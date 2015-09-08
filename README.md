@@ -2,7 +2,7 @@
 ##Introduction##
 The purpose of this exercise is to give you a chance to showcase your talents and abilities. Please have fun with this, and wow us with your best.
 ##Business Problem to Solve##
-The ministry needs a new website for a book that the ministry wants to create curriculum for. The name of this book is "Ready to Wed", and it's written by Greg and Erin Smalley. You can find out a little bit about this book by looking at [this link]("http://www.amazon.com/Ready-Wed-Start-Marriage-Youll/dp/1624054064/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=&sr=").
+The ministry needs a new website for a book that the ministry wants to create curriculum for. The name of this book is "Ready to Wed", and it's written by Greg and Erin Smalley. You can find out a little bit about this book by looking at http://www.amazon.com/Ready-Wed-Start-Marriage-Youll/dp/1624054064/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=&sr=.
 ##Requirements##
 The work needs to provide the following:
 

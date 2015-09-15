@@ -1,5 +1,8 @@
-[
+ï»¿[
   {
+    "Id": 1,
+    "Title": "Ready to Wed: 12 Ways to Start a Marriage You'll Love",
+    "Description":  "Written for engaged couples, this book is full of tools, tips, and instructions that start a couple on a straight path to a strong marriage. Emphasizing that marriage and family are good, the book integrates the 12 Traits of a Thriving Marriage to help prepare and strengthen marriages from the start. A vital resource for those who mentor engaged couples and for pastors/churches who wish to use it in a premarital counseling program.",
     "Points": [
       {
         "Id": 1,
@@ -9,7 +12,7 @@
       {
         "Id": 2,
         "Title": "Spending Enjoyable Time Together",
-        "Summary": "In the busyness of life, remember that love isn’t self-sufficient. Your marriage must be constantly fed and nurtured by spending regular time together."
+        "Summary": "In the busyness of life, remember that love isnâ€™t self-sufficient. Your marriage must be constantly fed and nurtured by spending regular time together."
       },
       {
         "Id": 3,
@@ -29,7 +32,7 @@
       {
         "Id": 6,
         "Title": "Mutually Satisfying Physical Intimacy",
-        "Summary": "Sex is God’s gift to a married couple as a way to experience the deepest, most profound intimacy possible—the two becoming one flesh."
+        "Summary": "Sex is Godâ€™s gift to a married couple as a way to experience the deepest, most profound intimacy possibleâ€”the two becoming one flesh."
       },
       {
         "Id": 7,
@@ -49,19 +52,18 @@
       {
         "Id": 10,
         "Title": "Cherish",
-        "Summary": "Created by God, your fiancé(e) is of infinite worth and value. Reflect often on the things that you love and cherish about your future spouse."
+        "Summary": "Created by God, your fiancÃ©(e) is of infinite worth and value. Reflect often on the things that you love and cherish about your future spouse."
       },
       {
         "Id": 11,
         "Title": "Nourish",
-        "Summary": "Love involves action and behavior. You need to nourish your relationship with your fiancé(e) in ways that speak love to him or her."
+        "Summary": "Love involves action and behavior. You need to nourish your relationship with your fiancÃ©(e) in ways that speak love to him or her."
       },
       {
         "Id": 12,
         "Title": "Community-Mindedness",
         "Summary": "Connecting regularly with like-minded couples who are committed to the good of your relationship is vital to the success of your marriage."
       }
-    ],
-    "Id": 1
+    ]
   }
 ]

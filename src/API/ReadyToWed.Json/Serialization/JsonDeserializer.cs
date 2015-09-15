@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,7 +11,8 @@ namespace ReadyToWed.Serialization
     {
         public async Task<T> DeserializeObjectAsync<T>(string value)
         {
-            T obj = await Task.Factory.StartNew(() => Newtonsoft.Json.JsonConvert.DeserializeObject<T>(value));
+            var settings = new JsonSerializerSettings { StringEscapeHandling = StringEscapeHandling.Default };
+            T obj = await Task.Factory.StartNew(() => Newtonsoft.Json.JsonConvert.DeserializeObject<T>(value, settings));
             return obj;
         }
     }

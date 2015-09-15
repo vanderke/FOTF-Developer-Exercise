@@ -8,12 +8,16 @@ namespace ReadyToWed.ViewModels
     public class BookViewModel : ViewModel
     {
 
-        public BookViewModel(int id)
+        public BookViewModel(Models.BookModel book)
         {
-            this.Id = id;
+            if (book == null)
+            {
+                throw new ArgumentNullException("book");
+            }
+            this.Book = book;
         }
 
-        public int Id { get; }
+        public Models.BookModel Book { get; }
 
     }
 }

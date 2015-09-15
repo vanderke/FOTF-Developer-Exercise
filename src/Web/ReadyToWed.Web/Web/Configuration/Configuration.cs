@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Web.Http;
 using System.Web.Mvc;
 using System.Web.Routing;
+using System.Web.Optimization;
 
 namespace ReadyToWed.Web.Configuration
 {
@@ -19,9 +19,8 @@ namespace ReadyToWed.Web.Configuration
         public static void Configure(Data.IModelReader reader)
         {
             ReadyToWed.Data.ModelReaderManager.Current = reader;
-            AreaRegistration.RegisterAllAreas();
-            GlobalConfiguration.Configure(WebApiConfig.Register);
-            RouteConfig.RegisterRoutes(RouteTable.Routes);
+            MvcConfiguration.Configure(RouteTable.Routes);
+            BundleConfiguration.Configure(BundleTable.Bundles);
         }
         
     }

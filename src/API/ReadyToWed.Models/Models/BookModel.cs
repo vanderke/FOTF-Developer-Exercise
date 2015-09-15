@@ -8,6 +8,9 @@ namespace ReadyToWed.Models
     public class BookModel : Model
     {
 
+        public string Title { get; set; }
+        public string Description { get; set; }
+
         private IList<BookPointModel> points;
         public IList<BookPointModel> Points
         {

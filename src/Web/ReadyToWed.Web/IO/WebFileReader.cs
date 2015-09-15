@@ -25,20 +25,17 @@ namespace ReadyToWed.IO
 
         public async Task<Maybe<string>> ReadAsync(string fileName)
         {
-            Maybe<string> result = await Task.Run(() => this.Read(fileName));
-            return result;
-        }
-
-        private Maybe<string> Read(string fileName)
-        {
             string path = System.IO.Path.Combine(this.workingDirectory, fileName);
             if (System.IO.File.Exists(path))
             {
-                string fileContents = System.IO.File.ReadAllText(path);
-                return new Maybe<string>(fileContents);
+                using (System.IO.StreamReader reader = new System.IO.StreamReader(path))
+                {
+                    string fileContents = await reader.ReadToEndAsync();
+                    return new Maybe<string>(fileContents);
+                }
             }
             return new Maybe<string>();
         }
-
+                
     }
 }

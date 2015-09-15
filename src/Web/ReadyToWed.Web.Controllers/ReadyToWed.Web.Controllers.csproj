@@ -55,16 +55,8 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Net" />
-    <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="System.Web.Http, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
@@ -97,7 +89,7 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Web\Mvc\Controllers\HomeController.cs" />
-    <Compile Include="Web\WebApi\Controllers\BookController.cs" />
+    <Compile Include="Web\Mvc\Html\PageExtensions.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\API\ReadyToWed.Models\ReadyToWed.Models.csproj">
@@ -111,6 +103,10 @@
     <ProjectReference Include="..\..\API\ReadyToWed\ReadyToWed.csproj">
       <Project>{cf204bab-4bc8-4b44-9944-ab2dfb2c1aaa}</Project>
       <Name>ReadyToWed</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ReadyToWed.Web\ReadyToWed.Web.csproj">
+      <Project>{5f7bcf73-16bf-48d3-9c6f-5c3058c0444f}</Project>
+      <Name>ReadyToWed.Web</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

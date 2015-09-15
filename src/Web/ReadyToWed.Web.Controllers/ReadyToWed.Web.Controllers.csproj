@@ -104,6 +104,10 @@
       <Project>{273004c8-66c2-4d45-870f-116759e3f5c8}</Project>
       <Name>ReadyToWed.Models</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\API\ReadyToWed.ViewModels\ReadyToWed.ViewModels.csproj">
+      <Project>{441a1720-5656-4367-b586-567af7609832}</Project>
+      <Name>ReadyToWed.ViewModels</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\API\ReadyToWed\ReadyToWed.csproj">
       <Project>{cf204bab-4bc8-4b44-9944-ab2dfb2c1aaa}</Project>
       <Name>ReadyToWed</Name>

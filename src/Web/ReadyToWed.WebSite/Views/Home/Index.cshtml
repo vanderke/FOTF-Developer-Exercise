@@ -5,7 +5,8 @@
         <h1>@Model.Book.Title</h1>
     </div>
 </div>
-<div id="description" class="row">
+<div id="description"></div>
+<div class="row">
     <div class="col-md-3">
         <img src="~/Images/books/@String.Concat(Model.Book.Id.ToString(), ".jpg")" class="img-responsive" />
     </div>
@@ -19,7 +20,8 @@
 
 @if (Model.Book.Points.Any())
 {
-    <div id="points" class="row">
+    <div id="points"></div>
+    <div class="row">
         <div class="col-md-12">
             <h3>Points</h3>
             <ul>

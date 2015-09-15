@@ -38,7 +38,7 @@ namespace ReadyToWed.Web.Configuration
 
             foreach (StyleBundle bundle in BundleTable.Bundles.OfType<StyleBundle>())
             {
-                sbHtml.Append(System.Web.Optimization.Styles.Render(bundle.Path).ToHtmlString());
+                sbHtml.Append(Styles.Render(bundle.Path).ToHtmlString());
             }
 
             return sbHtml.ToString();
@@ -50,7 +50,7 @@ namespace ReadyToWed.Web.Configuration
 
             foreach (ScriptBundle bundle in BundleTable.Bundles.OfType<ScriptBundle>())
             {
-                sbHtml.Append(System.Web.Optimization.Styles.Render(bundle.Path).ToHtmlString());
+                sbHtml.Append(Scripts.Render(bundle.Path).ToHtmlString());
             }
 
             return sbHtml.ToString();

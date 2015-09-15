@@ -14,10 +14,17 @@ namespace ReadyToWed.ViewModels
             {
                 throw new ArgumentNullException("book");
             }
-            this.Book = book;
+            this.book = book;
         }
 
-        public Models.BookModel Book { get; }
+        private Models.BookModel book;
+        public Models.BookModel Book
+        {
+            get
+            {
+                return this.book;
+            }
+        }
 
     }
 }

@@ -20,7 +20,7 @@ namespace Website101.Models {
     }
 
     public T GetChapter( int number ) {
-      return this.Where( t => t.Number == number ) as T;
+      return this.Where( t => t.Number == number ).FirstOrDefault();
     }
   }
 }

@@ -1,0 +1,13 @@
+﻿@model Website101.Models.Chapter
+
+@{
+  ViewBag.Title = Model.Title;
+  ViewBag.Header = "Ready To Wed";
+}
+
+<section class="chapter even">
+  <h2>@Model.Title</h2>
+  <h6>Chapter @Model.Number</h6>
+  <p>@Model.Summary</p>
+  <a href="/" class="btn btn-default">Back</a>
+</section>

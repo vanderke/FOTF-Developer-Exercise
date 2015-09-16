@@ -1,7 +1,16 @@
-﻿
+﻿@using Website101.Models
+@model Book<Chapter>
+
 @{
-    ViewBag.Title = "Index";
+  ViewBag.Title = "Home";
+  ViewBag.Header = Model.Title;
 }
 
-<h2>Index</h2>
-
+@foreach ( Chapter chapter in Model.OrderBy( x => x.Number ) ) {
+  <section class="@( chapter.Number % 2 == 0 ? "even" : "odd" )">
+    <h3>@chapter.Title</h3>
+    <h6>Chapter @chapter.Number</h6>
+    <p>@chapter.Summary</p>
+    <a href="/Book/Chapter/@chapter.Number" class="btn btn-primary">View Chapter</a>
+  </section>
+}

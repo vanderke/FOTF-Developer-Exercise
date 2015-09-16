@@ -1,18 +1,20 @@
-﻿body {
-    padding-top: 50px;
-    padding-bottom: 20px;
+﻿.wrap{
+  width: 100%;
 }
 
-/* Set padding to keep content from hitting the edges */
-.body-content {
-    padding-left: 15px;
-    padding-right: 15px;
+body > .wrap > header{
+  background-image: url('/Content/images/wedding-couple.jpg');
+  background-position: center center;
+  height: 200px;
+  padding: 20px 200px; 
+  overflow: hidden;
+  text-align: center;
+  width: 100%
 }
 
-/* Set width on the form input elements since they're 100% wide by default */
-input,
-select,
-textarea {
-    max-width: 280px;
+body > .wrap > header h2 {
+  font-size: 60px;
 }
+
+
 

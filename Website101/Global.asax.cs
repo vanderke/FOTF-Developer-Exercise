@@ -4,15 +4,18 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
+using Website101.Infrastructure;
 
-namespace Website101
-{
-    public class MvcApplication : System.Web.HttpApplication
-    {
-        protected void Application_Start()
-        {
-            AreaRegistration.RegisterAllAreas();
-            RouteConfig.RegisterRoutes(RouteTable.Routes);
-        }
+namespace Website101 {
+  public class MvcApplication : System.Web.HttpApplication {
+
+    protected void Application_Start() {
+
+      // Give application access to the server utility.
+      ServerAccess.SetServer( Server );
+
+      AreaRegistration.RegisterAllAreas();
+      RouteConfig.RegisterRoutes(RouteTable.Routes);
     }
+  }
 }

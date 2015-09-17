@@ -1,0 +1,150 @@
+﻿body
+{
+	text-align: center;
+	background-color:#1F3451;
+	font-family:Helvetica, Segoe UI, Arial, sans-serif; 
+	font-size:smaller;
+}
+
+H1
+{
+	font-size:28px;
+	text-shadow: -2px 2px 3px #DCDCDC;
+}
+
+H2
+{
+	font-size:20px;
+	text-shadow: -2px 2px 3px #DCDCDC;
+}
+
+H3
+{
+	font-size:18px;
+	text-shadow: -2px 2px 3px #DCDCDC;
+}
+
+.SiteName
+{
+    color:black; text-shadow: 1px 1px 1px #6E6041; font-size:14pt;
+}
+
+/*a#navlink
+{
+	font-size: 20px;
+	text-shadow: -2px 2px 3px #333;
+	text-decoration: none;
+}*/
+
+/*.subtext
+{
+	font-size:14px;	
+}*/
+
+div#headercontainer
+{
+    /*margin-right: auto;
+	margin-top:20px;
+	width: 98%;
+	text-align: left;
+	background-color:#E3E3E3;
+	border:none;
+	padding: 10px;
+	font-family: Verdana, Geneva, sans-serif;*/
+
+        visibility:collapse;
+    visibility:hidden;
+}
+
+div#footercontainer
+{
+	/*margin-left: auto;
+	margin-right: auto;
+	margin-top:1px;
+	width: 98%;
+	text-align: center;
+	background-color:#E3E3E3;
+	border:none;
+	padding: 10px;
+	font-family: Verdana, Geneva, sans-serif;*/
+
+    visibility:collapse;
+    visibility:hidden;
+}
+
+/*.defTitle {
+	font-size: 24px;
+	font-weight: bold;
+}
+.defText {
+	font-style:italic;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+.shadowImage {
+	box-shadow:#666;
+}*/
+
+/*.footerText 
+{
+    color: #1F3451;
+    font-size: 11pt;
+
+}*/
+
+/*.flatbutton_Orange
+{
+    visibility: hidden;
+}
+
+.flatbutton_Orange:hover
+{
+    visibility: hidden;
+}
+
+.flatbutton_Clear
+{
+    visibility: hidden;
+}
+
+.flatbutton_Clear:hover
+{
+    visibility: hidden;
+}*/
+
+div#contentcontainer
+{
+text-align:left;
+
+}
+
+.btn-primary
+{
+    visibility: hidden;
+}
+
+.navbar navbar-inverse navbar-fixed-top
+{
+    visibility: hidden;
+    visibility: collapse;
+}
+
+.navbar-header
+{
+    visibility: hidden;
+    visibility: collapse;
+}
+
+div#mainNavbar
+{
+    visibility: hidden;
+    visibility: collapse;
+}
+
+
+
+.HideOnPrint
+{
+    visibility:collapse;
+    visibility:hidden;
+}
+

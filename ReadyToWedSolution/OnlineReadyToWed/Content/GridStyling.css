@@ -1,0 +1,107 @@
+﻿/* Common Grid View -------------------------------------- */
+table.GridViewStyle
+ {    
+    border-right: 2px solid #A7A6AA;
+     border-bottom: 2px solid #A7A6AA;
+     border-left: 2px solid #FFFFFF;
+     border-top: 2px solid #FFFFFF;
+     padding: 15px 15px 15px 15px;
+     width: 100%;
+ }
+ 
+ .GridViewStyle a
+ {
+     text-decoration: none;
+     color: Black;
+ }
+ 
+.GridViewHeaderStyle th
+ {
+     border-left: 1px solid #EBE9ED;
+     border-right: 1px solid #EBE9ED;
+ }
+ 
+.GridViewHeaderStyle
+ {
+     /* background-color:#BEBEBE; */
+     background-color: #DFDCB3;
+     /* background-color: #5D7B9D; */
+     font-family:Helvetica, Segoe UI, Arial, sans-serif;
+     font-weight: bold;
+     color: #FFFFFF;
+ }
+ 
+.GridViewFooterStyle
+ {
+     background-color: #5D7B9D;
+     font-weight: bold;
+     color: #FFFFFF;
+ }
+ 
+.GridViewRowStyle
+ {
+     background-color: #F7F6F3;
+     /* color: #333333; */
+ }
+ 
+.GridViewAlternatingRowStyle 
+{
+     background-color: #F5F5F5;
+     /* background-color: #FFFFFF;
+     color: #284775; */
+ }
+ 
+ table.GridViewStyle tr:hover
+ {
+   /* background-color: #CCCCCC; */
+   background-color: #DFDCB3;
+   color: White;
+ }
+ 
+ .GridViewRowStyle td, .GridViewAlternatingRowStyle td
+ {
+     border: 1px solid #EBE9ED;
+     /* font-size:larger; */
+ }
+ 
+.GridViewSelectedRowStyle
+ {
+     background-color: #E2DED6;
+     font-weight: bold;
+     color: #333333;
+ }
+ 
+.GridViewPagerStyle
+ {
+     text-align: right;
+     /* background-color: #284775; */
+     background-color: #CCCCFF;
+     font-family:Helvetica, Segoe UI, Arial, sans-serif;
+     /* font-size: larger; */
+     color: #B22222;
+ }
+ 
+.GridViewPagerStyle table /* to center the paging links*/
+ {
+     /* margin: 0 auto 0 auto; */
+     text-align: right;
+ }
+ 
+   .GridViewPagerStyle a:hover
+ {
+     color: Navy;
+ }
+ 
+ 
+ .GridViewPagerStyle td
+ {
+     text-align: right;
+     font-family:Helvetica, Segoe UI, Arial, sans-serif;
+     /* font-size: larger; */
+ }
+ 
+  .GridViewPagerStyle tr:hover td:hover
+ {
+     background-color: #DFDCB3;
+ }
+ /* -------------------------------------------------------- */

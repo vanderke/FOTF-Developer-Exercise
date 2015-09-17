@@ -1,0 +1,15 @@
+C:\Users\rztkd2\Documents\Visual Studio 2015\Projects\ReadyToWedSolution\clsReadyWed\bin\Debug\clsReadyWed.dll
+C:\Users\rztkd2\Documents\Visual Studio 2015\Projects\ReadyToWedSolution\clsReadyWed\bin\Debug\clsReadyWed.pdb
+C:\Users\rztkd2\Documents\Visual Studio 2015\Projects\ReadyToWedSolution\clsReadyWed\obj\Debug\clsReadyWed.dll
+C:\Users\rztkd2\Documents\Visual Studio 2015\Projects\ReadyToWedSolution\clsReadyWed\obj\Debug\clsReadyWed.pdb
+C:\Users\rztkd2\Documents\Visual Studio 2015\Projects\ReadyToWedSolution\clsReadyWed\bin\Debug\Common.dll
+C:\Users\rztkd2\Documents\Visual Studio 2015\Projects\ReadyToWedSolution\clsReadyWed\bin\Debug\Mandrill.API.dll
+C:\Users\rztkd2\Documents\Visual Studio 2015\Projects\ReadyToWedSolution\clsReadyWed\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+C:\Users\rztkd2\Documents\Visual Studio 2015\Projects\ReadyToWedSolution\clsReadyWed\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+C:\Users\rztkd2\Documents\Visual Studio 2015\Projects\ReadyToWedSolution\clsReadyWed\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\rztkd2\Documents\Visual Studio 2015\Projects\ReadyToWedSolution\clsReadyWed\bin\Debug\Microsoft.Practices.Unity.Interception.dll
+C:\Users\rztkd2\Documents\Visual Studio 2015\Projects\ReadyToWedSolution\clsReadyWed\bin\Debug\Newtonsoft.Json.dll
+C:\Users\rztkd2\Documents\Visual Studio 2015\Projects\ReadyToWedSolution\clsReadyWed\bin\Debug\openstacknet.dll
+C:\Users\rztkd2\Documents\Visual Studio 2015\Projects\ReadyToWedSolution\clsReadyWed\bin\Debug\SimpleRESTServices.dll
+C:\Users\rztkd2\Documents\Visual Studio 2015\Projects\ReadyToWedSolution\clsReadyWed\bin\Debug\Common.pdb
+C:\Users\rztkd2\Documents\Visual Studio 2015\Projects\ReadyToWedSolution\clsReadyWed\obj\Debug\clsReadyWed.csprojResolveAssemblyReference.cache

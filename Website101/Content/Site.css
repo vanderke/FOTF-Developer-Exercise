@@ -20,12 +20,12 @@
 input,
 select,
 textarea {
-    /*max-width: 280px*/;
+    /*max-width: 280px;*/
 }
 
 
 
-div.book-chapters > div{
+.book-chapters > div{
   margin-top: 10px;
   padding: 10px;
   box-shadow: 2px 2px 2px #999;
@@ -34,6 +34,11 @@ div.book-chapters > div{
 .book-chapters > div:nth-child(odd) {
   background-color: #f1f1f1;
 }
-table tr:nth-child(even) {
-  background-color: #ffffff;
+
+.chapter div:nth-child( 3 ){
+  text-align: right;
+}
+
+.add-new{
+  margin: 20px;
 }

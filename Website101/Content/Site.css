@@ -1,44 +1,36 @@
-﻿.wrap{
-  width: 100%;
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
 }
 
-body > .wrap > header{
-  background-image: url('/Content/images/chalkboard.jpg');
-  background-position: center center;
-  color: #fff;
-  height: 200px;
-  padding: 20px 200px; 
-  overflow: hidden;
-  text-align: center;
-  width: 100%
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
-body > .wrap > header h2 {
-  font-size: 80px;
-  font-family: 'Dancing Script', cursive;
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
 }
 
-section.chapter{
-  padding: 20px 200px; 
-  min-height: 175px;
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
 }
 
-section.chapter h3{
-  font-size: 40px;
-  font-family: 'Dancing Script', cursive;
+table, th , td {
+  border: 1px solid grey;
+  border-collapse: collapse;
+  padding: 5px;
 }
-
-section.odd{ 
-  /*background: url('/Content/images/heart2.png') bottom left no-repeat;*/
-  background-color: maroon; 
-  color: #fff; 
-
+table tr:nth-child(odd) {
+  background-color: #f1f1f1;
 }
-
-section.even{
-  background: url('/Content/images/curly-cue.jpg') bottom right no-repeat;
-}
-
-section.even .right, section.odd .right{
-  text-align: right;
+table tr:nth-child(even) {
+  background-color: #ffffff;
 }

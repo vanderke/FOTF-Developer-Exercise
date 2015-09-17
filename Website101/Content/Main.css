@@ -1,0 +1,44 @@
+﻿.wrap{
+  width: 100%;
+}
+
+body > .wrap > header{
+  background-image: url('/Content/images/chalkboard.jpg');
+  background-position: center center;
+  color: #fff;
+  height: 200px;
+  padding: 20px 200px; 
+  overflow: hidden;
+  text-align: center;
+  width: 100%
+}
+
+body > .wrap > header h2 {
+  font-size: 80px;
+  font-family: 'Dancing Script', cursive;
+}
+
+section.chapter{
+  padding: 20px 200px; 
+  min-height: 175px;
+}
+
+section.chapter h3{
+  font-size: 40px;
+  font-family: 'Dancing Script', cursive;
+}
+
+section.odd{ 
+  /*background: url('/Content/images/heart2.png') bottom left no-repeat;*/
+  background-color: maroon; 
+  color: #fff; 
+
+}
+
+section.even{
+  background: url('/Content/images/curly-cue.jpg') bottom right no-repeat;
+}
+
+section.even .right, section.odd .right{
+  text-align: right;
+}

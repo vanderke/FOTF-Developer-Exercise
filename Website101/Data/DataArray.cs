@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using Newtonsoft.Json.Linq;
 using Website101.Infrastructure;
 
 namespace Website101.Data {
@@ -25,7 +26,7 @@ namespace Website101.Data {
     }
 
     /// <summary>
-    /// The data for this array.
+    /// The data storage for this array.
     /// </summary>
     private DataStore _data;
 
@@ -34,7 +35,7 @@ namespace Website101.Data {
     /// Populate data from the data store.
     /// </summary>
     public DataArray(){
-      _data = new DataStore( this.DataFile() );
+      _data = new DataStore( this.DataLocation() );
       this.Initialize();
     }
 
@@ -50,8 +51,16 @@ namespace Website101.Data {
     ///   this array.
     /// </summary>
     /// <returns>The path to the data store json file.</returns>
-    protected string DataFile() {
-      return ServerAccess.Server.MapPath( "~/" + DataDirectory + "/" + DataName + ".json" );
+    public string DataLocation() {
+      return ServerAccess.MapPath( "~/" + DataDirectory + "/" + DataName + ".json" );
+    }
+
+    /// <summary>
+    /// Give access to the JArray object.
+    /// </summary>
+    /// <returns>JArray object.</returns>
+    public JArray ToJArray() {
+      return _data.ToJArray();
     }
 
     #region IEnumerable<T> Members

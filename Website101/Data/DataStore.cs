@@ -2,12 +2,13 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Web.Script.Serialization;
 using System.IO;
 using Newtonsoft.Json.Linq;
 using System.Reflection;
 
 namespace Website101.Data {
-  public class DataStore {
+  public class DataStore : IDataStore {
 
     /// <summary>
     /// The location of the json file.
@@ -58,15 +59,23 @@ namespace Website101.Data {
     }
 
     /// <summary>
+    /// Remove data from datasource.
+    /// </summary>
+    public void Delete() {
+      _data.RemoveAll();
+      File.Delete( _filepath );
+    }
+
+    /// <summary>
     /// Get a data node.
     /// </summary>
     /// <typeparam name="T">IDataNode</typeparam>
     /// <param name="index">The index to retrieve the node from.</param>
     /// <returns></returns>
-    public T GetNode<T>( int index ) where T : IDataNode {
+    public T GetNode<T>( int index = -1 ) where T : IDataNode {
       object[] args = new object[2] {
-        index,
-        this
+        this,
+        index
       };
       return (T)Activator.CreateInstance( typeof( T ), args );
     }
@@ -77,9 +86,13 @@ namespace Website101.Data {
     /// <param name="index">The index of the data to write from.</param>
     /// <param name="node">An IDataNode object.</param>
     public void WriteToDataNode( int index, IDataNode node ) {
+      JToken data = _data.ElementAt( index );
+      if ( index < 0 || data == null ) {
+        throw new IndexOutOfRangeException();
+      }
       PropertyInfo[] properties = node.GetType().GetProperties();
       foreach ( PropertyInfo property in properties ) {
-        object value = _data.ElementAt( index )[property.Name];
+        object value = data[property.Name];
         value = Convert.ChangeType( value, property.PropertyType );
         property.SetValue( node, value );
       }
@@ -91,12 +104,24 @@ namespace Website101.Data {
     /// <param name="index">The index of the data to read to.</param>
     /// <param name="node">An IDataNode object.</param>
     public void ReadFromDataNode( int index, IDataNode node ) {
-      PropertyInfo[] properties = node.GetType().GetProperties();
-      foreach ( PropertyInfo property in properties ) {
-        object value = property.GetValue( node );
-        value = Convert.ChangeType( value, typeof( JToken ) );
-        _data.ElementAt( index )[property.Name] = (JToken)value;
+      string nodeJson = new JavaScriptSerializer().Serialize( node );
+      JObject obj = JObject.Parse( nodeJson );
+      if ( node.IsNew() ) {
+        // Add new node.
+        _data.Add( obj );
       }
+      else {
+        // Update existing.
+        _data[index] = obj;
+      }
+    }
+
+    /// <summary>
+    /// Give access to the JArray object.
+    /// </summary>
+    /// <returns>JArray object.</returns>
+    public JArray ToJArray() {
+      return _data;
     }
   }
 }

@@ -6,8 +6,8 @@ using Website101.Data;
 
 namespace Website101.Models {
   public class Chapter : DataNode {
-    public Chapter( int index, DataStore dataSource )
-      : base( index, dataSource ) {
+    public Chapter( DataStore dataSource, int index = -1 )
+      : base( dataSource, index ) {
 
     }
 

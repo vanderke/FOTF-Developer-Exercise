@@ -8,11 +8,15 @@ namespace Website101.Data {
 
     protected int _index;
 
-    protected DataStore _data;
+    protected IDataStore _data;
 
-    public DataNode( int index, DataStore dataStore ) {
-      _index = index;
+    public bool IsNew() {
+      return _index < 0;
+    }
+
+    public DataNode( IDataStore dataStore, int index = -1 ) {
       _data = dataStore;
+      _index = index;
       this.Load();
     }
 
@@ -20,7 +24,9 @@ namespace Website101.Data {
     /// Load data from the data store.
     /// </summary>
     public void Load() {
-      _data.WriteToDataNode( _index, this );
+      if ( !this.IsNew() ) {
+        _data.WriteToDataNode( _index, this );
+      }
     }
 
     /// <summary>
@@ -29,6 +35,22 @@ namespace Website101.Data {
     public void Save() {
       _data.ReadFromDataNode( _index, this );
       _data.Save();
+    }
+
+    /// <summary>
+    /// Get the current index.
+    /// </summary>
+    /// <returns>The index of this node.</returns>
+    public int GetIndex() {
+      return _index;
+    }
+
+    /// <summary>
+    /// Update the index.
+    /// </summary>
+    /// <param name="index">The index of the node.</param>
+    public void SetIndex( int index ) {
+      _index = index;
     }
   }
 }

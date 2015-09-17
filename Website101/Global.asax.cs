@@ -10,10 +10,6 @@ namespace Website101 {
   public class MvcApplication : System.Web.HttpApplication {
 
     protected void Application_Start() {
-
-      // Give application access to the server utility.
-      ServerAccess.SetServer( Server );
-
       AreaRegistration.RegisterAllAreas();
       RouteConfig.RegisterRoutes(RouteTable.Routes);
     }

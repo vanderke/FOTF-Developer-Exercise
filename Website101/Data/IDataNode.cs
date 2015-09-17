@@ -24,6 +24,11 @@ namespace Website101.Data {
     void Save();
 
     /// <summary>
+    /// Remove this data from the data store.
+    /// </summary>
+    void Remove();
+
+    /// <summary>
     /// Get the current index.
     /// </summary>
     /// <returns>The index of this node.</returns>

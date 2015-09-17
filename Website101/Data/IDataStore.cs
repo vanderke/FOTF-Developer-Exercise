@@ -23,6 +23,12 @@ namespace Website101.Data {
     void Delete();
 
     /// <summary>
+    /// Remove an entry.
+    /// </summary>
+    /// <param name="index">The index of the entry</param>
+    void Remove( int index );
+
+    /// <summary>
     /// Get a data node of type IDataNode.
     /// </summary>
     /// <typeparam name="T">IDataNode</typeparam>

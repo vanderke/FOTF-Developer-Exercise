@@ -1,18 +1,84 @@
 ﻿
 @{
-    ViewBag.Title = "View";
+    ViewBag.Title = "Chapters";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
-<h1>Chapters</h1>
+<div ng-app="chapters" ng-controller="chapterCtrl">
 
-<div class="row content">
-  <div class="col-md-6" ng-app="chapters" ng-controller="chapterCtrl">
-    <ul>
-      <li ng-repeat="x in chapters | orderBy:'Number'">
-        {{ x.Title + ": " + x.Summary }}
-      </li>
-    </ul>
+  <h1>Chapters</h1>
+
+  <button class="btn btn-success" ng-click="AddNew()">
+    <span class="glyphicon glyphicon-plus"></span> Chapter
+  </button>
+
+  <div class="row content">
+    <div class="col-md-12 book-chapters">
+
+      <div ng-repeat="chapter in chapters | orderBy:'Number'" class="row chapter">
+        <div class="col-md-3">          
+          Chapter {{ chapter.Number }}
+          <h3>{{ chapter.Title }}</h3>
+        </div>
+        <div class="col-md-8">
+          {{ chapter.Summary }}
+        </div>
+        <div class="col-md-1">
+          <button class="btn btn-primary" ng-click="Edit( chapter.Number )">
+            <span class="glyphicon glyphicon-pencil"></span>
+          </button>
+          <button class="btn btn-danger" ng-click="Delete( chapter.Number )">
+            <span class="glyphicon glyphicon-trash"></span>
+          </button>
+        </div>
+      </div>
+
+    </div>
   </div>
+
+  <button class="btn btn-success" ng-click="AddNew()">
+    <span class="glyphicon glyphicon-plus"></span> Chapter
+  </button>
+
+  <form id="chapterForm" name="chapterForm" class="modal fade" role="form" novalidate>
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">{{ FormTitle }}</h4>
+        </div>
+        <div class="modal-body">
+
+          <input type="hidden" ng-model="Number" />
+
+          <div class="form-group">
+            <label for="Title">Title <span class="required">*</span></label>
+            <input class="form-control" type="text" id="Title" ng-model="Title" required />
+            <span style="color:red" ng-show="titleInvalid">
+              Title is required.
+            </span>
+          </div>
+
+          <div class="form-group">
+            <label for="Summary">Summary <span class="required">*</span></label>
+            <textarea class="form-control" type="text" id="Summary" ng-model="Summary" required></textarea>
+            <span style="color:red" ng-show="summaryInvalid">
+              Summary is required.
+            </span>
+          </div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" ng-click="Submit()">Submit</button>
+          <button type="button" class="btn btn-default" ng-click="CloseForm()">Cancel</button>
+        </div>
+      </div>
+
+    </div>
+  </form>
+
 </div>
 
+
+<script src="~/Scripts/Controllers/ChapterController.js"></script>

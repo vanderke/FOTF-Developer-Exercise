@@ -26,5 +26,36 @@ namespace Website101.Controllers
       object data = new { chapters = book };
       return Json( data, JsonRequestBehavior.AllowGet );
     }
+
+    //POST: Book/Add
+    [HttpPost]
+    public JsonResult Add( Chapter chapter ) {
+      chapter.Save();
+      Book<Chapter> book = new Book<Chapter>();
+      JsonResult result = new JsonResult();
+      object data = new { chapters = book };
+      return Json( data, JsonRequestBehavior.AllowGet );
+    }
+
+    //POST: Book/Edit
+    [HttpPost]
+    public JsonResult Edit( Chapter chapter ) {
+      chapter.Save();
+      Book<Chapter> book = new Book<Chapter>();
+      JsonResult result = new JsonResult();
+      object data = new { chapters = book };
+      return Json( data, JsonRequestBehavior.AllowGet );
+    }
+
+    //POST: Book/Delete
+    [HttpPost]
+    public JsonResult Delete( int id = 0 ) {
+      Book<Chapter> book = new Book<Chapter>();
+      Chapter chapter = book.GetChapter( id );
+      chapter.Remove();
+      JsonResult result = new JsonResult();
+      object data = new { chapters = book };
+      return Json( data, JsonRequestBehavior.AllowGet );
+    }
   }
 }

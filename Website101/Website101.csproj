@@ -103,8 +103,8 @@
     <Content Include="Scripts\angular-1.4.5.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <Content Include="DataStore\Book.json" />
     <Content Include="DataStore\Book - Copy.json" />
+    <Content Include="DataStore\Book.json" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\Controllers\ChapterController.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />

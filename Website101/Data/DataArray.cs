@@ -56,11 +56,11 @@ namespace Website101.Data {
     }
 
     /// <summary>
-    /// Give access to the JArray object.
+    /// Give access to the DataStore object.
     /// </summary>
     /// <returns>JArray object.</returns>
-    public JArray ToJArray() {
-      return _data.ToJArray();
+    public DataStore GetDataStore() {
+      return _data;
     }
 
     #region IEnumerable<T> Members

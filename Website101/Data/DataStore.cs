@@ -67,6 +67,15 @@ namespace Website101.Data {
     }
 
     /// <summary>
+    /// Remove an entry.
+    /// </summary>
+    /// <param name="index">The index of the entry</param>
+    public void Remove( int index ) {
+      _data.RemoveAt( index );
+      this.Save();
+    }
+
+    /// <summary>
     /// Get a data node.
     /// </summary>
     /// <typeparam name="T">IDataNode</typeparam>

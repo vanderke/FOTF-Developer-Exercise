@@ -1,11 +1,11 @@
 ﻿
-angular.module( 'chapters', [] ).controller( 'chapterCtrl', function( $scope, $http ) {
+angular.module( 'chapters', [] ).controller( 'chapterCtrl', function( $scope, $http, $filter ) {
 
   $scope.chapters = [];
 
   // Initialize form values.
   $scope.Initialize = function() {
-    $scope.Number = $scope.chapters.length + 1;
+    $scope.Number = $scope.GetNextChapter();
     $scope.Title = "";
     $scope.Summary = "";
     $scope.FormTitle = "Add Chapter " + $scope.Number;
@@ -13,7 +13,6 @@ angular.module( 'chapters', [] ).controller( 'chapterCtrl', function( $scope, $h
     $scope.titleInvalid = false;
     $scope.summaryInvalid = false;
   }
-  $scope.Initialize();
 
   // Get the chapters from the backend.
   $scope.Fetch = function() {
@@ -23,7 +22,6 @@ angular.module( 'chapters', [] ).controller( 'chapterCtrl', function( $scope, $h
       $scope.Initialize();
     } );
   }
-  $scope.Fetch();
 
   // Open the form to add a new chapter.
   $scope.AddNew = function() {
@@ -53,7 +51,6 @@ angular.module( 'chapters', [] ).controller( 'chapterCtrl', function( $scope, $h
 
   // Watch form state.
   $scope.test = function() {
-    console.log( "test" );
     $scope.incomplete = false;
     if ( !$scope.Title.length || !$scope.Summary.length ) {
       $scope.incomplete = true;
@@ -66,7 +63,6 @@ angular.module( 'chapters', [] ).controller( 'chapterCtrl', function( $scope, $h
 
   // Submit the form.
   $scope.Submit = function() {
-    console.log( $scope.incomplete );
     if ( $scope.incomplete ) {
       $scope.titleInvalid = !$scope.Title.length;
       $scope.summaryInvalid = !$scope.Summary.length;
@@ -109,5 +105,22 @@ angular.module( 'chapters', [] ).controller( 'chapterCtrl', function( $scope, $h
     }
     return null;
   }
+
+  // Get the next chapter.
+  $scope.GetNextChapter = function() {
+    if ( $scope.chapters.length > 0 ) {
+      var chapters = $filter( "orderBy" )( $scope.chapters, "Number" );
+      for ( var i = 0; i < chapters.length; i++ ) {
+        if ( i + 1 !== chapters[i].Number ) {
+          return i + 1;
+        }
+      }
+    }
+    return $scope.chapters.length + 1;
+  }
+
+  // Run the application.
+  $scope.Initialize();
+  $scope.Fetch();
 
 } );

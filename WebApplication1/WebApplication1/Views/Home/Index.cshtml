@@ -1,0 +1,16 @@
+﻿@{
+    ViewBag.Title = "Books";
+}
+<div ng-app="fotf" ng-controller="BookListCtrl" ng-cloak>
+    <div class="row">
+        <div ng-repeat="book in books" class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <a href="/Home/Book/{{book.BookId}}"><img ng-src="{{book.ImgUrl}}" style="width: 171px"></a>
+                <div class="caption">
+                    <h3>{{book.Title}}</h3>
+                    <p>{{book.Summary}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -7,13 +7,16 @@ The ministry needs a new website for a book that the ministry wants to create cu
 The work needs to provide the following:
 
 - The site needs to present the information in a mobile and desktop friendly way.
-- The site needs to display the 12 main points of the book (Provided in the appendix).
+- The site needs to display the 12 main points of the book (Provided in the appendix). 
 - The data needs to come through some sort of data layer. In other words, we don't want the text hard coded in the web pages. Show us that you understand how to use a DAL. You can use either a database (i.e. MongoDB, SQL Server, MySQL) or a JSON feed for the source of your data.
 - The front end part of the site should include the use of some sort of JavaScript framework (i.e. JQuery, Backbone, Angular, Bootstrap)
-- The back end part of the site should showcase your knowledge of MVC/Razor.
-- Your work should showcase how well you understand SOLID principles and Object Oriented Design.
+- The back end part of the site should showcase your knowledge of appropriate design patterns.
+- Your work should showcase how well you understand Object Oriented Design principles.
 - Your work should showcase your understanding of TDD and unit testing.
-- The project should be runnable from inside Visual Studio 2013 or newer.
+- The project should include instructions for running the website on a local environment.
+
+###Bonus###
+It would be really great if you can make the site incorporate some sort of administration interface that allows an administrative user to edit the 12 main points of the book.
 
 ##Delivery##
 When you are finished, submit a pull request. If there is any configuration that needs to be done, please note that in your pull request. 

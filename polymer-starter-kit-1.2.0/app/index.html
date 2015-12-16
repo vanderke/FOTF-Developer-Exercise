@@ -1,0 +1,399 @@
+<!doctype html>
+<!--
+@license
+Copyright (c) 2015 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+-->
+
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="generator" content="Polymer Starter Kit" />
+  <title>Ready to Wed</title>
+  <!-- Place favicon.ico in the `app/` directory -->
+
+  <!-- Chrome for Android theme color -->
+  <meta name="theme-color" content="#2E3AA1">
+
+  <!-- Web Application Manifest -->
+  <link rel="manifest" href="manifest.json">
+
+  <!-- Tile color for Win8 -->
+  <meta name="msapplication-TileColor" content="#3372DF">
+
+  <!-- Add to homescreen for Chrome on Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="application-name" content="PSK">
+  <link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">
+
+  <!-- Add to homescreen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Polymer Starter Kit">
+  <link rel="apple-touch-icon" href="images/touch/apple-touch-icon.png">
+
+  <!-- Tile icon for Win8 (144x144) -->
+  <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+
+  <!-- build:css styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild-->
+
+  <!-- build:js bower_components/webcomponentsjs/webcomponents-lite.min.js -->
+  <script src="bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+  <!-- endbuild -->
+
+  <!-- will be replaced with elements/elements.vulcanized.html -->
+  <link rel="import" href="elements/elements.html">
+  <link rel="import" href="bower_components/firebase-element/firebase-collection.html">
+  <link rel="import" href="bower_components/firebase-element/firebase.html">
+  <link rel="import" href="bower_components/paper-input/paper-input.html">
+  <link rel="import" href="bower_components/paper-input/paper-textarea.html">
+  <link rel="import" href="bower_components/paper-button/paper-button.html">
+  <link rel="import" href="elements/my-img-box/img-box.html">
+  <link rel="import" href="elements/my-text-box/text-box.html">
+  <!-- <link rel="import" href="elements/my-admin-login/admin-login.html"> -->
+  <link rel="import" href="admin-login.html">
+  <!-- <link rel="import" href="text-box.html"> -->
+  <!-- <link rel="import" href="img-box.html"> -->
+  <!-- endreplace-->
+
+  <!-- For shared styles, shared-styles.html import in elements.html -->
+  <style is="custom-style" include="shared-styles"></style>
+  <script src="https://cdn.firebase.com/js/client/2.3.2/firebase.js"></script>
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+</head>
+
+<body unresolved class="fullbleed layout vertical">
+  <span id="browser-sync-binding"></span>
+  <template is="dom-bind" id="app">
+
+    <paper-drawer-panel id="paperDrawerPanel">
+      <!-- Drawer Scroll Header Panel -->
+      <paper-scroll-header-panel drawer fixed>
+
+        <!-- Drawer Toolbar -->
+        <paper-toolbar id="drawerToolbar">
+          <span class="paper-font-title">Menu</span>
+        </paper-toolbar>
+
+        <!-- Drawer Content -->
+        <paper-menu class="list" attr-for-selected="data-route" selected="[[route]]">
+          <a data-route="home" href="{{baseUrl}}">
+            <iron-icon icon="home"></iron-icon>
+            <span>Home</span>
+          </a>
+
+          <!-- <a data-route="users" href="users">
+            <iron-icon icon="info"></iron-icon>
+            <span>Users</span>
+          </a>
+
+          <a data-route="contact" href="contact">
+            <iron-icon icon="mail"></iron-icon>
+            <span>Contact</span>
+          </a> -->
+
+          <a data-route="books" href="/books">
+            <iron-icon icon="book"></iron-icon>
+            <span>Books</span>
+          </a>
+        </paper-menu>
+      </paper-scroll-header-panel>
+
+      <!-- Main Area -->
+      <paper-scroll-header-panel main id="headerPanelMain" condenses keep-condensed-header>
+
+        <!-- Main Toolbar -->
+        <paper-toolbar id="mainToolbar" class="tall">
+          <paper-icon-button id="paperToggle" icon="menu" paper-drawer-toggle></paper-icon-button>
+          <span class="flex"></span>
+
+          <!-- Toolbar icons -->
+          <paper-icon-button icon="refresh"></paper-icon-button>
+          <paper-icon-button icon="search"></paper-icon-button>
+
+          <!-- Application name -->
+          <div class="middle middle-container center horizontal layout">
+            <div class="app-name">Ready to Wed</div>
+          </div>
+
+          <!-- Application sub title -->
+          <div class="bottom bottom-container center horizontal layout">
+            <div class="bottom-title paper-font-subhead">A Book by Greg and Erin Smalley</div>
+          </div>
+
+        </paper-toolbar>
+
+        <!-- Main Content -->
+        <div class="content">
+          <iron-pages attr-for-selected="data-route" selected="{{route}}">
+
+            <section data-route="home">
+              <paper-material elevation="2">
+                <div id="test">
+                  <text-box></text-box>
+                  <img-box></img-box>
+                </div>
+                <!-- <my-greeting></my-greeting> -->
+
+                <!-- <p class="paper-font-subhead">You now have:</p> -->
+                <!-- <my-list></my-list> -->
+
+                <!-- <p class="paper-font-body2">Looking for more Web App layouts? Check out our <a href="https://github.com/PolymerElements/app-layout-templates">layouts</a> collection. You can also <a href="http://polymerelements.github.io/app-layout-templates/">preview</a> them live.</p> -->
+              </paper-material>
+              <!-- <paper-material elevation="1"> -->
+              <!-- <p class="paper-font-body2">This is another card.</p> -->
+              <!-- </paper-material> -->
+
+              <paper-material elevation="1" class="paper-font-body2">
+                <template is="dom-bind">
+                  <firebase-collection location="https://sweltering-fire-3131.firebaseio.com/points" data="{{ points }}">
+                  </firebase-collection>
+                  <template is="dom-repeat" items="[[points]]" as="point">
+                    <!-- <h4>[[point.__firebaseKey__]]</h4> -->
+                    <ul>
+                      <li>
+                        <b><span>Title: </span></b>
+                        <span>[[point.title]]</span>
+                        <br>
+                        <ul>
+                          <li>
+                            <b><span>Summary: </span></b>
+                            <span>[[point.summary]]</span>
+                            <br>
+                          </li>
+                        </ul>
+                      </li>
+
+                    </ul>
+                  </template>
+                </template>
+                <!-- <h1 id="license">License</h1>
+                <p>Everything in this repo is BSD style license unless otherwise specified.</p>
+                <p>Copyright (c) 2015 The Polymer Authors. All rights reserved.</p>
+                <p>Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:</p>
+                <ul>
+                  <li>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</li>
+                  <li>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+                  </li>
+                  <li>Neither the name of Google Inc. nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.</li>
+                </ul>
+                <p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+                  ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+                  LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
+                  EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</p> -->
+
+              </paper-material>
+            </section>
+
+            <!-- <section data-route="users">
+              <paper-material elevation="1">
+                <h2 class="page-title">Users</h2>
+                <p>This is the users section</p>
+                <a href$="{{baseUrl}}users/Addy">Addy</a><br>
+                <a href$="{{baseUrl}}users/Rob">Rob</a><br>
+                <a href$="{{baseUrl}}users/Chuck">Chuck</a><br>
+                <a href$="{{baseUrl}}users/Sam">Sam</a>
+              </paper-material>
+            </section> -->
+
+            <!-- <section data-route="user-info">
+              <paper-material elevation="1">
+                <h2 class="page-title">User: {{params.name}}</h2>
+                <div>This is {{params.name}}'s section</div>
+              </paper-material>
+            </section> -->
+
+            <section data-route="admin">
+              <admin-login></admin-login>
+              <!-- <script src="../bower_components/page/page.js"></script>-->
+              <!-- <paper-input id="email" label="Email"></paper-input>
+              <paper-input type="password" id="password" label="Password"></paper-input>
+              <paper-button id="login" raised>Login</paper-button> -->
+              <script>
+                // var $email = $('#email').val();
+                // var $password = $('#password').val();
+                // var $button = $('#login');
+                //  var ref = new Firebase("https://sweltering-fire-3131.firebaseio.com/points");
+                // $button.on('click', goToURL);
+                //  function goToURL() {
+                //    console.log('I have been clicked');
+                //    window.location.href = 'http://127.0.0.1:5000/edit';
+                  // window.location.href = '';
+                // }
+                // $button.on('click', function() {
+                //     console.log('I have been clicked');
+                //     console.log('Email: ' + $email.val());
+                //     console.log('Password: ' + $password.val());
+                //   });
+                  // $button.on('click', function() {
+                    // ref.authWithPassword({
+                    //   "email": 'admin@example.com',
+                    //   "password": 'focusonthefamily'
+                    // }, function(error, authData) {
+                    //   if (error) {
+                    //     console.log("Login Failed!", error);
+                    //   } else {
+                        // goToURL();
+                        // page('/edit', function() {
+                        //   app.route = 'edit';
+                        // })
+                    //     console.log('Email: ' + this.email);
+                    //     console.log("Authenticated successfully with payload:", authData);
+                    //   }
+                    // });
+                  // }
+                </script>
+              <!-- <firebase-auth location="https://sweltering-fire-3131.firebaseio.com/points"
+                provider="custom" redirect="true" ref="https://sweltering-fire-3131.firebaseio.com/points"> -->
+              <!-- <paper-material elevation="1">
+                  <h2 class="page-title">Admin</h2>
+                  <p>This is the admin section</p>
+                  <paper-input label="admin" placeholder="Admin"></paper-input>
+                  <paper-input type="password" label="password" placeholder="Password"></paper-input>
+                </paper-material> -->
+              <!-- </firebase-auth> -->
+            </section>
+            <section data-route="edit">
+              <paper-input id="title" label="Title"></paper-input>
+              <paper-textarea id="summary" label="Summary"></paper-textarea>
+              <paper-button id="button" raised>Add</paper-button>
+              <paper-button id="editlogout" raised>Logout</paper-button>
+              <script>
+                var title = document.querySelector('#title');
+                var summary = document.querySelector('#summary');
+                var pointsRef = new Firebase('https://sweltering-fire-3131.firebaseio.com/points');
+
+                $('#button').on('click', addToDB);
+
+                function addToDB() {
+                  pointsRef.push({
+                    title: title.value,
+                    summary: summary.value
+                  });
+                  title.value = '';
+                  summary.value = '';
+                  console.log('The button has been pushed!');
+                }
+              </script>
+              <!-- <firebase-auth location="https://sweltering-fire-3131.firebaseio.com/points"
+                provider="custom" redirect="true" ref="https://sweltering-fire-3131.firebaseio.com/points"> -->
+              <!-- <paper-material elevation="1">
+                  <h2 class="page-title">Admin</h2>
+                  <p>This is the admin section</p>
+                  <paper-input label="admin" placeholder="Admin"></paper-input>
+                  <paper-input type="password" label="password" placeholder="Password"></paper-input>
+                </paper-material> -->
+              <!-- </firebase-auth> -->
+            </section>
+            <!--<section data-route="books">
+              <paper-material elevation="2">
+                <text-box></text-box>
+                <img-box></img-box> -->
+            <!-- <div class="buy">
+                  <a href="http://www.amazon.com/Ready-Wed-Start-Marriage-Youll/dp/1624054064/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=&sr=">Buy Now</a>
+                </div> -->
+            <!-- <div class="image">
+                  <img src="../images/readytowed.jpg">
+                </div>
+                <div class="text">
+                  <p>Ready to Wed discusses 12 Traits of a thriving marriage and offers a variety of topics to
+                    guide and advise those preparing   to say, “I do!”
+                  </p>
+                  <p>
+                    Learn to:
+                    Define a vision statement unique to your marriage.
+                    Positively engage conflict to build a foundation of trust and forgiveness.
+                    “Leave and cleave,” even if you are a child of divorce.
+                    Manage expectations―and your in-laws!
+                    Navigate hot-button issues including, sex and the chore wars.
+                    Cope with change, stress, and crisis―especially in your first year.
+                    Build a community of support and find mentors.
+                    Assess your progress using the Couple Checkup.
+                    Loaded with advice, tips, and instructions, this valuable resource is
+                    ideal for soon-to-be-newlyweds and those who support them!
+                  </p>
+                </div> -->
+
+
+            <!-- <div>
+                  <p>Ready to Wed discusses 12 Traits of a thriving marriage and offers a variety of topics to
+                    guide and advise those preparing   to say, “I do!”
+
+                    Learn to:
+                    Define a vision statement unique to your marriage.
+                    Positively engage conflict to build a foundation of trust and forgiveness.
+                    “Leave and cleave,” even if you are a child of divorce.
+                    Manage expectations―and your in-laws!
+                    Navigate hot-button issues including, sex and the chore wars.
+                    Cope with change, stress, and crisis―especially in your first year.
+                    Build a community of support and find mentors.
+                    Assess your progress using the Couple Checkup.
+                    Loaded with advice, tips, and instructions, this valuable resource is
+                    ideal for soon-to-be-newlyweds and those who support them!
+                  </p>
+                </div> -->
+            </paper-material>
+            <paper-material elevation="2">
+              <!-- <template is="dom-bind">
+                  <firebase-collection location="https://sweltering-fire-3131.firebaseio.com/points" data="{{ points }}">
+                  </firebase-collection>
+                  <template is="dom-repeat" items="[[points]]" as="point">
+                    <h4>[[point.__firebaseKey__]]</h4>
+                    <b><span>Title: </span></b>
+                    <span>[[point.title]]</span>
+                    <br>
+                    <b><span>Summary: </span></b>
+                    <span>[[point.summary]]</span>
+                    <br>
+                  </template>
+                </template> -->
+            </paper-material>
+            </section>
+
+
+
+          </iron-pages>
+        </div>
+      </paper-scroll-header-panel>
+    </paper-drawer-panel>
+
+    <paper-toast id="toast">
+      <span class="toast-hide-button" role="button" tabindex="0" onclick="app.$.toast.hide()">Ok</span>
+    </paper-toast>
+
+    <!-- Uncomment next block to enable Service Worker support (1/2) -->
+    <!--
+    <paper-toast id="caching-complete"
+                 duration="6000"
+                 text="Caching complete! This app will work offline.">
+    </paper-toast>
+
+    <platinum-sw-register auto-register
+                          clients-claim
+                          skip-waiting
+                          on-service-worker-installed="displayInstalledToast">
+      <platinum-sw-cache default-cache-strategy="fastest"
+                         cache-config-file="cache-config.json">
+      </platinum-sw-cache>
+    </platinum-sw-register>
+    -->
+
+  </template>
+
+  <!-- build:js scripts/app.js -->
+  <script src="scripts/app.js"></script>
+  <!-- <script src="scripts/utils.js"></script> -->
+  <!-- endbuild-->
+</body>
+
+</html>

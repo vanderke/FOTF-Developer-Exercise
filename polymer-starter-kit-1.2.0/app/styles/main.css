@@ -16,3 +16,19 @@ body {
 #test {
   width: 90%;
 }
+
+.title {
+  font-size: 1.1em;
+  font-family: PT Serif;
+  text-shadow: 5px;
+}
+
+.summary {
+  font-size: 1.05em;
+  font-family: PT Serif;
+  text-shadow: 5px;
+}
+
+span {
+  font-family: arial;
+}

@@ -149,12 +149,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                   <template is="dom-repeat" items="[[points]]" as="point">
                     <ul>
                       <li>
-                        <b><span>Title: </span></b>
+                        <b><span class="title">Title: </span></b>
                         <span>[[point.title]]</span>
                         <br>
                         <ul>
                           <li>
-                            <b><span>Summary: </span></b>
+                            <b><span class="summary">Summary: </span></b>
                             <span>[[point.summary]]</span>
                             <br>
                           </li>
@@ -182,41 +182,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
             </section>
             <section data-route="admin">
               <admin-login></admin-login>
-              <script>
-                // var $email = $('#email').val();
-                // var $password = $('#password').val();
-                // var $button = $('#login');
-                //  var ref = new Firebase("https://sweltering-fire-3131.firebaseio.com/points");
-                // $button.on('click', goToURL);
-                //  function goToURL() {
-                //    console.log('I have been clicked');
-                //    window.location.href = 'http://127.0.0.1:5000/edit';
-                  // window.location.href = '';
-                // }
-                // $button.on('click', function() {
-                //     console.log('I have been clicked');
-                //     console.log('Email: ' + $email.val());
-                //     console.log('Password: ' + $password.val());
-                //   });
-                  // $button.on('click', function() {
-                    // ref.authWithPassword({
-                    //   "email": 'admin@example.com',
-                    //   "password": 'focusonthefamily'
-                    // }, function(error, authData) {
-                    //   if (error) {
-                    //     console.log("Login Failed!", error);
-                    //   } else {
-                        // goToURL();
-                        // page('/edit', function() {
-                        //   app.route = 'edit';
-                        // })
-                    //     console.log('Email: ' + this.email);
-                    //     console.log("Authenticated successfully with payload:", authData);
-                    //   }
-                    // });
-                  // }
-                </script>
             </section>
+
             <section data-route="edit">
               <paper-input id="title" label="Title"></paper-input>
               <paper-textarea id="summary" label="Summary"></paper-textarea>
@@ -240,43 +207,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                 }
               </script>
             </section>
-            <!--<section data-route="books">
-              <paper-material elevation="2">
-                <text-box></text-box>
-                <img-box></img-box> -->
-            <!-- <div class="buy">
-                  <a href="http://www.amazon.com/Ready-Wed-Start-Marriage-Youll/dp/1624054064/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=&sr=">Buy Now</a>
-                </div> -->
-            <!-- <div class="image">
-                  <img src="../images/readytowed.jpg">
-                </div>
-                <div class="text">
-                  <p>Ready to Wed discusses 12 Traits of a thriving marriage and offers a variety of topics to
-                    guide and advise those preparing   to say, “I do!”
-                  </p>
-                  <p>
-                    Learn to:
-                    Define a vision statement unique to your marriage.
-                    Positively engage conflict to build a foundation of trust and forgiveness.
-                    “Leave and cleave,” even if you are a child of divorce.
-                    Manage expectations―and your in-laws!
-                    Navigate hot-button issues including, sex and the chore wars.
-                    Cope with change, stress, and crisis―especially in your first year.
-                    Build a community of support and find mentors.
-                    Assess your progress using the Couple Checkup.
-                    Loaded with advice, tips, and instructions, this valuable resource is
-                    ideal for soon-to-be-newlyweds and those who support them!
-                  </p>
-                </div> -->
-
-
-            </paper-material>
-            <paper-material elevation="2">
-            </paper-material>
-            </section>
-
-
-
           </iron-pages>
         </div>
       </paper-scroll-header-panel>

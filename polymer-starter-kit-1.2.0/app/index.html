@@ -59,10 +59,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   <link rel="import" href="bower_components/paper-button/paper-button.html">
   <link rel="import" href="elements/my-img-box/img-box.html">
   <link rel="import" href="elements/my-text-box/text-box.html">
-  <!-- <link rel="import" href="elements/my-admin-login/admin-login.html"> -->
   <link rel="import" href="admin-login.html">
-  <!-- <link rel="import" href="text-box.html"> -->
-  <!-- <link rel="import" href="img-box.html"> -->
   <!-- endreplace-->
 
   <!-- For shared styles, shared-styles.html import in elements.html -->
@@ -149,7 +146,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                   <firebase-collection location="https://sweltering-fire-3131.firebaseio.com/points" data="{{ points }}">
                   </firebase-collection>
                   <template is="dom-repeat" items="[[points]]" as="point">
-                    <!-- <h4>[[point.__firebaseKey__]]</h4> -->
                     <ul>
                       <li>
                         <b><span>Title: </span></b>
@@ -163,7 +159,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                           </li>
                         </ul>
                       </li>
-
                     </ul>
                   </template>
                 </template>
@@ -186,10 +181,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
             </section>
             <section data-route="admin">
               <admin-login></admin-login>
-              <!-- <script src="../bower_components/page/page.js"></script>-->
-              <!-- <paper-input id="email" label="Email"></paper-input>
-              <paper-input type="password" id="password" label="Password"></paper-input>
-              <paper-button id="login" raised>Login</paper-button> -->
               <script>
                 // var $email = $('#email').val();
                 // var $password = $('#password').val();
@@ -315,7 +306,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
   <!-- build:js scripts/app.js -->
   <script src="scripts/app.js"></script>
-  <!-- <script src="scripts/utils.js"></script> -->
   <!-- endbuild-->
 </body>
 

@@ -60,6 +60,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   <link rel="import" href="elements/my-img-box/img-box.html">
   <link rel="import" href="elements/my-text-box/text-box.html">
   <link rel="import" href="admin-login.html">
+  <link rel="import" href="admin-logout.html">
   <!-- endreplace-->
 
   <!-- For shared styles, shared-styles.html import in elements.html -->
@@ -220,7 +221,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
               <paper-input id="title" label="Title"></paper-input>
               <paper-textarea id="summary" label="Summary"></paper-textarea>
               <paper-button id="button" raised>Add</paper-button>
-              <paper-button id="editlogout" raised>Logout</paper-button>
+              <admin-logout></admin-logout>
+              <!-- <paper-button id="editlogout" raised>Logout</paper-button> -->
               <script>
                 var title = document.querySelector('#title');
                 var summary = document.querySelector('#summary');

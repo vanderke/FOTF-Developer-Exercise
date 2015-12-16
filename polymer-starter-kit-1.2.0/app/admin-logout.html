@@ -1,50 +1,14 @@
 <link rel="import" href="bower_components/firebase-element/firebase-auth.html">
-<dom-module id="admin-login">
+<dom-module id="admin-logout">
   <template>
     <firebase-auth id="firebaseLogin" user="{{user}}" status-known="{{statusKnown}}" location="https://sweltering-fire-3131.firebaseio.com/points" provider="{{provider}}" on-error="errorHandler" on-user-created="userSuccessHandler" on-password-changed="userSuccessHandler" on-password-reset="userSuccessHandler" on-user-removed="userSuccessHandler"></firebase-auth>
-
-    <!-- Provider type: -->
-    <select value="{{provider::change}}">
-      <option>anonymous</option>
-      <option>facebook</option>
-      <option>github</option>
-      <option>google</option>
-      <option>twitter</option>
-      <option>password</option>
-    </select>
-
-    <div hidden$="{{computePasswordHidden(provider)}}">
-      <br><em>password-specific options:</em><br>
-      <paper-input id="email" value="{{ email::input }}" label="Email"></paper-input>
-      <paper-input type="password" id="password" value="{{ password::input }}" label="Password"></paper-input>
-      <!-- <paper-button id="login" raised>Login</paper-button> -->
-      <!-- <input placeholder="email" value="{{email::input}}">
-      <input type="password" placeholder="password" value="{{password::input}}">
-      <button on-tap="createUserHandler" disabled$="{{computeCreateUserDisabled(email, password)}}">Create user</button> -->
-      <br>
-      <!-- <input placeholder="new password" value="{{newPassword::input}}"> -->
-      <!-- <button on-tap="changePasswordHandler" disabled$="{{computeChangePasswordDisabled(email, password, newPassword)}}">Change password</button> -->
-      <!-- <br> -->
-      <!-- <button on-tap="resetPasswordHandler" disabled$="{{computeResetPasswordDisabled(email, password)}}">Reset password</button> -->
-      <!-- <button on-tap="removeUserHandler" disabled$="{{computeRemoveUserDisabled(email, password)}}">Remove user</button> -->
-    <!-- </div> -->
-    <br>
-    <div id="message">[[message]]</div>
-    <br>
-
-    <paper-button on-tap="login" hidden$="{{computeLoginHidden(statusKnown, user)}}" raised>Login</paper-button>
-    <paper-button on-tap="logout" hidden$="{{computeLogoutHidden(statusKnown, user)}}" raised>Logout</paper-button>
-    <h3>Login status:</h3>
-    <p>{{computeLoginStatus(statusKnown, user)}}</p>
-
-    <h3>User ID:</h3>
-    <pre>{{user.uid}}</pre>
+    <paper-button on-tap="logout" raised>Logout</paper-button>
   </template>
 </dom-module>
 
 <script>
   Polymer({
-    is: 'admin-login',
+    is: 'admin-logout',
 
     properties: {
       provider: {
@@ -108,10 +72,9 @@
       window.location.href = 'http://127.0.0.1:5000';
     },
 
-    // errorHandler: function(e) {
-    //   console.log('Error: ' + e.detail.message);
-    //   this.message = 'Error: ' + e.detail.message;
-    // },
+    errorHandler: function(e) {
+      this.message = 'Error: ' + e.detail.message;
+    },
 
     userSuccessHandler: function(e) {
       this.message = e.type + ' success!';

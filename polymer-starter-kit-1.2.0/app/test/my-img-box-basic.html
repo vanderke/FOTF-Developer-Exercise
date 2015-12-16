@@ -1,0 +1,42 @@
+<!doctype html>
+
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <title>my-img-box-basic</title>
+
+  <script src="../../bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
+  <script src="../../bower_components/web-component-tester/browser.js"></script>
+
+  <!-- Import the element to test -->
+  <link rel="import" href="../elements/my-img-box/img-box.html">
+
+</head>
+<body>
+
+  <test-fixture id="basic">
+    <template>
+      <img-box></img-box>
+    </template>
+  </test-fixture>
+
+  <script>
+
+    suite('img-box tests', function() {
+      var output, image;
+
+      setup(function() {
+        output = fixture('basic');
+      });
+
+      test('image', function() {
+        image = output.querySelector('.image');
+        // assert.equal(paragraph.textContent, 'Ready to Wed discusses 12 Traits of a thriving marriage and offers a variety of topics to guide and advise those preparing to say, “I do!”');
+        assert.equal(image.textContent, 'Hello World');
+      });
+
+    });
+  </script>
+
+</body>
+</html>

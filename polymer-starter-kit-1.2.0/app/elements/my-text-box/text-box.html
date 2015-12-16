@@ -1,0 +1,47 @@
+<dom-module id="text-box">
+  <style>
+    :host {
+      display: block;
+    }
+
+    .container {
+      margin-top: 15px;
+      float: right;
+      width: 70%;
+      padding: 10px;
+      z-index: 10;
+    }
+
+    p {
+      font-style: italic;
+      font-size: 22px;
+      font-variant: small-caps;
+    }
+
+    @media (max-width: 1300px) {
+      .container {
+        width: auto;
+        display: block;
+        float: right;
+      }
+    }
+  </style>
+  <template>
+    <paper-material elevation="0">
+      <div class="container">
+        <p id="paragraph1">Ready to Wed discusses 12 Traits of a thriving marriage and offers a variety of topics to guide and advise those preparing to say, “I do!”
+        </p>
+        <p id="paragraph2">
+          Learn to: Define a vision statement unique to your marriage. Positively engage conflict to build a foundation of trust and forgiveness. “Leave and cleave,” even if you are a child of divorce. Manage expectations―and your in-laws! Navigate hot-button issues
+          including, sex and the chore wars. Cope with change, stress, and crisis―especially in your first year. Build a community of support and find mentors. Assess your progress using the Couple Checkup. Loaded with advice, tips, and instructions,
+          this valuable resource is ideal for soon-to-be-newlyweds and those who support them!
+        </p>
+      </div>
+    </paper-material>
+  </template>
+  <script>
+    Polymer({
+      is: 'text-box'
+    });
+  </script>
+</dom-module>

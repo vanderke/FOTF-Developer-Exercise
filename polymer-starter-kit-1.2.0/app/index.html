@@ -89,17 +89,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
             <iron-icon icon="home"></iron-icon>
             <span>Home</span>
           </a>
-
-          <!-- <a data-route="users" href="users">
-            <iron-icon icon="info"></iron-icon>
-            <span>Users</span>
-          </a>
-
-          <a data-route="contact" href="contact">
-            <iron-icon icon="mail"></iron-icon>
-            <span>Contact</span>
-          </a> -->
-
           <a data-route="books" href="http://www.smalleymarriage.com/store/">
             <iron-icon icon="book"></iron-icon>
             <span>Books</span>
@@ -147,7 +136,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                   A Look Inside
                 </h1>
                 <hr>
-                <!-- <paper-header-panel>A Look Inside</paper-header-panel> -->
                 <template is="dom-bind">
                   <firebase-collection location="https://sweltering-fire-3131.firebaseio.com/points" data="{{ points }}">
                   </firebase-collection>
@@ -208,7 +196,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                   });
                   title.value = '';
                   summary.value = '';
-                  console.log('The button has been pushed!');
                 }
               </script>
             </section>

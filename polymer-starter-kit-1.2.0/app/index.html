@@ -143,17 +143,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                   <text-box></text-box>
                   <img-box></img-box>
                 </div>
-                <!-- <my-greeting></my-greeting> -->
-
-                <!-- <p class="paper-font-subhead">You now have:</p> -->
-                <!-- <my-list></my-list> -->
-
-                <!-- <p class="paper-font-body2">Looking for more Web App layouts? Check out our <a href="https://github.com/PolymerElements/app-layout-templates">layouts</a> collection. You can also <a href="http://polymerelements.github.io/app-layout-templates/">preview</a> them live.</p> -->
               </paper-material>
-              <!-- <paper-material elevation="1"> -->
-              <!-- <p class="paper-font-body2">This is another card.</p> -->
-              <!-- </paper-material> -->
-
               <paper-material elevation="1" class="paper-font-body2">
                 <template is="dom-bind">
                   <firebase-collection location="https://sweltering-fire-3131.firebaseio.com/points" data="{{ points }}">
@@ -194,25 +184,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
               </paper-material>
             </section>
-
-            <!-- <section data-route="users">
-              <paper-material elevation="1">
-                <h2 class="page-title">Users</h2>
-                <p>This is the users section</p>
-                <a href$="{{baseUrl}}users/Addy">Addy</a><br>
-                <a href$="{{baseUrl}}users/Rob">Rob</a><br>
-                <a href$="{{baseUrl}}users/Chuck">Chuck</a><br>
-                <a href$="{{baseUrl}}users/Sam">Sam</a>
-              </paper-material>
-            </section> -->
-
-            <!-- <section data-route="user-info">
-              <paper-material elevation="1">
-                <h2 class="page-title">User: {{params.name}}</h2>
-                <div>This is {{params.name}}'s section</div>
-              </paper-material>
-            </section> -->
-
             <section data-route="admin">
               <admin-login></admin-login>
               <!-- <script src="../bower_components/page/page.js"></script>-->
@@ -253,15 +224,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                     // });
                   // }
                 </script>
-              <!-- <firebase-auth location="https://sweltering-fire-3131.firebaseio.com/points"
-                provider="custom" redirect="true" ref="https://sweltering-fire-3131.firebaseio.com/points"> -->
-              <!-- <paper-material elevation="1">
-                  <h2 class="page-title">Admin</h2>
-                  <p>This is the admin section</p>
-                  <paper-input label="admin" placeholder="Admin"></paper-input>
-                  <paper-input type="password" label="password" placeholder="Password"></paper-input>
-                </paper-material> -->
-              <!-- </firebase-auth> -->
             </section>
             <section data-route="edit">
               <paper-input id="title" label="Title"></paper-input>
@@ -285,15 +247,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                   console.log('The button has been pushed!');
                 }
               </script>
-              <!-- <firebase-auth location="https://sweltering-fire-3131.firebaseio.com/points"
-                provider="custom" redirect="true" ref="https://sweltering-fire-3131.firebaseio.com/points"> -->
-              <!-- <paper-material elevation="1">
-                  <h2 class="page-title">Admin</h2>
-                  <p>This is the admin section</p>
-                  <paper-input label="admin" placeholder="Admin"></paper-input>
-                  <paper-input type="password" label="password" placeholder="Password"></paper-input>
-                </paper-material> -->
-              <!-- </firebase-auth> -->
             </section>
             <!--<section data-route="books">
               <paper-material elevation="2">
@@ -325,38 +278,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                 </div> -->
 
 
-            <!-- <div>
-                  <p>Ready to Wed discusses 12 Traits of a thriving marriage and offers a variety of topics to
-                    guide and advise those preparing   to say, “I do!”
-
-                    Learn to:
-                    Define a vision statement unique to your marriage.
-                    Positively engage conflict to build a foundation of trust and forgiveness.
-                    “Leave and cleave,” even if you are a child of divorce.
-                    Manage expectations―and your in-laws!
-                    Navigate hot-button issues including, sex and the chore wars.
-                    Cope with change, stress, and crisis―especially in your first year.
-                    Build a community of support and find mentors.
-                    Assess your progress using the Couple Checkup.
-                    Loaded with advice, tips, and instructions, this valuable resource is
-                    ideal for soon-to-be-newlyweds and those who support them!
-                  </p>
-                </div> -->
             </paper-material>
             <paper-material elevation="2">
-              <!-- <template is="dom-bind">
-                  <firebase-collection location="https://sweltering-fire-3131.firebaseio.com/points" data="{{ points }}">
-                  </firebase-collection>
-                  <template is="dom-repeat" items="[[points]]" as="point">
-                    <h4>[[point.__firebaseKey__]]</h4>
-                    <b><span>Title: </span></b>
-                    <span>[[point.title]]</span>
-                    <br>
-                    <b><span>Summary: </span></b>
-                    <span>[[point.summary]]</span>
-                    <br>
-                  </template>
-                </template> -->
             </paper-material>
             </section>
 

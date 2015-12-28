@@ -1,0 +1,97 @@
+﻿<script>
+
+    function changeText()
+    {
+        document.getElementById("lblSuccessMessage").innerText = "Successful Submission";        
+    }
+
+</script>
+
+@{
+    ViewBag.Title = "Registration Form";
+}
+<h2>@ViewBag.Title.</h2>
+
+
+@using (Html.BeginForm())
+{
+    <fieldset>
+ 
+        <div class="row">
+            <div class="form-group col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div class="form-group">
+                    <span><strong>First Name</strong></span>
+                    @Html.TextBox("Firstname")
+                </div>
+             </div>
+        </div>
+        <div class="row">
+            <div class="form-group col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div class="form-group">
+                    <span><strong>Middle Name</strong></span>
+                    @Html.TextBox("MiddleName")
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div class="form-group">
+                    <span><strong>Last Name</strong></span>
+                    @Html.TextBox("LastName")
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div class="form-group">
+                    <span><strong>Address1</strong></span>
+                    @Html.TextBox("Address1")
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div class="form-group">
+                    <span><strong>Address2</strong></span>
+                    @Html.TextBox("Address2")
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div class="form-group">
+                    <span><strong>City</strong></span>
+                    @Html.TextBox("City")
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div class="input-group">
+                    <span><strong>Zip Code</strong></span>
+                    @Html.TextBox("Zip4", "", new { style = "width:50px" })
+                    <asp:Label ID="lblDash" for="txtZipCode5" CssClass="input-group-addon"><span><strong>-</strong></span></asp:Label>
+                    @Html.TextBox("Zip5", "", new { style = "width:50px" })
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div id="div">
+                    <span><strong>Phone Number</strong></span>
+                    <div class="input-group">
+                        @Html.TextBox("PhoneNumber")
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="btn-group col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div class="btn-group">
+                    <input id="lblSuccessMessage" type="submit" value="Register" class="btn btn-success" name="submitButton" onclick="javascript: return changeText();" />
+                </div>
+            </div>
+        </div>
+           
+</fieldset>
+}

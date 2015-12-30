@@ -1,19 +1,43 @@
-<div class="row no-gutters" id="form">
-    <div class="form-group col-xs-5 col-md-5">
-        <input type="text" class="form-control" placeholder="Username" id="username">
+<div id="entire_page">
+    <div class="row no-gutters" id="form">
+        <div class="form-group col-xs-5 col-md-3">
+            <input type="text" class="form-control" placeholder="Username" id="username">
+        </div>
+        <div class="form-group col-xs-5 col-md-3">
+            <input type="text" class="form-control" placeholder="Password" id="password">
+        </div>
+        <div class="form-group col-xs-2 col-md-3">
+            <button class="btn" id="login">Login</button>
+        </div>
     </div>
-    <div class="form-group col-xs-5 col-md-5">
-        <input type="text" class="form-control" placeholder="Password" id="password">
+    <div class="jumbotron" id="main_header">
+        <%= image_tag "fotf_logo.PNG", :class => 'img-responsive'%><h2><small><em>Helping families thrive</em></small></h2>
     </div>
-    <div class="form-group col-xs-2 col-md-2">
-        <button class="btn" id="login">Login</button>
-    </div>
-</div>
-<div id="main_header" class="jumbotron">
-    <%= image_tag "fotf_logo.PNG", :class => 'img-responsive'%><h2><small><em>Helping families thrive</em></small></h2>
-</div>
   
-
-<div>
-  <p>wordss</p>
+    <div>
+      <h3 class="center">Are you ready to get married? <em>Overview of Ready to Wed.</em></h3>
+    </div>
+    
+    <!-- BOOK SUMMARY! -->
+    <div class="container" style="width:100%;">
+        <%= image_tag "ready_to_wed.jpg", :class => 'img-responsive', :style => "width:30%; float:left;"%>
+        <table class="table" style="width:70%; float:right;">
+            <thead>
+                <tr>
+                    <th>Chapter</th>
+                    <th>Summary</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Life Long Commitment</td>
+                    <td>Lifelong commitment begins with a decision that divorce is not an option and a determination to invest in your marriage every day.</td>
+                </tr>
+                <tr>
+                    <td>Spending Enjoyable Time Together</td>
+                    <td>In the busyness of life, remember that love isn’t self-sufficient. Your marriage must be constantly fed and nurtured by spending regular time together</td>
+                </tr>
+            </tbody>
+      </table>
+    </div>
 </div>

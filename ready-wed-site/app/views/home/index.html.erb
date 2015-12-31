@@ -20,22 +20,24 @@
     
     <!-- BOOK SUMMARY! -->
     <div class="container" style="width:100%;">
-        <%= image_tag "ready_to_wed.jpg", :class => 'img-responsive', :style => "width:30%; float:left;"%>
-        <table class="table" style="width:70%; float:right;">
-            <thead>
-                <tr>
-                    <th>Chapter</th>
-                    <th>Summary</th>
-                </tr>
-            </thead>
-            <tbody>
-                <% @chapters.each do |chapter| %>
+        <div class="row">
+            <%= image_tag "ready_to_wed.jpg", :class => 'img-responsive col-xs-4', :style => "width:30%; float:left;"%>
+            <table class="table col-xs-8" style="width:70%; float:right;">
+                <thead>
                     <tr>
-                        <td><%= chapter.title %></td>
-                        <td><%= chapter.summary %></td>
+                        <th>Chapter</th>
+                        <th>Summary</th>
                     </tr>
-                <% end %>
-            </tbody>
-      </table>
+                </thead>
+                <tbody>
+                    <% @chapters.each do |chapter| %>
+                        <tr>
+                            <td><%= chapter.title %></td>
+                            <td><%= chapter.summary %></td>
+                        </tr>
+                    <% end %>
+                </tbody>
+            </table>
+        </div>
     </div>
 </div>

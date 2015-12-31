@@ -29,14 +29,12 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>Life Long Commitment</td>
-                    <td>Lifelong commitment begins with a decision that divorce is not an option and a determination to invest in your marriage every day.</td>
-                </tr>
-                <tr>
-                    <td>Spending Enjoyable Time Together</td>
-                    <td>In the busyness of life, remember that love isn’t self-sufficient. Your marriage must be constantly fed and nurtured by spending regular time together</td>
-                </tr>
+                <% @chapters.each do |chapter| %>
+                    <tr>
+                        <td><%= chapter.title %></td>
+                        <td><%= chapter.summary %></td>
+                    </tr>
+                <% end %>
             </tbody>
       </table>
     </div>

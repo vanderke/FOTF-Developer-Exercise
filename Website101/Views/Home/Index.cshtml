@@ -1,0 +1,42 @@
+﻿@using Website101.Models
+@model Book<Chapter>
+
+@{
+  ViewBag.Title = "Home";
+  ViewBag.Header = Model.Title;
+  int i = 0;
+}
+
+@foreach ( Chapter chapter in Model.OrderBy( x => x.Number ) ) {
+
+  bool stripe = i++ % 2 == 0;
+
+  <section class="chapter clearfix @( stripe ? "even" : "odd" )">
+
+    @if ( stripe ) {
+      <div class="row">
+        <div class="col-md-6 left">
+          <h3>@chapter.Title</h3>
+          <h6>Chapter @chapter.Number</h6>
+        </div>
+        <div class="col-md-6 right">
+          <p>@chapter.Summary</p>
+          <a href="/Book/Chapter/@chapter.Number" class="btn btn-default">View Chapter</a>
+        </div>
+      </div>
+    }
+    else {
+      <div class="row">
+        <div class="col-md-6 left">
+          <p>@chapter.Summary</p>
+          <a href="/Book/Chapter/@chapter.Number" class="btn btn-default">View Chapter</a>
+        </div>
+        <div class="col-md-6 right">
+          <h3>@chapter.Title</h3>
+          <h6>Chapter @chapter.Number</h6>
+        </div>
+      </div>
+    }
+
+  </section>
+}

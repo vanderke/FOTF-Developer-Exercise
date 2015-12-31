@@ -1,0 +1,103 @@
+c:\users\drigby\documents\visual studio 2015\Projects\Website101\Website101\bin\roslyn\csc.exe
+c:\users\drigby\documents\visual studio 2015\Projects\Website101\Website101\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+c:\users\drigby\documents\visual studio 2015\Projects\Website101\Website101\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+c:\users\drigby\documents\visual studio 2015\Projects\Website101\Website101\bin\roslyn\Microsoft.CodeAnalysis.dll
+c:\users\drigby\documents\visual studio 2015\Projects\Website101\Website101\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+c:\users\drigby\documents\visual studio 2015\Projects\Website101\Website101\bin\roslyn\Microsoft.CSharp.Core.targets
+c:\users\drigby\documents\visual studio 2015\Projects\Website101\Website101\bin\roslyn\Microsoft.VisualBasic.Core.targets
+c:\users\drigby\documents\visual studio 2015\Projects\Website101\Website101\bin\roslyn\System.Collections.Immutable.dll
+c:\users\drigby\documents\visual studio 2015\Projects\Website101\Website101\bin\roslyn\System.Reflection.Metadata.dll
+c:\users\drigby\documents\visual studio 2015\Projects\Website101\Website101\bin\roslyn\vbc.exe
+c:\users\drigby\documents\visual studio 2015\Projects\Website101\Website101\bin\roslyn\VBCSCompiler.exe
+c:\users\drigby\documents\visual studio 2015\Projects\Website101\Website101\bin\roslyn\VBCSCompiler.exe.config
+c:\users\drigby\documents\visual studio 2015\Projects\Website101\Website101\bin\Website101.dll.config
+c:\users\drigby\documents\visual studio 2015\Projects\Website101\Website101\bin\Website101.dll
+c:\users\drigby\documents\visual studio 2015\Projects\Website101\Website101\bin\Website101.pdb
+c:\users\drigby\documents\visual studio 2015\Projects\Website101\Website101\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\drigby\documents\visual studio 2015\Projects\Website101\Website101\bin\Microsoft.Web.Infrastructure.dll
+c:\users\drigby\documents\visual studio 2015\Projects\Website101\Website101\bin\System.Web.Helpers.dll
+c:\users\drigby\documents\visual studio 2015\Projects\Website101\Website101\bin\System.Web.Mvc.dll
+c:\users\drigby\documents\visual studio 2015\Projects\Website101\Website101\bin\System.Web.Razor.dll
+c:\users\drigby\documents\visual studio 2015\Projects\Website101\Website101\bin\System.Web.Webpages.Deployment.dll
+c:\users\drigby\documents\visual studio 2015\Projects\Website101\Website101\bin\System.Web.Webpages.dll
+c:\users\drigby\documents\visual studio 2015\Projects\Website101\Website101\bin\System.Web.Webpages.Razor.dll
+c:\users\drigby\documents\visual studio 2015\Projects\Website101\Website101\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\drigby\documents\visual studio 2015\Projects\Website101\Website101\bin\System.Web.Razor.xml
+c:\users\drigby\documents\visual studio 2015\Projects\Website101\Website101\bin\System.Web.Webpages.xml
+c:\users\drigby\documents\visual studio 2015\Projects\Website101\Website101\bin\System.Web.Webpages.Deployment.xml
+c:\users\drigby\documents\visual studio 2015\Projects\Website101\Website101\bin\System.Web.Webpages.Razor.xml
+c:\users\drigby\documents\visual studio 2015\Projects\Website101\Website101\bin\System.Web.Helpers.xml
+c:\users\drigby\documents\visual studio 2015\Projects\Website101\Website101\bin\System.Web.Mvc.xml
+c:\users\drigby\documents\visual studio 2015\Projects\Website101\Website101\obj\Debug\Website101.csprojResolveAssemblyReference.cache
+c:\users\drigby\documents\visual studio 2015\Projects\Website101\Website101\obj\Debug\Website101.dll
+c:\users\drigby\documents\visual studio 2015\Projects\Website101\Website101\obj\Debug\Website101.pdb
+C:\Users\drigby\Documents\Visual Studio 2015\Projects\FOTF-Developer-Exercise\Website101\bin\roslyn\csc.exe
+C:\Users\drigby\Documents\Visual Studio 2015\Projects\FOTF-Developer-Exercise\Website101\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\drigby\Documents\Visual Studio 2015\Projects\FOTF-Developer-Exercise\Website101\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\drigby\Documents\Visual Studio 2015\Projects\FOTF-Developer-Exercise\Website101\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\drigby\Documents\Visual Studio 2015\Projects\FOTF-Developer-Exercise\Website101\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\drigby\Documents\Visual Studio 2015\Projects\FOTF-Developer-Exercise\Website101\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\drigby\Documents\Visual Studio 2015\Projects\FOTF-Developer-Exercise\Website101\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\drigby\Documents\Visual Studio 2015\Projects\FOTF-Developer-Exercise\Website101\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\drigby\Documents\Visual Studio 2015\Projects\FOTF-Developer-Exercise\Website101\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\drigby\Documents\Visual Studio 2015\Projects\FOTF-Developer-Exercise\Website101\bin\roslyn\vbc.exe
+C:\Users\drigby\Documents\Visual Studio 2015\Projects\FOTF-Developer-Exercise\Website101\bin\roslyn\VBCSCompiler.exe
+C:\Users\drigby\Documents\Visual Studio 2015\Projects\FOTF-Developer-Exercise\Website101\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\drigby\Documents\Visual Studio 2015\Projects\FOTF-Developer-Exercise\Website101\bin\Website101.dll.config
+C:\Users\drigby\Documents\Visual Studio 2015\Projects\FOTF-Developer-Exercise\Website101\bin\Website101.dll
+C:\Users\drigby\Documents\Visual Studio 2015\Projects\FOTF-Developer-Exercise\Website101\bin\Website101.pdb
+C:\Users\drigby\Documents\Visual Studio 2015\Projects\FOTF-Developer-Exercise\Website101\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\drigby\Documents\Visual Studio 2015\Projects\FOTF-Developer-Exercise\Website101\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\drigby\Documents\Visual Studio 2015\Projects\FOTF-Developer-Exercise\Website101\bin\Newtonsoft.Json.dll
+C:\Users\drigby\Documents\Visual Studio 2015\Projects\FOTF-Developer-Exercise\Website101\bin\System.Web.Helpers.dll
+C:\Users\drigby\Documents\Visual Studio 2015\Projects\FOTF-Developer-Exercise\Website101\bin\System.Web.Mvc.dll
+C:\Users\drigby\Documents\Visual Studio 2015\Projects\FOTF-Developer-Exercise\Website101\bin\System.Web.Razor.dll
+C:\Users\drigby\Documents\Visual Studio 2015\Projects\FOTF-Developer-Exercise\Website101\bin\System.Web.Webpages.Deployment.dll
+C:\Users\drigby\Documents\Visual Studio 2015\Projects\FOTF-Developer-Exercise\Website101\bin\System.Web.Webpages.dll
+C:\Users\drigby\Documents\Visual Studio 2015\Projects\FOTF-Developer-Exercise\Website101\bin\System.Web.Webpages.Razor.dll
+C:\Users\drigby\Documents\Visual Studio 2015\Projects\FOTF-Developer-Exercise\Website101\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\drigby\Documents\Visual Studio 2015\Projects\FOTF-Developer-Exercise\Website101\bin\Newtonsoft.Json.xml
+C:\Users\drigby\Documents\Visual Studio 2015\Projects\FOTF-Developer-Exercise\Website101\bin\System.Web.Razor.xml
+C:\Users\drigby\Documents\Visual Studio 2015\Projects\FOTF-Developer-Exercise\Website101\bin\System.Web.Webpages.xml
+C:\Users\drigby\Documents\Visual Studio 2015\Projects\FOTF-Developer-Exercise\Website101\bin\System.Web.Webpages.Deployment.xml
+C:\Users\drigby\Documents\Visual Studio 2015\Projects\FOTF-Developer-Exercise\Website101\bin\System.Web.Webpages.Razor.xml
+C:\Users\drigby\Documents\Visual Studio 2015\Projects\FOTF-Developer-Exercise\Website101\bin\System.Web.Helpers.xml
+C:\Users\drigby\Documents\Visual Studio 2015\Projects\FOTF-Developer-Exercise\Website101\bin\System.Web.Mvc.xml
+C:\Users\drigby\Documents\Visual Studio 2015\Projects\FOTF-Developer-Exercise\Website101\obj\Debug\Website101.dll
+C:\Users\drigby\Documents\Visual Studio 2015\Projects\FOTF-Developer-Exercise\Website101\obj\Debug\Website101.pdb
+C:\Users\drigby\Documents\Visual Studio 2015\Projects\FOTF-Developer-Exercise\Website101\obj\Debug\Website101.csprojResolveAssemblyReference.cache
+C:\Projects\FOTF-Developer-Exercise\Website101\bin\roslyn\csc.exe
+C:\Projects\FOTF-Developer-Exercise\Website101\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Projects\FOTF-Developer-Exercise\Website101\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Projects\FOTF-Developer-Exercise\Website101\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Projects\FOTF-Developer-Exercise\Website101\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Projects\FOTF-Developer-Exercise\Website101\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Projects\FOTF-Developer-Exercise\Website101\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Projects\FOTF-Developer-Exercise\Website101\bin\roslyn\System.Collections.Immutable.dll
+C:\Projects\FOTF-Developer-Exercise\Website101\bin\roslyn\System.Reflection.Metadata.dll
+C:\Projects\FOTF-Developer-Exercise\Website101\bin\roslyn\vbc.exe
+C:\Projects\FOTF-Developer-Exercise\Website101\bin\roslyn\VBCSCompiler.exe
+C:\Projects\FOTF-Developer-Exercise\Website101\bin\roslyn\VBCSCompiler.exe.config
+C:\Projects\FOTF-Developer-Exercise\Website101\bin\Website101.dll.config
+C:\Projects\FOTF-Developer-Exercise\Website101\bin\Website101.dll
+C:\Projects\FOTF-Developer-Exercise\Website101\bin\Website101.pdb
+C:\Projects\FOTF-Developer-Exercise\Website101\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Projects\FOTF-Developer-Exercise\Website101\bin\Microsoft.Web.Infrastructure.dll
+C:\Projects\FOTF-Developer-Exercise\Website101\bin\Newtonsoft.Json.dll
+C:\Projects\FOTF-Developer-Exercise\Website101\bin\System.Web.Helpers.dll
+C:\Projects\FOTF-Developer-Exercise\Website101\bin\System.Web.Mvc.dll
+C:\Projects\FOTF-Developer-Exercise\Website101\bin\System.Web.Razor.dll
+C:\Projects\FOTF-Developer-Exercise\Website101\bin\System.Web.Webpages.Deployment.dll
+C:\Projects\FOTF-Developer-Exercise\Website101\bin\System.Web.Webpages.dll
+C:\Projects\FOTF-Developer-Exercise\Website101\bin\System.Web.Webpages.Razor.dll
+C:\Projects\FOTF-Developer-Exercise\Website101\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Projects\FOTF-Developer-Exercise\Website101\bin\Newtonsoft.Json.xml
+C:\Projects\FOTF-Developer-Exercise\Website101\bin\System.Web.Razor.xml
+C:\Projects\FOTF-Developer-Exercise\Website101\bin\System.Web.Webpages.xml
+C:\Projects\FOTF-Developer-Exercise\Website101\bin\System.Web.Webpages.Deployment.xml
+C:\Projects\FOTF-Developer-Exercise\Website101\bin\System.Web.Webpages.Razor.xml
+C:\Projects\FOTF-Developer-Exercise\Website101\bin\System.Web.Helpers.xml
+C:\Projects\FOTF-Developer-Exercise\Website101\bin\System.Web.Mvc.xml
+C:\Projects\FOTF-Developer-Exercise\Website101\obj\Debug\Website101.dll
+C:\Projects\FOTF-Developer-Exercise\Website101\obj\Debug\Website101.pdb
+C:\Projects\FOTF-Developer-Exercise\Website101\obj\Debug\Website101.csprojResolveAssemblyReference.cache

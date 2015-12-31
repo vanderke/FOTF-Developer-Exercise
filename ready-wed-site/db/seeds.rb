@@ -12,3 +12,7 @@ chapters = [
     {:id => "11",   :title => "Nourish",                                :summary => "Love involves action and behavior. You need to nourish your relationship with your fiancé(e) in ways that speak love to him or her."},
     {:id => "12",   :title => "Community-Mindedness",                   :summary => "Connecting regularly with like-minded couples who are committed to the good of your relationship is vital to the success of your marriage."}
 ]
+
+chapters.each do |c|
+    Chapter.create!(c)
+end

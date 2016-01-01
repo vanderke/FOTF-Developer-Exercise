@@ -10,6 +10,7 @@ body {
 
 #main_header {
     background-color:#1B4D5A;
+    position: relative;
 }
 
 .row.no-gutters {
@@ -25,4 +26,8 @@ body {
 
 .center {
     text-align: center;
+}
+
+#site_navbar {
+  bottom: 0;
 }

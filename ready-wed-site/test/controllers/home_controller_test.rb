@@ -1,6 +1,8 @@
 require 'test_helper'
 
 class HomeControllerTest < ActionController::TestCase
+	
+	#TESTS FOR INDEX PAGE
 	test "should get index" do
     	get :index
     	assert_response :success, "The response was unsuccessful."
@@ -16,5 +18,11 @@ class HomeControllerTest < ActionController::TestCase
   		get :index
   		assert_not_nil assigns(:chapters), "The @chapters object did not make it to response."
     	assert_not_empty assigns(:chapters), "The @chapters object is empty and it shouldn't be."
+	end
+
+	#TESTS FOR MEET PAGE
+	test "should get meet" do
+    	get :meet
+    	assert_response :success, "The response was unsuccessful."
 	end
 end

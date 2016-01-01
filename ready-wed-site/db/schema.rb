@@ -11,7 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160101000732) do
+ActiveRecord::Schema.define(version: 20160101190037) do
+
+  create_table "authors", force: :cascade do |t|
+    t.text     "name",       null: false
+    t.text     "about",      null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "chapters", force: :cascade do |t|
     t.text     "title",      null: false

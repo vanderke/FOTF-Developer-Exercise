@@ -4,5 +4,6 @@ class HomeController < ApplicationController
   end
 
   def meet
+  	@author = Author.find(1)
   end
 end

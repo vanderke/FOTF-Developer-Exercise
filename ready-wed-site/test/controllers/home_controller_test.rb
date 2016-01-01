@@ -35,6 +35,5 @@ class HomeControllerTest < ActionController::TestCase
 	test "home controller should assign @author object to the meet view" do
 		get :meet
 		assert_not_nil assigns(:author), "The @author object did not make it to the response."
-		assert_not_empty assigns(:author), "The @author object is empty and it shouldn't be."
 	end
 end

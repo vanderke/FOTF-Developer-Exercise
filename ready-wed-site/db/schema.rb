@@ -11,16 +11,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151231001425) do
+ActiveRecord::Schema.define(version: 20160101000732) do
 
-  create_table "chapters", id: false, force: :cascade do |t|
-    t.text     "id",         null: false
+  create_table "chapters", force: :cascade do |t|
     t.text     "title",      null: false
     t.text     "summary",    null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
-
-  add_index "chapters", ["id"], name: "index_chapters_on_id", unique: true
 
 end

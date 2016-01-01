@@ -1,28 +1,7 @@
 <div id="entire_page">
-    <div class="row no-gutters" id="form">
-        <div class="form-group col-xs-5 col-md-3">
-            <input type="text" class="form-control" placeholder="Username" id="username">
-        </div>
-        <div class="form-group col-xs-5 col-md-3">
-            <input type="text" class="form-control" placeholder="Password" id="password">
-        </div>
-        <div class="form-group col-xs-2 col-md-3">
-            <button class="btn" id="login">Login</button>
-        </div>
-    </div>
-    <div class="jumbotron" id="main_header">
-        <%= image_tag "fotf_logo.PNG", :class => 'img-responsive'%>
-        <nav id="site_navbar">
-            <ul class="nav navbar-nav">
-                <li>
-                    <a href="/">Overview</a>
-                </li>
-                <li>
-                    <a href="/">Again</a>
-                </li>
-            </ul>
-        </nav>
-    </div>
+    <%= render 'login' %>
+
+    <%= render 'header' %>
   
     <div>
       <h3 class="center">Are you ready to get married? <em>Overview of Ready to Wed.</em></h3>

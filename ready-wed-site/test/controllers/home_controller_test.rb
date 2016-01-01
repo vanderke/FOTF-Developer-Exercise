@@ -8,7 +8,7 @@ class HomeControllerTest < ActionController::TestCase
 
 	test "controller should render the index view" do
 		get :index
-		assert_template :index, "The root did not display the index view."
+		assert_template :index, "The index view was not displayed."
 		assert_template layout: "layouts/application"
 	end
 

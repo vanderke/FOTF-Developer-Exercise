@@ -11,6 +11,7 @@
     <div class="container" style="width:100%;">
         <div class="row">
             <%= image_tag "ready_to_wed.jpg", :class => 'img-responsive col-xs-4', :style => "width:30%; float:left;"%>
+            <% if @chapters != nil %>
             <table class="table col-xs-8" style="width:70%; float:right;">
                 <thead>
                     <tr>
@@ -27,6 +28,7 @@
                     <% end %>
                 </tbody>
             </table>
+            <% end %>
         </div>
     </div>
 </div>

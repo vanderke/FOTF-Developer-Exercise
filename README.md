@@ -16,4 +16,4 @@ My original thought for site administration was to have a separate app for emplo
 There are other aspects of the site that I have similar sob stories about, but I'll save my breath for a later conversation.
 
 ##Dislaimer##
-Since I spent most of my time learning, a lot of the code in this project is taken from tutorials and adapted for my purposes. That being said, I DID write it, and I know how it works. (I wouldn't have been able to adapt it if I didn't know how it works)
+Since I spent most of my time learning, a lot of the code in this project is taken from tutorials and adapted for my purposes. That being said, I DID write it, and I know how it works. (I wouldn't have been able to adapt it if I didn't know how it works). This project is more evidence of my ability to learn than it is evidence of what I knew.

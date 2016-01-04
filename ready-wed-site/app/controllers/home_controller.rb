@@ -1,5 +1,6 @@
 class HomeController < ApplicationController
   def index
+  	@user = User.find(flash[:userid]) unless !User.exists?(:id => flash[:userid])
     @chapters = Chapter.all
   end
 

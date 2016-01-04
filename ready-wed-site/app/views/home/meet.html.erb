@@ -1,0 +1,11 @@
+<%= render 'shared/login' %>
+
+<%= render 'shared/header' %>
+
+<% if @author != nil %>
+<h1><%= @author.name %></h1>
+<div class="row">
+	<%= image_tag "greg_and_erin_smalley.jpg", :class => 'img-responsive col-xs-4', :style => "width:30%; float:left;"%>
+	<p class="table col-xs-8" style="width:70%; float:right;"><%= @author.about %></p>
+</div>
+<% end %>

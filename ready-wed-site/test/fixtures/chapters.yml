@@ -1,0 +1,20 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+# This model initially had no columns defined.  If you add columns to the
+# model remove the '{}' from the fixture names and add the columns immediately
+# below each fixture, per the syntax in the comments below
+#
+one:
+  id: 1
+  title: Life Long Commitment
+  summary: Lifelong commitment begins with a decision that divorce is not an option and a determination to invest in your marriage every day.
+
+two:
+  id: 2
+  title: Spending Enjoyable Time Together
+  summary: "In the busyness of life remember that love isn't self-sufficient. Your marriage must be constantly fed and nurtured by spending regular time together."
+
+three:
+  id: 3
+  title: Positive Communication
+  summary: Communication gives life to marriage when you spend time getting to know your spouse and allowing yourself to be deeply known by him or her.

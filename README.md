@@ -1,90 +1,19 @@
-# FOTF-Developer-Exercise
-##Introduction##
-The purpose of this exercise is to give you a chance to showcase your talents and abilities. Please have fun with this, and wow us with your best.
-##Business Problem to Solve##
-The ministry needs a new website for a book that the ministry wants to create curriculum for. The name of this book is "Ready to Wed", and it's written by Greg and Erin Smalley. You can find out a little bit about this book by looking at http://www.amazon.com/Ready-Wed-Start-Marriage-Youll/dp/1624054064/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=&sr=.
-##Requirements##
-The work needs to provide the following:
+# Dave's FOTF-Developer-Exercise
 
-- The site needs to present the information in a mobile and desktop friendly way.
-- The site needs to display the 12 main points of the book (Provided in the appendix). 
-- The data needs to come through some sort of data layer. In other words, we don't want the text hard coded in the web pages. Show us that you understand how to use a DAL. You can use either a database (i.e. MongoDB, SQL Server, MySQL) or a JSON feed for the source of your data.
-- The front end part of the site should include the use of some sort of JavaScript framework (i.e. JQuery, Backbone, Angular, Bootstrap)
-- The back end part of the site should showcase your knowledge of appropriate design patterns.
-- Your work should showcase how well you understand Object Oriented Design principles.
-- Your work should showcase your understanding of TDD and unit testing.
-- The project should include instructions for running the website on a local environment.
+##Instructions to run##
+I chose ruby on rails as my implementation, so it should be really easy to run this app. The rails version I used is 4.2.4, but everything should be handled by the gemfile. All you should have to do to run this is cd into the root directory of the app and run:
 
-###Bonus###
-It would be really great if you can make the site incorporate some sort of administration interface that allows an administrative user to edit the 12 main points of the book.
+- bundle install
+- rake db:migrate
+- rake db:seed
+- rails server
 
-##Delivery##
-When you are finished, submit a pull request. If there is any configuration that needs to be done, please note that in your pull request. 
+##Information you should know##
+I spent the first day of this researching some options for implementation. Namely I looked at Java and Apache, Javascript and Node, and Ruby on Rails. I have knowledge/experience about/in almost every area of software development, but not in the same technologies. For example, I've done unit testing with JUnit before, but I've not set up any servers with Java. I have set up servers with Rails, but I hadn't done any testing. So no matter what technologies I looked at, there were unkowns that I would have to learn on the fly. I chose Ruby on Rails because it is convention over configuration. I trusted that if I simply figured out the conventions, then the development would be easier. I was right. But that means I had to learn a LOT about the conventions, and that meant lots of tutorials and research. As a result, I spent so much time learning that I didn't have enough time to implement everything that I wanted to implement. The biggest example is site administration.
 
-##Appendix##
-Here is JSON string that contains the 12 main points of the book:
+My original thought for site administration was to have a separate app for employees of FOTF. This separate app would make requests as an admin user to the Ready to Wed site, and that would prevent anyone from just making themselves admins. I wasn't sure if that was an accurate/feasible idea or not, so I decided to simply go with making a User model and having an admin field in the database. There would not be any admin field in the signup form, so no one would be able to just click "yes, I'm an admin", and I would simply root the database with an admin user for FOTF to use. I didn't really like this idea because it means that anyone who has access to the site (everyone) could become an admin by simply guessing the email and password of the admin account. Nonetheless, it seemed like all I had time for. As it turns out, I didn't even have time to get to admin functionality because I was learning so much about the rails way of doing things. Users can make accounts and sign in/out, but there is no point. It simply demonstrates that I can do it.
 
+There are other aspects of the site that I have similar sob stories about, but I'll save my breath for a later conversation.
 
-
-    {
-    "1":{
-        "title":"Life Long Commitment",
-          "summary":"Lifelong commitment begins with a decision that divorce is not an option and a determination to invest in your marriage every day."
-    },
-    
-    "2":{
-        "title":"Spending Enjoyable Time Together",
-        "summary":"In the busyness of life, remember that love isn’t self-sufficient. Your marriage must be constantly fed and nurtured by spending regular time together."
-    },
-    
-    "3":{
-        "title":"Positive Communication",
-        "summary":"Communication gives life to marriage when you spend time getting to know your spouse and allowing yourself to be deeply known by him or her."
-    },
-    
-    "4":{
-        "title":"Shared Spiritual Intimacy",
-        "summary":"Couples who have a deep, shared faith and have Christ at the center of their marriage have a more satisfying relationship and deeper intimacy."
-    },
-    
-    "5":{
-        "title":"Healthy Individuals",
-        "summary":"A healthy marriage is made of two healthy people. Commit to a lifetime of spiritual, emotional, physical and mental growth and development."
-    },
-    
-    "6":{
-        "title":"Mutually Satisfying Physical Intimacy",
-        "summary":"Sex is God’s gift to a married couple as a way to experience the deepest, most profound intimacy possible—the two becoming one flesh."
-    },
-    
-    "7":{
-        "title":"Healthy Conflict Management",
-        "summary":"Conflict is an inevitable part of marriage, but handled well, healthy conflict can become an opportunity for deeper intimacy and connection."
-    },
-    
-    "8":{
-        "title":"Shared Responsibility (Teamwork)",
-        "summary":"Marriage means you are always on the same team. Make decisions and divide household responsibilities in a way that honors both of you."
-    },
-    
-    "9":{
-        "title":"Coping With Change, Stress and Crises",
-        "summary":"You will face challenges on your journey together. Always fight for your marriage and trust that God will turn your pain to blessing."
-    },
-    
-    "10":{
-        "title":"Cherish",
-        "summary":"Created by God, your fiancé(e) is of infinite worth and value. Reflect often on the things that you love and cherish about your future spouse."
-    },
-    
-    "11":{
-        "title":"Nourish",
-        "summary":"Love involves action and behavior. You need to nourish your relationship with your fiancé(e) in ways that speak love to him or her."
-    },
-    
-    "12":{
-        "title":"Community-Mindedness",
-        "summary":"Connecting regularly with like-minded couples who are committed to the good of your relationship is vital to the success of your marriage."
-    }
-    }
-
+##Dislaimer##
+Since I spent most of my time learning, a lot of the code in this project is taken from tutorials and adapted for my purposes. That being said, I DID write it, and I know how it works. (I wouldn't have been able to adapt it if I didn't know how it works)

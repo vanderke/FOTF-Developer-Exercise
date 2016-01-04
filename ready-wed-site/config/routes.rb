@@ -1,7 +1,11 @@
 Rails.application.routes.draw do
 
   root 'home#index'
-  get '/meet', to: 'home#meet'
+  get    '/meet',        to: 'home#meet'
+
+  get    'login',        to: 'sessions#new'
+  post   'login',        to: 'sessions#create'
+  delete 'logout',       to: 'sessions#destroy'
 
   resources :users
 

@@ -120,7 +120,8 @@ html {
 }
 .site-footer {
   background: #222222;
-  padding-right: 2em;
+  padding-right: 3em;
+  padding-left: 3em;
 }
 
 .footer-text {

@@ -1,0 +1,30 @@
+<!-- Basic html structure for user based setup -->
+
+
+<form>
+  <h2>Add a Lesson</h2>
+  <div class="form-group">
+    <label for="title">Lesson</label>
+    <input type="text" ng-model='lesson' class="form-control" id="lesson" placeholder="Lesson">
+    <label for="title">Title</label>
+    <input type="text" ng-model='title' class="form-control" id="title" placeholder="Title">
+    <label for="summary">Summary</label>
+    <input type="text" ng-model='summary' class="form-control" id="summary" placeholder="Summary">
+  </div>
+
+  <button type="submit" ng-click='addBookData()' class="btn btn-default">Submit</button>
+</form>
+
+</br>
+
+<form>
+  <h2>Edit a User</h2>
+  <div class="form-group">
+    <label for="addBookData">User Name</label>
+    <input type="text"   ng-model='title' class="form-control" id="editUserName" placeholder="{{editUserName}}">
+  </div>
+
+  <button type="submit" ng-click='editBookPoint()' class="btn btn-default">Submit</button>
+</form>
+
+<a href='#/'>Back To Home</a>

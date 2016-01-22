@@ -1,3 +1,5 @@
+![Ready To Wed](screenshots/ready-to-wed-screehshot.png "Website Screenshot")
+
 ##Welcome
 
 This is the repo for my Focus on the Family developer exercise.

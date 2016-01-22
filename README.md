@@ -2,7 +2,7 @@
 
 This is the repo for my Focus on the Family developer exercise.
 
-Please follow the startup instructions after you clone the repo in order to run the site.
+Please follow the startup instructions after you clone the repo in order to run the site locally.
 
 
 ##Startup Instructions

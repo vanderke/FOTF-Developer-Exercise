@@ -1,3 +1,10 @@
+##Welcome
+
+This is the repo for my Focus on the Family developer exercise.
+
+Please follow the startup instructions after you clone the repo in order to run the site.
+
+
 ##Startup Instructions
 
 This exercise can run with the server of your choice or with Gulp.

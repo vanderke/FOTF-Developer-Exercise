@@ -1,4 +1,4 @@
-![Ready To Wed](screenshots/ready-to-wed-screehshot.png "Website Screenshot")
+![Ready To Wed](client/img/Ready-to-Wed-Screen-Shot.png "Website Screenshot")
 
 ##Welcome
 

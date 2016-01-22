@@ -6,8 +6,8 @@ app.config(function ($routeProvider) {
    controller:'rtwController',
  })
 
- .when('/user', {
-   templateUrl: 'pages/user.html',
+ .when('/editLessonName', {
+   templateUrl: 'pages/editLessonName.html',
    controller:'rtwController',
  })
 

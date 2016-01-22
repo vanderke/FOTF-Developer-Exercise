@@ -90,6 +90,10 @@ td, th {
   background-color: #fdfdfd;
 }
 
+p {
+  margin:1.2em;
+}
+
 /**********************
 Footer
 ***********************/

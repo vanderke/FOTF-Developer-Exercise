@@ -14,6 +14,7 @@ var favicon = require('serve-favicon');
 var routes = require('./routes/index.js');
 var users = require('./routes/bookPoints.js');
 
+
 var mongoURI = process.env.MONGOLAB_URI || 'mongodb://localhost/';
 
 mongoose.connect(mongoURI, function(err, res) {
@@ -23,6 +24,14 @@ mongoose.connect(mongoURI, function(err, res) {
     console.log('Connected to Database: ' + mongoURI);
   }
 });
+
+
+//Mongoose
+// mongoose.connect('mongodb://localhost/rtw-lessons');
+
+
+
+
 
 
 

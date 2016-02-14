@@ -14,7 +14,7 @@ var dotenv = require('dotenv');
 var routes = require('./routes/index.js');
 var users = require('./routes/bookPoints.js');
 
-app.set('port', (process.env.PORT || 3000));
+
 
 // *** express instance *** //
 var app = express();
@@ -22,6 +22,7 @@ var app = express();
 
 var mongoURI = process.env.MONGOLAB_URI || 'mongodb://localhost/rtw-lessons';
 
+app.set('port', (process.env.PORT || 5000));
 
 mongoose.connect(mongoURI, function(err, res) {
   if(err) {

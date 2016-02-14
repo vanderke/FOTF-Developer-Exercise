@@ -8,6 +8,7 @@ var bodyParser = require('body-parser');
 var swig = require('swig');
 var mongoose = require('mongoose');
 var dotenv = require('dotenv');
+// var config = require('./config');
 
 
 // *** routes *** //
@@ -15,7 +16,6 @@ var routes = require('./routes/index.js');
 var users = require('./routes/bookPoints.js');
 
 
-var config = require('./config');
 
 // *** express instance *** //
 var app = express();

@@ -34,18 +34,11 @@ mongoose.connect(mongoURI, function(err, res) {
 // mongoose.connect('mongodb://localhost/rtw-lessons');
 
 
-
-
-
-
-
-
-
 // *** view engine *** //
 var swig = new swig.Swig();
 app.engine('html', swig.renderFile);
 app.set('view engine', 'html');
-
+app.set('port', (process.env.PORT || 5000));
 
 // *** static directory *** //
 app.set('views', path.join(__dirname, 'views'));

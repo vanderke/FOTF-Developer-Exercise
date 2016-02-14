@@ -14,12 +14,16 @@ var favicon = require('serve-favicon');
 var routes = require('./routes/index.js');
 var users = require('./routes/bookPoints.js');
 
-//Mongoose
-// mongoose.connect('mongodb://localhost/rtw-lessons');
-mongoose.connect('mongodb:ryan@ryanchristianmedia.com:Timtim384@ds061405.mongolab.com:61405/heroku_57ffvpvf');
+var mongoURI = process.env.MONGOLAB_URI || 'mongodb://localhost/';
 
+mongoose.connect(mongoURI, function(err, res) {
+  if(err) {
+    console.log('Error connecting to the database. ' + err);
+  } else {
+    console.log('Connected to Database: ' + mongoURI);
+  }
+});
 
- var MONGOLAB_URI = 'mongodb:ryan@ryanchristianmedia.com:Timtim384@ds061405.mongolab.com:61405/heroku_57ffvpvf';
 
 
 // *** express instance *** //

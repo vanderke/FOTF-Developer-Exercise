@@ -15,7 +15,12 @@ var routes = require('./routes/index.js');
 var users = require('./routes/bookPoints.js');
 
 //Mongoose
-mongoose.connect('mongodb://localhost/rtw-lessons');
+// mongoose.connect('mongodb://localhost/rtw-lessons');
+mongoose.connect('mongodb:ryan@ryanchristianmedia.com:Timtim384@ds061405.mongolab.com:61405/heroku_57ffvpvf');
+
+
+ MONGOLAB_URI='mongodb:ryan@ryanchristianmedia.com:Timtim384@ds061405.mongolab.com:61405/heroku_57ffvpvf'
+
 
 // *** express instance *** //
 var app = express();

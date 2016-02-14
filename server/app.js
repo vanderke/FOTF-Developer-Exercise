@@ -6,7 +6,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var swig = require('swig');
 var mongoose = require('mongoose');
-var favicon = require('serve-favicon');
+// var favicon = require('serve-favicon');
 
 
 

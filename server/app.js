@@ -50,7 +50,7 @@ app.set('views', path.join(__dirname, 'views'));
 
 
 // *** config middleware *** //
-app.use(favicon(__dirname + '/public/favicons/favicon-96x96.png'));
+// app.use(favicon(__dirname + '/public/favicons/favicon-96x96.png'));
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));

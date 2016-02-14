@@ -19,6 +19,8 @@ var users = require('./routes/bookPoints.js');
 // *** express instance *** //
 var app = express();
 
+var config = require('./config');
+
 
 var mongoURI = process.env.MONGOLAB_URI || 'mongodb://localhost/rtw-lessons';
 

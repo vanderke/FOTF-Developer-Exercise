@@ -1,5 +1,5 @@
 {
 	"undefined": "localhost/rtw-lessons",
 	"dev": "localhost/rtw-lessons",
-	"prod": "localhost/rtw-lessons"
+	"prod": "process.env.MONGOLAB_URI"
 }

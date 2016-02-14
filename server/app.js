@@ -8,8 +8,6 @@ var bodyParser = require('body-parser');
 var swig = require('swig');
 var mongoose = require('mongoose');
 var dotenv = require('dotenv');
-// var config = require('./config');
-
 
 // *** routes *** //
 var routes = require('./routes/index.js');

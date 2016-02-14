@@ -22,7 +22,7 @@ var app = express();
 
 var mongoURI = process.env.MONGOLAB_URI || 'mongodb://localhost/rtw-lessons';
 
-app.set('port', (process.env.PORT || 5000));
+app.listen('port', (process.env.PORT || 5000));
 
 mongoose.connect(mongoURI, function(err, res) {
   if(err) {

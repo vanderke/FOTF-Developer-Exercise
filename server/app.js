@@ -95,5 +95,6 @@ app.use(function(err, req, res, next) {
   });
 });
 
+seed();
 
 module.exports = app;

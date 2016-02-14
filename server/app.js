@@ -1,12 +1,12 @@
 // *** main dependencies *** //
 var express = require('express');
 var path = require('path');
+var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var swig = require('swig');
 var mongoose = require('mongoose');
-var favicon = require('serve-favicon');
 var dotenv = require('dotenv');
 
 
@@ -14,8 +14,11 @@ var dotenv = require('dotenv');
 var routes = require('./routes/index.js');
 var users = require('./routes/bookPoints.js');
 
+// *** express instance *** //
+var app = express();
 
-var mongoURI = process.env.MONGOLAB_URI || 'mongodb://localhost/#';
+
+var mongoURI = process.env.MONGOLAB_URI || 'mongodb://localhost/rtw-lessons';
 
 
 mongoose.connect(mongoURI, function(err, res) {
@@ -36,8 +39,6 @@ mongoose.connect(mongoURI, function(err, res) {
 
 
 
-// *** express instance *** //
-var app = express();
 
 
 // *** view engine *** //

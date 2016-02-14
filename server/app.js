@@ -15,7 +15,7 @@ var routes = require('./routes/index.js');
 var users = require('./routes/bookPoints.js');
 
 
-var mongoURI = process.env.MONGOLAB_URI || 'mongodb://localhost/';
+var mongoURI = process.env.MONGOLAB_URI || 'mongodb://localhost/#';
 
 mongoose.connect(mongoURI, function(err, res) {
   if(err) {

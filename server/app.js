@@ -7,7 +7,7 @@ var bodyParser = require('body-parser');
 var swig = require('swig');
 var mongoose = require('mongoose');
 var favicon = require('serve-favicon');
-
+var dotenv = require('dotenv');
 
 
 // *** routes *** //
@@ -16,6 +16,7 @@ var users = require('./routes/bookPoints.js');
 
 
 var mongoURI = process.env.MONGOLAB_URI || 'mongodb://localhost/#';
+
 
 mongoose.connect(mongoURI, function(err, res) {
   if(err) {

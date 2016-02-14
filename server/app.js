@@ -14,6 +14,8 @@ var dotenv = require('dotenv');
 var routes = require('./routes/index.js');
 var users = require('./routes/bookPoints.js');
 
+app.set('port', (process.env.PORT || 3000));
+
 // *** express instance *** //
 var app = express();
 
@@ -40,14 +42,13 @@ app.engine('html', swig.renderFile);
 app.set('view engine', 'html');
 
 
-app.set('port', (process.env.PORT || 3000));
 
 // *** static directory *** //
 app.set('views', path.join(__dirname, 'views'));
 
 
 // *** config middleware *** //
-app.use(favicon(__dirname + '/public/favicons/favicon-96x96.png'));
+app.use(favicon(__dirname + '/public/favicons/favicon.ico'));
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));

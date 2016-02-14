@@ -38,7 +38,9 @@ mongoose.connect(mongoURI, function(err, res) {
 var swig = new swig.Swig();
 app.engine('html', swig.renderFile);
 app.set('view engine', 'html');
-app.set('port', (process.env.PORT || 5000));
+
+
+app.set('port', (process.env.PORT || 3000));
 
 // *** static directory *** //
 app.set('views', path.join(__dirname, 'views'));

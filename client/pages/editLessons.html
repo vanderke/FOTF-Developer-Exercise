@@ -1,0 +1,49 @@
+<!-- Page to allow a registered user to add, edit, and delete lessons -->
+
+
+<div class='wrapper'>
+
+
+
+      <form class='form'>
+        <h4>Add a lesson</h4>
+
+
+        <div class="form-group">
+          <label form="username">Lesson</label>
+          <input type="text" ng-model='lesson' class="form-control" id="lesson" placeholder="Lesson Number" required>
+          <label form="username">Title</label>
+          <input type="text" ng-model='title' class="form-control" id="lesson" placeholder="Title" required>
+          <label form="username">Summary</label>
+          <input type="text" ng-model='summary' class="form-control" id="lesson" placeholder="Summary" required>
+        </div>
+        <button ng-click='addBookData()' type="submit" class="btn btn-default">Submit</button>
+      </form>
+
+    </br></br>
+
+  <h4> Click here to Get Lessons</br></h4>
+  <button ng-click='getBookData()' type="submit" class="btn btn-default">Get Lessons</button></br></br>
+
+  <div>
+    <ul ng-repeat='data in bookData'>
+
+
+
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Lesson</th>
+            <th>Title</th>
+            <th>Summary</th>
+          </tr>
+        </thead>
+        <tbody id="all-lessons">
+          <a href='#/user' ng-click='getSingleUserId(user)'><li>{{data.title}}</li></a>
+          <td>{{data.lesson}}</td>
+          <td>{{data.title}}</td>
+          <td>{{data.summary}}</td>
+        </tbody>
+      </table>
+
+    </div>

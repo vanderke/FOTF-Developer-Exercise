@@ -1,0 +1,148 @@
+/**********************
+Header
+***********************/
+
+header {
+  float: left;
+  margin: 25px 0 0 0;
+  padding: 2.2em 0 1em 2em;
+  width: 100%;
+  color: #fff;
+  background: #222222;
+}
+
+header li {
+  text-align: right;
+}
+
+header img{
+  width: 260px;
+}
+
+h1 {
+  font-family: 'Changa one', sans-serif;
+  margin: 15px 0;
+  font-size: 1.75em;
+  font-weight: normal;
+  line-height: 0.8em;
+}
+
+h2 {
+  font-size: 0.75em;
+  margin: -5px 0 0;
+  font-weight: normal;
+}
+
+/**********************
+Navigation
+***********************/
+
+nav {
+  text-align: center;
+  padding: 10px 0;
+  margin: 20px 0 0;
+  float:right;
+  padding-right: 4%;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0 10px;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  font-weight: 800;
+  padding: 15px 10px;
+  color: #fff;
+  font-size: 1.2em;
+}
+
+/**********************
+Body
+***********************/
+
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background: #160D0D;
+  background-color: #fdfdfd;
+  height:100%;
+}
+
+.responsive-image{
+    width: 100%;
+    background-size: 100% 100%;
+    border-bottom: 1px solid #000;
+}
+
+.wrapper {
+  padding: 10% 5% 2% 5%;
+}
+
+h1, h2, h3, h4, h5, h6, ul, li, label, table, th, tr, td{
+  color: #000;
+}
+
+td, th {
+  background-color: #fdfdfd;
+}
+
+p {
+  margin:1.2em;
+}
+
+/**********************
+Footer
+***********************/
+
+* {
+  margin: 0;
+}
+html {
+  height: 100%;
+}
+.page-wrap {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -230px;
+}
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+.site-footer, .page-wrap:after {
+  /* .push must be the same height as footer */
+  height: 230px;
+  color:#fff;
+}
+.site-footer {
+  background: #222222;
+  }
+
+.footer-text {
+  color:#fff;
+}
+
+
+/************************
+Horizontal Rule - Heart
+*************************/
+hr.heart {
+  border-top: 4px double #8c8b8b;
+  text-align: center;
+  margin-left:37%;
+}
+hr.heart:after {
+  content: '\002665';
+  display: inline-block;
+  position: relative;
+  top: -15px;
+  padding: 0 10px;
+  background: #fff;
+  color: red;
+  font-size: 24px;
+}

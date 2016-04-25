@@ -1,0 +1,154 @@
+1.07.2 2005/12/04
+---------------------------
++ Added the from define to define what address the results email is coming from
+* Changed the e-mail field to be reported as Reply-To instead of From: (for SPF)
++ Added checks to send_mail() to check for CC/BCC/MIME injection exploits
++ Added a silent drop if the e-mail fails the injection tests
++ Added a log entry if the e-mail is sent with the senders IP address.  This allows webmasters/hosting companies to see how many times the formmail.php is sending mail which will help identify if there is an injection exploit that is not be caught.
++ Added a sender IP field to the headers of the e-mail
++ Added a referer field to the headers of the e-mail
++ Added subject_prefix for sites that allow users to define the subject
+
+1.07.1 2005/03/27
+---------------------------
+- Removed the conditional block around the block of if statements that called $recipient_function to fix the CHECK_REFERER=false vulnerability
+- Removed the PHPFormMail version number from the HTML output.  It is still reported in the e-mail.
+* Moved the $recipient_array checking code from a variable to be imbeded in the if statement since it's only used once
+* Changed the html output to use the charset of utf-8
++ Added a new header to the e-mail output so the email will use the charset of utf-8
+* Cleaned up some double quotes that should be single quotes
+
+1.07.0 2004/12/18
+---------------------------
++ Added map_recipients()
++ Added logic to call map_recipients when $recipient_array is used
+! Moved the html "look code" (vlink, link, etc) to the output_html function
++ *Added htmlspecialchars() to all the output in the output_html function.  
+! Changed output_html to use local variables for the modified values.
+! Moved the subject and email check to the send_mail function.
+! Modified the CSS title class to be a H1
+! Fixed the CSS code so backgrounds will properly show again
+! *Fixed a bug when aliases were used and there was a hidden field (there was a $ in front of htmlspecialchars)
++ Added the ability to specify how aliases are applied (html, email, both) default is html
++ Added the ability for the email to use aliases
++ Added a conditional to call alias_fields() (why call it if there aren't any)
+! Cleaned up the main output loop for fields
+! HTML output fields will now properly show line breaks (if there was multi line input).  This does not affect the e-mail output
+! Changed the HTTP_REFERER error so it doesn't point to a page that doesn't exist.
+
+Added new invisible fields: recipient_array - should contain keys to match the 
+$recipient_array alias_method - can be "html", "email", "both"
+
+*Denotes a possible Cross Site Scripting (XSS) vulnerability
+
+1.06.0 2003/02/01
+---------------------------
+! Made script play nicely with php4 that has globals turned off.
+! Fixed bug that would not display the proper error message if nothing is sent to the formmail.php (get or post).
++ Added ability to turn of referer checking (define).  This is currently BETA.
++ Added times to e-mail output (date string)
++ Added new field gmt_offset to accept +/-12 and properly reflect it in the time in the e-mail output. (Example, EST would be -5)
++ Added new field mail_newline with the options of 1, 2, 3 to allow the form creator to choose what type of newline to use in the email. 1 is the dfaefault at \n. 2 is \r and 3 is \r\n.
++ Changed email output in send_mail to allow for the newline changes.
+- Remeoved function fill_data() and all refs to it
+! Changed code syntax to PEAR standard (not tabs/pspaces yet)
+! Changed XHTML/CSS to be more complient.
+! Added _ fix for e-mail adddresses.
+! Added link to norton support for http_referer error (they appear to be the only software that has this issue).
+! Fixed it so you can now make checkbox fields required.
+
+1.05.0 2002/10/01
+---------------------------
++ You can now have regular expressions in the $referers array.
++ Added the ability to have field name aliases.
++ Added the ability to have hidden field results.
+! Updated the error system to have critical errors.
+! Changed crit errors to link to the readme.
++ Added a new const for readme link.
+! Fixed check_recipients bug (Don)
+! Fixed a bug when setting the first 3 css variables.
+! Minor logic changes
+! Fixed bug with PHP showing isset for fields that were empty. Fix: strlen()
+! decode_vars() now returns an empty array if no data was sent to the form.
++ Added a new error message for no data being sent to the form.
+! changed error function to use global var instead of passing as a ref
+! removed exit() calls from script, it shouldn't need them.
+
+
+1.04.1 2002/07/22
+---------------------------
+! Fixed a possible exploit with the regex that checked e-mail addresses.
+! Added \r to \n in e-mail output.  Some users were having problems with just \n.
+! Fix Bug #583178 undeclared global $errors in send_mail().  This will stop the bug with blank pages being printed if there was an issue with the mail server.
+
+
+1.04.0 2002/06/08
+---------------------------
+- Removed the ability to have empty referers.
+! Changed " to ' where applicable (for speed).
++ Added an error message if there is no referer.
+! Changed default to NOT copy the field contents to thank you/error pages.
+! Update to allow the thank you page to properly follow show_blank_fields (like in the e-mail).
+! Fixed bug when having spaces, line breaks, etc between required field names.
+! Change "comming" to "coming".
+! Added automatic support for PHP3.  Script now detects the PHP version and calls the proper in_array().
+! Fixed a bug with PHP3 and NULL constants.
+! Changed the error logging when a bad recipient is found.  Each bad recipient should be logged if there is more than one in an execution.
++ Added error logging for "There is no recipient to send this to".
+- Removed the compile url function.  Replaced the function with get_env('QUERY_STRING').
+! Modified how stripslashes() was applied. Now it is only run once, on every variable.
++ Added a condition if realname is undefined to check to see if firstname or lastname exists and combines them to act as the "realname" for e-mail pourposes. :)
+! Removed default filling of realname to "Unknown Stranger" and added support for empty realnames so just the e-mail will show up instead of realname and e-mail address in emails.
+
+
+1.03.1 2002/04/24
+---------------------------
++ Fix a security problem with referers being easy to spoof.
+! Fix all the undefined variable warnings when E_ALL is defined.
+! Fixed a typo where I mispelled form.
+! A few small changes with the logic of the program.
+
+
+1.03.0 2002/01/01
+---------------------------
++ Added fields recipient_cc, recipient_bcc and priority.
++ Now the redirected "error" and "thank you" pages receive all the variables POST encoded for any third party scripts.
+! Changed most attributes to use styles rather than html attributes.
+! Changed how colors were implemented. If they are not defined they will use the browser default instead of the old white/black color scheme.
+! Fixed a bug with the non-redirected "error" and "thank you" pages' title. They now properly reflect the page that is displaying.
+! Made CSS fully CSS compliant.
+! Misc. code cleanups
+
+
+1.02 2001/09/24
+---------------------------
++ Added value array fix (konrad@shortcircuit.be)
++ Added back in regular expression searching.
++ Defined the version number at the top of the PHP document and reference the define throughout the script.
++ Added a check for valid environmental variables to stop malicious attacks. 
+
+
+1.01 2001/09/10
+---------------------------
++ Added sort ability.
++ Made the environmental section variable.
+! Fixed a small bug with the apostrophes (screen output).
+- Removed most of the "for" loops.
+! Cleaned up the documentation.
+! Made the documentation HTML 4.1 Transitional.
+! Made the output of PHPFormMail XHTML 1.0. 
+
+
+0.03b 2001/05/25
+---------------------------
++ Add strip slashes to the output e-mail for those that need it.
+
+
+0.02b 2000/02/06
+---------------------------
++ Documentation added, fixed refers, and general code clean up.
+
+
+0.01b 2000/01/31
+---------------------------
++ This script was created.

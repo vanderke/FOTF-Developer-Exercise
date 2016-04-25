@@ -1,0 +1,137 @@
+body {
+  font-family: 'EK Mukta', sans-serif;
+  color: #444;
+}
+
+p {
+  font-family: 'EK Mukta', sans-serif;
+  color: #444;
+  font-size: 1.1em;
+}
+
+h1,
+h3 {
+  font-family: 'arabella', cursive;
+  color: #ff5555;
+}
+
+h2 {
+  font-family: 'EK Mukta', sans-serif;
+  color: #ff5555;
+}
+
+#header {
+  background-color: #dcf5f6;
+}
+
+.site-title {
+  font-size: 8.750em;
+}
+
+.tagline {
+  font-size: 1.30em;
+  padding-top: 4em;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 1110px) {
+  .site-title {
+    font-size: 7.750em;
+  }
+  .tagline {
+    font-size: 1.30em;
+    padding-top: 4em;
+    text-transform: uppercase;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #header {
+    background-color: #fff;
+  }
+  .site-title {
+    font-size: 6.750em;
+    text-align: center;
+  }
+
+  .tagline {
+    font-size: 1em;
+    padding: 1em;
+    background-color: #dcf5f6;
+    text-align: center;
+  }
+}
+
+#icons {
+  padding: 4em 0;
+}
+
+.icons {
+  width: 110px;
+}
+
+@media screen and (max-width: 800px){
+  .icons {
+    width: 75px;
+  }
+}
+
+#lead p {
+  font-size: 1.75em;
+}
+
+.flourish {
+  padding-top: 2em;
+}
+
+#main-chapters {
+  padding: 2em 0;
+}
+
+@media screen and (max-width: 800px){
+  #main-chapters {
+    padding: 2em 0;
+  }
+}
+
+.chapter-heading {
+  font-size: 1.3em;
+  background-color: #dcf5f6;
+  padding: 1em;
+  font-family: 'EK Mukta', sans-serif;
+  text-transform: uppercase;
+  margin-top: 2em;
+}
+
+@media screen and (max-width: 800px) {
+  .chapter-heading {
+    font-size: 1em;
+    margin-top: 2em;
+  }
+  #main-chapters .chapter-title {
+    font-size: 4em;
+    line-height: 1.2;
+  }
+}
+
+.chapter-title {
+  font-size: 4.625em;
+  line-height: 1;
+  padding: .5em 0;
+}
+
+footer {
+  background-color: #ff5555;
+  padding: 4em 20%;
+}
+
+footer h3 {
+    color: #fff;
+    font-size: 3em;
+}
+
+@media screen and (max-width: 800px) {
+  footer {
+    padding: 2em;
+  }
+}

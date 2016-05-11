@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Ready to Wed</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="main.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+	<!-- Popup Overlay -->
+	<script src="external/jquery.popupoverlay.js"></script>
+</head>
+
+<body class="contents">
+	<div class="navbar navbar-inverse navbar-static-top">
+
+		<div class="container">
+
+			<a href="#" class="navbar-brand">Ready to Wed</a>
+
+			<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+
+			<div class="collapse navbar-collapse navHeaderCollapse">
+
+				<ul class="nav navbar-nav navbar-right">
+					<li class="active"><a href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a id="login" href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+				</ul>
+
+			</div>
+
+		</div>
+
+	</div>
+
+	<div id="sign-in">
+        <h1>Admin Sign-In</h1>
+        <form id = "loginPopup" action ="main" method ="GET">
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="password" name ="password" placeholder="Password" required/>
+            <input type="submit" value="Sign In">
+        </form>
+    </div>
+	<script type="text/javascript" src="main.js"></script>
+</body>
+
+</html>

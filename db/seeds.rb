@@ -5,3 +5,12 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+require 'rake'
+
+Rake::Task.clear #necessary to avoid tasks being loaded several times in dev mode
+FOTFDeveloperExercise::Application.load_tasks
+
+import_tasks.each do |task_name|
+  puts "Running task: #{task_name} "
+  Rake::Task[task_name].invoke
+end

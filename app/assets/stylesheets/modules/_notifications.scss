@@ -7,24 +7,24 @@
   border: 1px solid;
   border-radius: 4px;
 
-  &__title {
+  &.title {
     margin: 0 0 $condensed-whitespace 0;
     font-size: em(20px);
   }
 
-  &--alert {
+  &.alert {
     @include notification-colors($notification-alert);
   }
 
-  &--warning {
+  &.warning {
     @include notification-colors($notification-warning);
   }
 
-  &--success {
+  &.success {
     @include notification-colors($notification-success);
   }
 
-  &--notice {
+  &.notice {
     @include notification-colors($notification-notice);
   }
 }

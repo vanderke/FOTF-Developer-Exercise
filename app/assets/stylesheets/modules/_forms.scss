@@ -56,7 +56,7 @@
 // Field pair form
 
 .form-pair {
-  &__group {
+  &.group {
     margin-bottom: $default-whitespace;
     display: flex;
     flex-wrap: wrap;

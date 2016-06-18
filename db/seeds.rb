@@ -9,6 +9,7 @@ require 'rake'
 
 Rake::Task.clear #necessary to avoid tasks being loaded several times in dev mode
 FOTFDeveloperExercise::Application.load_tasks
+import_tasks = [ 'load_book_data']
 
 import_tasks.each do |task_name|
   puts "Running task: #{task_name} "

@@ -5,7 +5,7 @@
 // ------------------
 // Drop in the colors that make
 // up the brand in this section
-
+$main-love-color: #E94E77;
 // Default colors
 
 $default-text-color: #333;
@@ -13,7 +13,7 @@ $default-border-color: #ccc;
 
 // Link colors
 
-$link-color: #3476af;
+$link-color: #C6E5D9;
 $link-disabled: #dedede;
 
 // Button colors
@@ -35,6 +35,7 @@ $default-font-size: 16px;
 $default-leading: 1.6;
 $default-whitespace: 1.6 * $default-font-size;
 $condensed-whitespace: .5 * $default-whitespace;
+$main-title-font-size: 22px;
 
 // FONTS
 // ------------------
@@ -43,7 +44,8 @@ $headline-font: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
 $sans-serif-font: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
 $serif-font: "Georgia", "Cambria", "Times New Roman", "Times", serif;
 $code-font: "Bitstream Vera Sans Mono", "Consolas", "Courier", monospace;
-$main-lesson-font: "Storybook", sans-serif;
+$main-title-font: "Storybook", "Consolas", "Papyrus", monospace;
+
 
 // LAYOUT
 // ------------------

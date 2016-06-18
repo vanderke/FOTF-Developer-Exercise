@@ -1,7 +1,19 @@
-<section>
-  <div class="hero">
-    <p>
-      New 12-week course for Engaged Couples
-    </p>
-  </div>
-</section>
+<div class="hero">
+  <p>
+    New 12-week course for Engaged Couples
+  </p>
+</div>
+<div class="list">
+  <ul class="list">
+    <% @lessons.each do |lesson| %>
+      <div class="row">
+        <div class="col-4">
+          <li><%= lesson.chapter %></li>
+          <li><%= lesson.title %></li>
+          <li><%= lesson.summary %></li>
+        </div>
+      </div>
+    <% end %>
+  </ul>
+
+</div>

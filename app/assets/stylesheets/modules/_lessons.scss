@@ -1,13 +1,8 @@
 // Place all the styles related to the lessons controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-#primary-nav {
-  background-color: $main-love-color;
-}
-
-.lesson-title {
-  text-decoration: none;
-  font-family: fantasy;
-  font: $main-title-font;
-  font-size: $main-title-font-size;
+.hero {
+  background-color: $sea-of-love-color;
+  background-image: image-url("engaged_hero.jpg");
+  background-repeat: no-repeat;
 }

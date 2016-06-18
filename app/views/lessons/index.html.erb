@@ -4,16 +4,16 @@
   </p>
 </div>
 <div class="list">
-  <ul class="list">
+  <div class="list">
     <% @lessons.each do |lesson| %>
-      <div class="row">
-        <div class="col-4">
-          <li><%= lesson.chapter %></li>
-          <li><%= lesson.title %></li>
-          <li><%= lesson.summary %></li>
+      <div class="row highlight">
+        <div class="col-12 form-vertical">
+          <p>Chapter: <%= lesson.chapter %></p>
+          <p>Title: <%= lesson.title %></p>
+          <p>Lesson: <%= lesson.summary %></p>
         </div>
       </div>
     <% end %>
-  </ul>
+  </div>
 
 </div>

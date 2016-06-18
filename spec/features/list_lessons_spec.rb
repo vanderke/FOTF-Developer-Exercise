@@ -8,9 +8,9 @@ describe "View the list of lessons" do
 
     all_lessons = [lesson1, lesson2, lesson3]
 
-    visit lessons_url
+    visit lessons_path
 
-    all_lesson.each do |lesson|
+    all_lessons.each do |lesson|
       expect(page).to have_text(lesson.title)
       expect(page).to have_text(lesson.chapter)
       expect(page).to have_text(lesson.summary)

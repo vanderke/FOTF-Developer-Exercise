@@ -29,6 +29,7 @@ GEM
       tzinfo (~> 1.1)
     addressable (2.4.0)
     arel (5.0.1.20140414130214)
+    bower-rails (0.10.0)
     builder (3.2.2)
     capybara (2.6.2)
       addressable
@@ -149,6 +150,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bower-rails
   capybara (= 2.6.2)
   coffee-rails (~> 4.0.0)
   jbuilder (~> 2.0)

@@ -13,6 +13,7 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 
 group :test, :development do
+  gem 'jasmine-rails'
   gem 'sqlite3'
   gem "rspec-rails", "3.4.2"
   gem 'pry'

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="ready2wed">
 <head>
   <title>FOTFDeveloperExercise</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
@@ -10,7 +10,7 @@
 
 <%= render "layouts/header" %>
 
-<div class="l-container">
+<div class="l-container" ng-view>
   <section id="content">
     <%= yield %>
   </section>

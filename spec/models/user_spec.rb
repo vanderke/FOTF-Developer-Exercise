@@ -1,5 +1,6 @@
 require 'rails_helper'
 
+
 describe "A user" do
   it "requires a username" do
     user = User.new(username: "")

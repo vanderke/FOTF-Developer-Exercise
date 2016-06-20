@@ -11,8 +11,8 @@ describe "Delete a user" do
     expect(current_path).to eq(root_path)
     expect(page).to have_text('Account successfully deleted!')
 
-    visit users_path
+    visit root_path
 
-    expect(page).not_to have_text(user.name)
+    expect(page).not_to have_text(user.username)
   end
 end

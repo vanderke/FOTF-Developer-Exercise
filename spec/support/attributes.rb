@@ -6,3 +6,11 @@ def user_attributes(overrides = {})
     username: "movielover"
   }.merge(overrides)
 end
+
+def lesson_attributes(overrides = {})
+  {
+    chapter: "1",
+    title: "Two Roads Diverged in A Yellow Wood",
+    summary: "Stick to what you are called to do."
+  }.merge(overrides)
+end

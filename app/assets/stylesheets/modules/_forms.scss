@@ -91,10 +91,11 @@
 }
 
 .fieldset {
-  margin: 0 0 10px 0;
-  padding: 10px 20px;
+  margin-bottom: em(25.6px);
+  padding: em(10px);
   background-color: $sea-of-love-color;
-  border: 0;
+  border: 3px solid $sand-of-love-color;
+  border-radius: em(15px);
   box-shadow: $lightest-love-color 0 0 8px;
 
   label {

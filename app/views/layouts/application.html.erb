@@ -11,6 +11,9 @@
 <%= render "layouts/header" %>
 
 <div id="wrapper">
+
+  <%= render "layouts/flashes" %>
+  
   <div class="l-container" ng-view>
     <section id="content">
       <%= yield %>

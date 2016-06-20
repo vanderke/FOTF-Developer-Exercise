@@ -5,19 +5,22 @@
       <li class="required">
         <%= f.label :username %>
         <%= f.text_field :username, size: 40, autofocus: true,
-                         placeholder: "Letters and Numbers only!" %>
+                         placeholder: "Letters and numbers ok, no spaces." %>
       </li>
       <li class="required">
         <%= f.label :email %>
-        <%= f.email_field :email, size: 40 %>
+        <%= f.email_field :email, size: 40,
+                          placeholder: "user@example.com" %>
       </li>
       <li class="required">
         <%= f.label :password %>
-        <%= f.password_field :password, size: 40 %>
+        <%= f.password_field :password, size: 40,
+                              placeholder: "At least 10 characters." %>
       </li>
       <li class="required">
         <%= f.label :password_confirmation, "Confirm Password" %>
-        <%= f.password_field :password_confirmation, size: 40 %>
+        <%= f.password_field :password_confirmation, size: 40,
+                              placeholder: "Same as above." %>
       </li>
     </ol>
     <p>

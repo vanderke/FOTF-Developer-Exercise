@@ -34,4 +34,8 @@
   min-height: em(500px);
   overflow: hidden;
   background-color: $white;
+
+  h1 {
+    color: $agape-love-color;
+  }
 }

@@ -16,6 +16,8 @@ describe "Viewing a user's profile page" do
   it "shows the user as a member since" do
     user = User.create!(user_attributes)
 
+    sign_in(user)
+
     visit user_url(user)
 
     expect(page).to have_text("June, 2016")

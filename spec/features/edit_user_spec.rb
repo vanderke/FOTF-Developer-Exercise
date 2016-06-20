@@ -28,6 +28,8 @@ describe "Editing a user" do
   it "does not update the user if it's invalid" do
     user = User.create!(user_attributes)
 
+    sign_in(user)
+
     visit edit_user_url(user)
 
     fill_in 'Username', with: " "

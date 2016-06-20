@@ -1,14 +1,15 @@
 <header class="header" role="banner">
-  <div id="primary-nav">
-    <div class="row">
-      <%= link_to "Ready To Wed", root_path, class: "title pls pts l-left"%>
-      <nav>
-        <p class="l-right prs">
-          <%= session[:user_id]%>
-          <%= link_to 'Sign Up', signup_path, class: "button" %>
-          <%= link_to 'Sign In', new_session_path, class: "button" %>
-        </p>
-      </nav>
+  <div id="primary-nav" class="l-container">
+    <div class="mast-container">
+      <%= link_to "Ready To Wed", root_path, class: "title"%>
+      <ul class="nav">
+        <% if current_user %>
+          <li><%= link_to current_user.username, current_user %></li>
+        <% else %>
+          <li><%= link_to 'Sign Up', signup_path, class: "button" %></li>
+          <li><%= link_to 'Sign In', new_session_path, class: "button" %></li>
+        <% end %>
+      </ul>
     </div>
   </div>
 </header>

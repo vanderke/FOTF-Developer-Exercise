@@ -26,7 +26,26 @@
 }
 
 .header {
-  line-height: 3.77em;
+  display: block;
+}
+
+.mast-container {
+  display: table;
+  padding: 15px 0;
+  width: 100%;
+}
+
+.nav {
+  margin: 0;
+  padding: 0;
+  text-align: right;
+  display: inline-flex;
+  float: right;
+
+  li {
+    list-style: none;
+    padding-right: em(5px);
+  }
 }
 
 #wrapper {

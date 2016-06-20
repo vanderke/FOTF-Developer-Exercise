@@ -28,3 +28,10 @@
 .header {
   line-height: 3.77em;
 }
+
+#wrapper {
+  padding: em(10px);
+  min-height: em(500px);
+  overflow: hidden;
+  background-color: $white;
+}

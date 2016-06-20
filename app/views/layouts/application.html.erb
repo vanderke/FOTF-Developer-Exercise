@@ -10,12 +10,15 @@
 
 <%= render "layouts/header" %>
 
-<div class="l-container" ng-view>
-  <section id="content">
-    <%= yield %>
-  </section>
+<div id="wrapper">
+  <div class="l-container" ng-view>
+    <section id="content">
+      <%= yield %>
+    </section>
+  </div>
 </div>
 
 <%= render "layouts/footer" %>
+
 </body>
 </html>

@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   resource :session
+  resources :users
   resources :lessons
 
   get 'signup', to: 'users#new'

@@ -9,7 +9,7 @@ describe "Signing in" do
 
     expect(current_path).to eq(new_session_path)
 
-    expect(page).to have_field("username")
+    expect(page).to have_field("Username")
     expect(page).to have_field("Password")
   end
 
@@ -25,9 +25,9 @@ describe "Signing in" do
 
     click_button 'Sign In'
 
-    expect(current_path).to eq(user_path(user))
+    expect(current_path).to eq(root_path)
 
-    expect(page).to have_text("Welcome back, #{user.name}!")
+    expect(page).to have_text("Welcome back, #{user.username}!")
   end
 
   it "does not sign in the user if the username/password combination is invalid" do

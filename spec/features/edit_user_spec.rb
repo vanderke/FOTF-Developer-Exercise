@@ -5,6 +5,8 @@ describe "Editing a user" do
   it "updates the user and shows the user's updated details" do
     user = User.create!(user_attributes)
 
+    sign_in(user)
+
     visit user_url(user)
 
     click_link 'Edit Account'

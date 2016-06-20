@@ -139,7 +139,7 @@
     float: left;
   }
 
-  div.field_with_errors {
+  &.fields_with_errors {
     display: inline;
     label {
       color: $errors-text-color;

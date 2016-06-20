@@ -13,8 +13,8 @@
   user-select: none;
   white-space: nowrap;
   color: $button-text-color;
-  background: $button-default;
-  border: 1px solid $default-border-color;
+  background: $sea-of-love-color;
+  border: 1px solid $sand-of-love-color;
   border-radius: 3px;
   appearance: none;
 
@@ -22,7 +22,7 @@
   &:focus {
     text-decoration: none;
     color: $button-text-color;
-    background-color: darken($button-default, 10%);
+    background-color: darken($sea-of-love-color, 10%);
   }
 
   &:disabled,

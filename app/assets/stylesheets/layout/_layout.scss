@@ -44,7 +44,11 @@
 
   li {
     list-style: none;
-    padding-right: em(5px);
+    padding-right: em(25px);
+
+    &:last-child {
+      padding-right: 0;
+    }
   }
 }
 

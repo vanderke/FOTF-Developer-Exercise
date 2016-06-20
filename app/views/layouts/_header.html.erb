@@ -4,6 +4,7 @@
       <%= link_to "Ready To Wed", root_path, class: "title pls pts l-left"%>
       <nav>
         <p class="l-right prs">
+          <%= session[:user_id]%>
           <%= link_to 'Sign Up', signup_path, class: "button" %>
           <%= link_to 'Sign In', new_session_path, class: "button" %>
         </p>

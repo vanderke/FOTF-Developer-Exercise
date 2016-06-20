@@ -15,8 +15,8 @@ describe "Creating a new User" do
 
     click_button "Create Account"
 
-    expect(page).to have_text('Example User')
-    expect(page).to have_text("Thanks, Example User for signing up!")
+    expect(page).to have_text('ExampleUser')
+    expect(page).to have_text("Thanks, ExampleUser for signing up!")
 
   end
 

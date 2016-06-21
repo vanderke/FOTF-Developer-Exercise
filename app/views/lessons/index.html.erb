@@ -12,15 +12,16 @@
           <p>Title: <%= lesson.title %></p>
           <p>Lesson: <%= lesson.summary %></p>
         </div>
+        <nav>
+          <%= link_to 'Show Lesson', lesson_path(lesson), class:"button" %>
+        </nav>
       </div>
     <% end %>
   </div>
   <nav>
-    <ul>
-      <li class="create-movie">
-        <%= link_to 'Add New Lesson', new_lesson_path, class: 'button' %>
-      </li>
-    </ul>
+    <p>
+      <%= link_to 'Add New Lesson', new_lesson_path, class: 'button' %>
+    </p>
   </nav>
 
 </div>

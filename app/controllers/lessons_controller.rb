@@ -34,6 +34,12 @@ class LessonsController < ApplicationController
     end
   end
 
+  def destroy
+    @lesson = Lesson.find(params[:id])
+    @lesson.destroy
+    redirect_to lessons_url, alert: "Lesson successfully deleted!"
+  end
+
 private
 
   def lesson_params

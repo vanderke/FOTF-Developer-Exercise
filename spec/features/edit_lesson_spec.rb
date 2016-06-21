@@ -3,7 +3,7 @@ require 'rails_helper'
 describe "Editing a lesson" do
   before do
     admin = User.create!(user_attributes(admin:true))
-    sing_in(admin)
+    sign_in(admin)
   end
 
   it "updates the lesson and shows the lesson's updated details" do

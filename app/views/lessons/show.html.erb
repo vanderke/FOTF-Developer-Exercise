@@ -1,0 +1,23 @@
+<div>
+  <div id="user">
+    <div class="fieldset">
+      <h1>
+        Chapter <%= @lesson.chapter %>
+      </h1>
+      <p>
+        Title <%= @lesson.title %>
+      </p>
+      <p>
+        Summary <%= @lesson.summary %>
+      </p>
+    </div>
+    <div>
+      <nav>
+        <%= link_to 'Edit Lesson', edit_lesson_path(@lesson), class: 'button' %>
+        <%= link_to 'Delete Lesson', @lesson, method: :delete,
+        data: { confirm: "Are you sure you want to permanently delete your account?"},
+        class: 'button' %>
+      </nav>
+    </div>
+  </div>
+</div>

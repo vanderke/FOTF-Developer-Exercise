@@ -4,9 +4,9 @@
   </p>
 </div>
 <div class="list">
-  <div class="list">
+  <div>
     <% @lessons.each do |lesson| %>
-      <div class="row highlight">
+      <div class="row fieldset">
         <div class="col-12 form-vertical">
           <p>Chapter: <%= lesson.chapter %></p>
           <p>Title: <%= lesson.title %></p>
@@ -15,5 +15,12 @@
       </div>
     <% end %>
   </div>
+  <nav>
+    <ul>
+      <li class="create-movie">
+        <%= link_to 'Add New Lesson', new_lesson_path, class: 'button' %>
+      </li>
+    </ul>
+  </nav>
 
 </div>

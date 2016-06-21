@@ -1,7 +1,14 @@
 Rails.application.routes.draw do
+  resource :session
+  resources :users
   resources :lessons
 
+  get 'signup', to: 'users#new'
+
   root "lessons#index"
+
+
+  mount JasmineRails::Engine => '/specs' if defined?(JasmineRails)
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

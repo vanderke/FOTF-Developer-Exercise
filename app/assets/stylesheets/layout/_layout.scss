@@ -26,5 +26,39 @@
 }
 
 .header {
-  line-height: 3.77em;
+  display: block;
+}
+
+.mast-container {
+  display: table;
+  padding: 15px 0;
+  width: 100%;
+}
+
+.nav {
+  margin: 0;
+  padding: 0;
+  text-align: right;
+  display: inline-flex;
+  float: right;
+
+  li {
+    list-style: none;
+    padding-right: em(25px);
+
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+}
+
+#wrapper {
+  padding: em(10px);
+  min-height: em(500px);
+  overflow: hidden;
+  background-color: $white;
+
+  h1 {
+    color: $agape-love-color;
+  }
 }

@@ -6,9 +6,11 @@
 // Drop in the colors that make
 // up the brand in this section
 $main-love-color: #E94E77;
+$agape-love-color: #d68189;
 $lightest-love-color: #f4ead5;
 $sea-of-love-color: #c6e5d9;
 $sand-of-love-color: #c6a49a;
+$white: #fff;
 
 // Default colors
 
@@ -27,10 +29,13 @@ $button-default: #fff;
 
 // Notification colors
 
-$notification-alert: #e94e77;
-$notification-warning: #c6a49a;
-$notification-success: #c6e5d9;
-$notification-notice: #f4ead5;
+$notification-alert: $main-love-color;
+$notification-warning: $agape-love-color;
+$notification-success: $sea-of-love-color;
+$notification-notice: $sea-of-love-color;
+$errors-background-color: #FFC;
+$errors-text-color: #DC3D3D;
+
 
 // CONTENT DEFAULTS
 // ------------------
@@ -49,6 +54,7 @@ $sans-serif-font: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
 $serif-font: "Georgia", "Cambria", "Times New Roman", "Times", serif;
 $code-font: "Bitstream Vera Sans Mono", "Consolas", "Courier", monospace;
 $main-title-font: "Storybook", "Consolas", "Papyrus", monospace;
+$fieldset-font: "Storybook", "Consolas", "Papyrus", sans-serif;
 
 
 // LAYOUT

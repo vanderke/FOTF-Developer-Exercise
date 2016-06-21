@@ -12,17 +12,17 @@
   vertical-align: middle;
   user-select: none;
   white-space: nowrap;
-  color: $button-text-color;
-  background: $button-default;
-  border: 1px solid $default-border-color;
+  color: $lightest-love-color;
+  background: $agape-love-color;
+  border: 1px solid $sand-of-love-color;
   border-radius: 3px;
   appearance: none;
 
   &:hover,
   &:focus {
     text-decoration: none;
-    color: $button-text-color;
-    background-color: darken($button-default, 10%);
+    color: darken($lightest-love-color, 10%);
+    background-color: darken($agape-love-color, 10%);
   }
 
   &:disabled,

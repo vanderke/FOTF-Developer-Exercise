@@ -30,3 +30,7 @@
 .is-visible {
   visibility: visible;
 }
+
+:focus {
+  outline-color: $sand-of-love-color;
+}

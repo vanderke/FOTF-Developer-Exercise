@@ -1,0 +1,26 @@
+<%= form_for(@lesson) do |f| %>
+  <%= render "shared/errors", object: @lesson %>
+  <div class="fieldset">
+    <ol>
+      <li class="required">
+        <%= f.label :chapter %>
+        <%= f.text_field :chapter, size: 40, autofocus: true %>
+      </li>
+      <li class="required">
+        <%= f.label :title %>
+        <%= f.text_field :title, size: 40, autofocus: true %>
+      </li>
+      <li class="required">
+        <%= f.label :summary %>
+        <%= f.text_field :summary, size: 500 %>
+      </li>
+    </ol>
+    <p>
+      <% if @lesson.new_record? %>
+        <%= f.submit "Create Lesson", class:"button" %>
+      <% else %>
+        <%= f.submit "Update Lesson", class:"button" %>
+      <% end %>
+    </p>
+  </div>
+<% end %>

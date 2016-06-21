@@ -2,22 +2,22 @@
   <%= render "shared/errors", object: @user %>
   <div class="fieldset">
     <ol>
-      <li class="required">
+      <li class="required" ng-model="user.username">
         <%= f.label :username %>
         <%= f.text_field :username, size: 40, autofocus: true,
                          placeholder: "Letters and numbers ok, no spaces." %>
       </li>
-      <li class="required">
+      <li class="required" ng-model="user.email">
         <%= f.label :email %>
         <%= f.email_field :email, size: 40,
                           placeholder: "user@example.com" %>
       </li>
-      <li class="required">
+      <li class="required" ng-model="user.password">
         <%= f.label :password %>
         <%= f.password_field :password, size: 40,
                               placeholder: "At least 10 characters." %>
       </li>
-      <li class="required">
+      <li class="required" ng-model="user.passwordConfirmation">
         <%= f.label :password_confirmation, "Confirm Password" %>
         <%= f.password_field :password_confirmation, size: 40,
                               placeholder: "Same as above." %>

@@ -19,9 +19,11 @@
     <% end %>
   </div>
   <nav>
-    <p>
-      <%= link_to 'Add New Lesson', new_lesson_path, class: 'button' %>
-    </p>
+    <% if current_user_admin? %>
+      <p>
+        <%= link_to 'Add New Lesson', new_lesson_path, class: 'button' %>
+      </p>
+    <% end %>
   </nav>
 
 </div>

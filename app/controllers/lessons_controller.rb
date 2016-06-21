@@ -1,4 +1,6 @@
 class LessonsController < ApplicationController
+  before_action :require_signin, except: [:index, :show]
+  before_action :require_admin, except: [:index, :show]
 
   def index
     @lessons = Lesson.all
@@ -41,6 +43,12 @@ class LessonsController < ApplicationController
   end
 
 private
+
+  def require_admin
+    unless current_user_admin?
+      redirect_to root_url, alert: "Unauthorized access."
+    end
+  end
 
   def lesson_params
     params.require(:lesson).permit(:chapter, :title, :summary)

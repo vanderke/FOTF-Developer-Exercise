@@ -34,7 +34,7 @@ describe LessonsController do
     it "cannot access update" do
       patch :update, id: @lesson
 
-      expect(respons).to redirect_to(root_url)
+      expect(response).to redirect_to(root_url)
     end
 
     it "cannot access destroy" do
@@ -44,5 +44,5 @@ describe LessonsController do
     end
 
   end
-  
+
 end

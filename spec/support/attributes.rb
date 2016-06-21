@@ -14,3 +14,9 @@ def lesson_attributes(overrides = {})
     summary: "Stick to what you are called to do."
   }.merge(overrides)
 end
+
+def review_attributes(overrides = {})
+  {
+    comment: "And miles to go before I sleep..."
+  }
+end

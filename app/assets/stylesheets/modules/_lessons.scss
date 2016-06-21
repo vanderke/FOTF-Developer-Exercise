@@ -2,9 +2,16 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 .hero {
+  position: relative;
+  min-height: 31.25em;
+  height: auto !important;
+  margin-bottom: 1.25em;
   background-color: $sea-of-love-color;
   background-image: image-url("engaged_hero.jpg");
+  background-size: cover;
+  background-position: center center;
   background-repeat: no-repeat;
+  text-align: center;
 }
 
 li#create-lesson {

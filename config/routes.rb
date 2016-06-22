@@ -1,8 +1,9 @@
 Rails.application.routes.draw do
   resource :session
   resources :users
+  resources :lessons, except: [:show]
   resources :lessons do
-    resources :reviews
+    resources :reviews, only: [:index, :create, :new]
   end
 
   get 'signup', to: 'users#new'

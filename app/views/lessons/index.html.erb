@@ -12,9 +12,12 @@
           <p>Title: <%= lesson.title %></p>
           <p>Lesson: <%= lesson.summary %></p>
         </div>
-        <nav>
-          <%= link_to 'Show Lesson', lesson_path(lesson), class:"button" %>
-        </nav>
+        <div class="form-horizontal">
+          <nav>
+            <%= link_to 'Show Lesson', lesson_path(lesson), class:"button" %>
+            <%= link_to 'Read Reflections', lesson_reviews_path(lesson), class:"button" %>
+          </nav>
+        </div>
       </div>
     <% end %>
   </div>

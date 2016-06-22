@@ -18,5 +18,5 @@ end
 def review_attributes(overrides = {})
   {
     comment: "And miles to go before I sleep..."
-  }
+  }.merge(overrides)
 end

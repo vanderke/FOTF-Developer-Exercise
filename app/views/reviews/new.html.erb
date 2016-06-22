@@ -1,0 +1,18 @@
+<section class="l-container" >
+  <h1>Write a reflection for chapter: <%= @lesson.chapter %></h1>
+  <%= form_for [@lesson, @review] do |f| %>
+  <%= render "shared/errors", object: @review %>
+    <div class="row fieldset">
+      <ol>
+        <li class="required">
+          <%= f.label(:comment, "Reflection") %>
+          <%= f.text_area :comment, cols: 80, placeholder: "How does this chapter touch your heart?" %>
+        </li>
+      </ol>
+      <p>
+        <%= f.submit 'Post Reflection', class:"button" %>
+        <%= link_to "Cancel", lesson_reviews_path(@lesson), class: 'button' %>
+      </p>
+    <% end %>
+  </div>
+</section>

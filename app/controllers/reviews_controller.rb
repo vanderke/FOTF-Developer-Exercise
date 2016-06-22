@@ -1,5 +1,5 @@
 class ReviewsController < ApplicationController
-  before_action :require_signin
+  before_action :require_signin, only: [:new, :create]
   before_action :set_lesson
 
   def index

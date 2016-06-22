@@ -15,4 +15,5 @@ describe "Viewing a list of reviews" do
     expect(page).to have_text(review2.comment)
     expect(page).not_to have_text(review3.comment)
   end
+
 end

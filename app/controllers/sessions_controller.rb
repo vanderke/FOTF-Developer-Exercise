@@ -1,16 +1,22 @@
 class SessionsController < ApplicationController
+  respond_to :html, :json
+
   def new
   end
 
   def create
-    if user = User.authenticate(params[:username], params[:password])
-      session[:user_id] = user.id
-      flash[:notice] = "Welcome back, #{user.username}!"
-      redirect_to(session[:intended_url] || root_url)
-      session[:intended_url] = nil
-    else
-      flash.now[:alert] = "Invalid username or password."
-      render :new
+    respond_to do |format|
+      if user = User.authenticate(params[:username], params[:password])
+        session[:user_id] = user.id
+        flash[:notice] = "Welcome back, #{user.username}!"
+        format.html { redirect_to(session[:intended_url] || root_url) }
+        session[:intended_url] = nil
+        format.json { render json: @userj, status: :created, localation: @user }
+      else
+        flash.now[:alert] = "Invalid username or password."
+        format.html { render :new }
+        format.json { render json: @user.errors, status: :unprocessable_entity }
+      end
     end
   end
 

@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
   before_action :require_signin, except: [:new, :create]
-  before_action :require_correct_user, only: [:edit, :update, :destroy]
+  before_action :require_correct_user, only: [:edit, :update, :destroy, :show]
   respond_to :html, :json
 
   def new
@@ -17,7 +17,7 @@ class UsersController < ApplicationController
         format.json { render json: @user, status: :created, location: @user }
       else
         format.html { render :new }
-        format.json { render json: @user.errors, status: :unprocessable_entity}   
+        format.json { render json: @user.errors, status: :unprocessable_entity}
       end
     end
   end

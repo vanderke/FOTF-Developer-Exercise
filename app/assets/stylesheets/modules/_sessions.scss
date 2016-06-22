@@ -1,6 +1,11 @@
 // Place all the styles related to the sessions controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-.user_link {
-  padding-top: em(5px);
+#user_link {
+  padding-left: em(75px);
+  padding-right: em(75px);
+  vertical-align: middle;
+  text-align: center;
+  font-size: em(13px);
+  margin-right: em(25px);
 }

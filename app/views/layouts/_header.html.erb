@@ -4,7 +4,7 @@
       <%= link_to "Ready To Wed", root_path, class: "title"%>
       <ul class="nav">
         <% if current_user %>
-          <li class="user_link"><%= link_to current_user.username, current_user %></li>
+          <li id="user_link" class="title button"><%= link_to current_user.username, current_user %></li>
           <li><%= link_to "Sign Out", session_path, method: :delete, class: "button" %></li>
 
         <% else %>

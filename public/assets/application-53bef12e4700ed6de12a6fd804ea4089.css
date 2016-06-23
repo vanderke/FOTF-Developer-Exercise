@@ -1,0 +1,1574 @@
+/* line 9, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/base/_helpers.scss */
+.txt-truncate {
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+}
+
+/* line 18, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/base/_helpers.scss */
+.txt-break {
+  word-break: break-all;
+  word-break: break-word;
+  word-wrap: break-word;
+}
+
+/* line 5, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/base/_base.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 9, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/base/_base.scss */
+html {
+  font-size: 16px;
+}
+
+/* line 13, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/base/_base.scss */
+body {
+  font-family: "Century Gothic", "Avant Garde", "Candara", "Calibri", sans-serif;
+  font-size: 100%;
+  line-height: 1.6;
+  color: #333333;
+  background-color: #e94e77;
+}
+
+/* line 21, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/base/_base.scss */
+a {
+  color: #c6e5d9;
+}
+/* line 25, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/base/_base.scss */
+a:hover, a:focus {
+  color: #a3d5c2;
+}
+
+/* line 46, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/base/_base.scss */
+input[type="color"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week"],
+textarea {
+  border: 1px solid #cccccc;
+  padding: 6px;
+  border-radius: 3px;
+}
+
+/* line 54, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/base/_base.scss */
+table {
+  max-width: 100%;
+  background-color: transparent;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 65, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/base/_base.scss */
+img,
+object,
+embed {
+  max-width: 100%;
+}
+
+/* line 11, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/base/_content.scss */
+.primary-headline, .secondary-headline {
+  margin-top: 0;
+  font-family: "Century Gothic", "Avant Garde", "Candara", "Calibri", sans-serif;
+  line-height: 1.2;
+}
+
+/* line 7, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/base/_utilities.scss */
+.txt-left {
+  text-align: left;
+}
+
+/* line 11, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/base/_utilities.scss */
+.txt-right {
+  text-align: right;
+}
+
+/* line 15, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/base/_utilities.scss */
+.txt-center {
+  text-align: center;
+}
+
+/* line 19, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/base/_utilities.scss */
+.txt-justify {
+  text-align: justify;
+}
+
+/* line 25, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/base/_utilities.scss */
+.ptn, .pvn, .pan {
+  padding-top: 0 !important;
+}
+
+/* line 26, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/base/_utilities.scss */
+.pts, .pvs, .pas {
+  padding-top: 12.8px !important;
+}
+
+/* line 27, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/base/_utilities.scss */
+.ptm, .pvm, .pam {
+  padding-top: 25.6px !important;
+}
+
+/* line 28, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/base/_utilities.scss */
+.ptl, .pvl, .pal {
+  padding-top: 51.2px !important;
+}
+
+/* line 29, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/base/_utilities.scss */
+.prn, .phn, .pan {
+  padding-right: 0 !important;
+}
+
+/* line 30, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/base/_utilities.scss */
+.prs, .phs, .pas {
+  padding-right: 12.8px !important;
+}
+
+/* line 31, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/base/_utilities.scss */
+.prm, .phm, .pam {
+  padding-right: 25.6px !important;
+}
+
+/* line 32, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/base/_utilities.scss */
+.prl, .phl, .pal {
+  padding-right: 51.2px !important;
+}
+
+/* line 33, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/base/_utilities.scss */
+.pbn, .pvn, .pan {
+  padding-bottom: 0 !important;
+}
+
+/* line 34, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/base/_utilities.scss */
+.pbs, .pvs, .pas {
+  padding-bottom: 12.8px !important;
+}
+
+/* line 35, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/base/_utilities.scss */
+.pbm, .pvm, .pam {
+  padding-bottom: 25.6px !important;
+}
+
+/* line 36, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/base/_utilities.scss */
+.pbl, .pvl, .pal {
+  padding-bottom: 51.2px !important;
+}
+
+/* line 37, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/base/_utilities.scss */
+.pln, .phn, .pan {
+  padding-left: 0 !important;
+}
+
+/* line 38, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/base/_utilities.scss */
+.pls, .phs, .pas {
+  padding-left: 12.8px !important;
+}
+
+/* line 39, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/base/_utilities.scss */
+.plm, .phm, .pam {
+  padding-left: 25.6px !important;
+}
+
+/* line 40, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/base/_utilities.scss */
+.pll, .phl, .pal {
+  padding-left: 51.2px !important;
+}
+
+/* line 41, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/base/_utilities.scss */
+.mtn, .mvn, .man {
+  margin-top: 0 !important;
+}
+
+/* line 42, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/base/_utilities.scss */
+.mts, .mvs, .mas {
+  margin-top: 12.8px !important;
+}
+
+/* line 43, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/base/_utilities.scss */
+.mtm, .mvm, .mam {
+  margin-top: 25.6px !important;
+}
+
+/* line 44, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/base/_utilities.scss */
+.mtl, .mvl, .mal {
+  margin-top: 51.2px !important;
+}
+
+/* line 45, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/base/_utilities.scss */
+.mrn, .mhn, .man {
+  margin-right: 0 !important;
+}
+
+/* line 46, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/base/_utilities.scss */
+.mrs, .mhs, .mas {
+  margin-right: 12.8px !important;
+}
+
+/* line 47, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/base/_utilities.scss */
+.mrm, .mhm, .mam {
+  margin-right: 25.6px !important;
+}
+
+/* line 48, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/base/_utilities.scss */
+.mrl, .mhl, .mal {
+  margin-right: 51.2px !important;
+}
+
+/* line 49, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/base/_utilities.scss */
+.mbn, .mvn, .man {
+  margin-bottom: 0 !important;
+}
+
+/* line 50, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/base/_utilities.scss */
+.mbs, .mvs, .mas {
+  margin-bottom: 12.8px !important;
+}
+
+/* line 51, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/base/_utilities.scss */
+.mbm, .mvm, .mam {
+  margin-bottom: 25.6px !important;
+}
+
+/* line 52, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/base/_utilities.scss */
+.mbl, .mvl, .mal {
+  margin-bottom: 51.2px !important;
+}
+
+/* line 53, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/base/_utilities.scss */
+.mln, .mhn, .man {
+  margin-left: 0 !important;
+}
+
+/* line 54, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/base/_utilities.scss */
+.mls, .mhs, .mas {
+  margin-left: 12.8px !important;
+}
+
+/* line 55, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/base/_utilities.scss */
+.mlm, .mhm, .mam {
+  margin-left: 25.6px !important;
+}
+
+/* line 56, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/base/_utilities.scss */
+.mll, .mhl, .mal {
+  margin-left: 51.2px !important;
+}
+
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+/* line 10, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/base/_normalize.scss */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+/* line 20, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/base/_normalize.scss */
+body {
+  margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+/* line 46, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/base/_normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+/* line 58, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/base/_normalize.scss */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 68, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/base/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+/* line 79, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/base/_normalize.scss */
+[hidden],
+template {
+  display: none;
+}
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+/* line 90, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/base/_normalize.scss */
+a {
+  background-color: transparent;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+/* line 99, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/base/_normalize.scss */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+/* line 110, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/base/_normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+/* line 119, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/base/_normalize.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+/* line 127, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/base/_normalize.scss */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+/* line 136, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/base/_normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+/* line 145, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/base/_normalize.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+/* line 154, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/base/_normalize.scss */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 164, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/base/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 171, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/base/_normalize.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 175, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/base/_normalize.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+/* line 186, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/base/_normalize.scss */
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+/* line 194, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/base/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+/* line 205, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/base/_normalize.scss */
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+/* line 213, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/base/_normalize.scss */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Contain overflow in all browsers.
+ */
+/* line 223, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/base/_normalize.scss */
+pre {
+  overflow: auto;
+}
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+/* line 234, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/base/_normalize.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+/* line 258, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/base/_normalize.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+/* line 268, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/base/_normalize.scss */
+button {
+  overflow: visible;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+/* line 280, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/base/_normalize.scss */
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* line 295, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/base/_normalize.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+/* line 305, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/base/_normalize.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+/* line 314, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/base/_normalize.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 324, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/base/_normalize.scss */
+input {
+  line-height: normal;
+}
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+/* line 337, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/base/_normalize.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+/* line 349, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/base/_normalize.scss */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 359, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/base/_normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+/* line 373, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/base/_normalize.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+/* line 381, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/base/_normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/* line 392, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/base/_normalize.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+/* line 401, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/base/_normalize.scss */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+/* line 410, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/base/_normalize.scss */
+optgroup {
+  font-weight: bold;
+}
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+/* line 421, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/base/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 427, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/base/_normalize.scss */
+td,
+th {
+  padding: 0;
+}
+
+/* line 8, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/layout/_layout.scss */
+.l-container {
+  margin: 0 auto;
+  max-width: 60rem;
+  width: 90%;
+}
+
+/* line 14, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/layout/_layout.scss */
+.l-section {
+  margin-bottom: 25.6px;
+}
+
+/* line 20, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/layout/_layout.scss */
+.l-left {
+  float: left;
+}
+
+/* line 24, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/layout/_layout.scss */
+.l-right {
+  float: right;
+}
+
+/* line 28, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/layout/_layout.scss */
+.header {
+  display: block;
+}
+
+/* line 32, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/layout/_layout.scss */
+.mast-container {
+  display: table;
+  padding: 15px 0;
+  width: 100%;
+}
+
+/* line 38, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/layout/_layout.scss */
+.nav {
+  margin: 0;
+  padding: 0;
+  text-align: right;
+  display: inline-flex;
+  float: right;
+}
+/* line 45, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/layout/_layout.scss */
+.nav li {
+  list-style: none;
+  padding-right: 1.5625em;
+}
+/* line 49, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/layout/_layout.scss */
+.nav li:last-child {
+  padding-right: 0;
+}
+
+/* line 55, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/layout/_layout.scss */
+#wrapper {
+  padding: 2.1875em;
+  min-height: 31.25em;
+  overflow: hidden;
+  background-color: white;
+}
+/* line 61, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/layout/_layout.scss */
+#wrapper h1 {
+  color: #d68189;
+}
+
+/* line 49, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/base/_helpers.scss */
+.row::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+@media screen and (min-width: 43.75em) {
+  /* line 10, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/layout/_grid.scss */
+  .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+    float: left;
+    margin-left: 2.12766%;
+    min-height: 1px;
+  }
+  /* line 16, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/layout/_grid.scss */
+  .col-1:first-child, .col-2:first-child, .col-3:first-child, .col-4:first-child, .col-5:first-child, .col-6:first-child, .col-7:first-child, .col-8:first-child, .col-9:first-child, .col-10:first-child, .col-11:first-child, .col-12:first-child {
+    margin-left: 0;
+  }
+  /* line 20, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/layout/_grid.scss */
+  .col-centered.col-1, .col-centered.col-2, .col-centered.col-3, .col-centered.col-4, .col-centered.col-5, .col-centered.col-6, .col-centered.col-7, .col-centered.col-8, .col-centered.col-9, .col-centered.col-10, .col-centered.col-11, .col-centered.col-12 {
+    float: none;
+    margin: 0 auto;
+  }
+  /* line 24, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/layout/_grid.scss */
+  .col-centered.col-1:first-child, .col-centered.col-2:first-child, .col-centered.col-3:first-child, .col-centered.col-4:first-child, .col-centered.col-5:first-child, .col-centered.col-6:first-child, .col-centered.col-7:first-child, .col-centered.col-8:first-child, .col-centered.col-9:first-child, .col-centered.col-10:first-child, .col-centered.col-11:first-child, .col-centered.col-12:first-child {
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 43.75em) {
+  /* line 32, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/layout/_grid.scss */
+  .col-1 {
+    width: 6.38298%;
+  }
+}
+
+@media screen and (min-width: 43.75em) {
+  /* line 32, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/layout/_grid.scss */
+  .col-2 {
+    width: 14.89362%;
+  }
+}
+
+@media screen and (min-width: 43.75em) {
+  /* line 32, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/layout/_grid.scss */
+  .col-3 {
+    width: 23.40426%;
+  }
+}
+
+@media screen and (min-width: 43.75em) {
+  /* line 32, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/layout/_grid.scss */
+  .col-4 {
+    width: 31.91489%;
+  }
+}
+
+@media screen and (min-width: 43.75em) {
+  /* line 32, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/layout/_grid.scss */
+  .col-5 {
+    width: 40.42553%;
+  }
+}
+
+@media screen and (min-width: 43.75em) {
+  /* line 32, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/layout/_grid.scss */
+  .col-6 {
+    width: 48.93617%;
+  }
+}
+
+@media screen and (min-width: 43.75em) {
+  /* line 32, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/layout/_grid.scss */
+  .col-7 {
+    width: 57.44681%;
+  }
+}
+
+@media screen and (min-width: 43.75em) {
+  /* line 32, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/layout/_grid.scss */
+  .col-8 {
+    width: 65.95745%;
+  }
+}
+
+@media screen and (min-width: 43.75em) {
+  /* line 32, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/layout/_grid.scss */
+  .col-9 {
+    width: 74.46809%;
+  }
+}
+
+@media screen and (min-width: 43.75em) {
+  /* line 32, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/layout/_grid.scss */
+  .col-10 {
+    width: 82.97872%;
+  }
+}
+
+@media screen and (min-width: 43.75em) {
+  /* line 32, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/layout/_grid.scss */
+  .col-11 {
+    width: 91.48936%;
+  }
+}
+
+@media screen and (min-width: 43.75em) {
+  /* line 32, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/layout/_grid.scss */
+  .col-12 {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 43.75em) {
+  /* line 48, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/layout/_grid.scss */
+  .push-1 {
+    margin-left: 10.6383%;
+  }
+}
+@media screen and (min-width: 43.75em) {
+  /* line 53, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/layout/_grid.scss */
+  .push-1:first-child {
+    margin-left: 8.51064%;
+  }
+}
+
+@media screen and (min-width: 43.75em) {
+  /* line 48, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/layout/_grid.scss */
+  .push-2 {
+    margin-left: 19.14894%;
+  }
+}
+@media screen and (min-width: 43.75em) {
+  /* line 53, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/layout/_grid.scss */
+  .push-2:first-child {
+    margin-left: 17.02128%;
+  }
+}
+
+@media screen and (min-width: 43.75em) {
+  /* line 48, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/layout/_grid.scss */
+  .push-3 {
+    margin-left: 27.65957%;
+  }
+}
+@media screen and (min-width: 43.75em) {
+  /* line 53, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/layout/_grid.scss */
+  .push-3:first-child {
+    margin-left: 25.53191%;
+  }
+}
+
+@media screen and (min-width: 43.75em) {
+  /* line 48, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/layout/_grid.scss */
+  .push-4 {
+    margin-left: 36.17021%;
+  }
+}
+@media screen and (min-width: 43.75em) {
+  /* line 53, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/layout/_grid.scss */
+  .push-4:first-child {
+    margin-left: 34.04255%;
+  }
+}
+
+@media screen and (min-width: 43.75em) {
+  /* line 48, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/layout/_grid.scss */
+  .push-5 {
+    margin-left: 44.68085%;
+  }
+}
+@media screen and (min-width: 43.75em) {
+  /* line 53, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/layout/_grid.scss */
+  .push-5:first-child {
+    margin-left: 42.55319%;
+  }
+}
+
+@media screen and (min-width: 43.75em) {
+  /* line 48, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/layout/_grid.scss */
+  .push-6 {
+    margin-left: 53.19149%;
+  }
+}
+@media screen and (min-width: 43.75em) {
+  /* line 53, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/layout/_grid.scss */
+  .push-6:first-child {
+    margin-left: 51.06383%;
+  }
+}
+
+@media screen and (min-width: 43.75em) {
+  /* line 48, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/layout/_grid.scss */
+  .push-7 {
+    margin-left: 61.70213%;
+  }
+}
+@media screen and (min-width: 43.75em) {
+  /* line 53, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/layout/_grid.scss */
+  .push-7:first-child {
+    margin-left: 59.57447%;
+  }
+}
+
+@media screen and (min-width: 43.75em) {
+  /* line 48, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/layout/_grid.scss */
+  .push-8 {
+    margin-left: 70.21277%;
+  }
+}
+@media screen and (min-width: 43.75em) {
+  /* line 53, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/layout/_grid.scss */
+  .push-8:first-child {
+    margin-left: 68.08511%;
+  }
+}
+
+@media screen and (min-width: 43.75em) {
+  /* line 48, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/layout/_grid.scss */
+  .push-9 {
+    margin-left: 78.7234%;
+  }
+}
+@media screen and (min-width: 43.75em) {
+  /* line 53, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/layout/_grid.scss */
+  .push-9:first-child {
+    margin-left: 76.59574%;
+  }
+}
+
+@media screen and (min-width: 43.75em) {
+  /* line 48, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/layout/_grid.scss */
+  .push-10 {
+    margin-left: 87.23404%;
+  }
+}
+@media screen and (min-width: 43.75em) {
+  /* line 53, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/layout/_grid.scss */
+  .push-10:first-child {
+    margin-left: 85.10638%;
+  }
+}
+
+@media screen and (min-width: 43.75em) {
+  /* line 48, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/layout/_grid.scss */
+  .push-11 {
+    margin-left: 95.74468%;
+  }
+}
+@media screen and (min-width: 43.75em) {
+  /* line 53, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/layout/_grid.scss */
+  .push-11:first-child {
+    margin-left: 93.61702%;
+  }
+}
+
+@media screen and (min-width: 43.75em) {
+  /* line 48, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/layout/_grid.scss */
+  .push-12 {
+    margin-left: 104.25532%;
+  }
+}
+@media screen and (min-width: 43.75em) {
+  /* line 53, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/layout/_grid.scss */
+  .push-12:first-child {
+    margin-left: 102.12766%;
+  }
+}
+
+/* line 1, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/layout/_header.scss */
+#primary-nav {
+  background-color: #e94e77;
+}
+
+/* line 5, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/layout/_header.scss */
+.title {
+  text-decoration: none;
+  font-family: fantasy;
+  font: "Papyrus", "Storybook", "Lucinda Grande", monospace;
+  font-size: 22px;
+  vertical-align: middle;
+}
+
+/* line 1, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/layout/_footer.scss */
+.footer {
+  background-color: #e94e77;
+  display: inline-block;
+  width: 100%;
+  color: #f4ead5;
+}
+
+/* line 4, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/modules/_buttons.scss */
+.button {
+  display: inline-block;
+  margin: 0;
+  padding: 8px 12px;
+  cursor: pointer;
+  line-height: normal;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  user-select: none;
+  white-space: nowrap;
+  color: #f4ead5;
+  background: #d68189;
+  border: 1px solid #c6a49a;
+  border-radius: 3px;
+  appearance: none;
+}
+/* line 22, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/modules/_buttons.scss */
+.button:hover, .button:focus {
+  text-decoration: none;
+  color: #e9d6ad;
+  background-color: #c95b65;
+}
+/* line 29, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/modules/_buttons.scss */
+.button:disabled, .button.is-disabled {
+  cursor: default;
+}
+
+/* line 41, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/modules/_buttons.scss */
+.button-pseudo {
+  display: inline-block;
+  padding: 8px 0;
+  line-height: normal;
+  vertical-align: middle;
+  background: transparent;
+  border: 0;
+}
+/* line 49, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/modules/_buttons.scss */
+.button + .button-pseudo {
+  margin-left: 25.6px;
+}
+
+/* line 22, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/modules/_forms.scss */
+.form-horizontal input[type="color"],
+.form-horizontal input[type="date"],
+.form-horizontal input[type="datetime"],
+.form-horizontal input[type="datetime-local"],
+.form-horizontal input[type="email"],
+.form-horizontal input[type="month"],
+.form-horizontal input[type="number"],
+.form-horizontal input[type="password"],
+.form-horizontal input[type="search"],
+.form-horizontal input[type="tel"],
+.form-horizontal input[type="text"],
+.form-horizontal input[type="time"],
+.form-horizontal input[type="url"],
+.form-horizontal input[type="week"],
+.form-horizontal textarea,
+.form-horizontal select {
+  margin-right: 12.8px;
+}
+
+/* line 30, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/modules/_forms.scss */
+.form-vertical label {
+  display: block;
+  margin-bottom: 0.3125em;
+}
+/* line 50, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/modules/_forms.scss */
+.form-vertical input[type="color"],
+.form-vertical input[type="date"],
+.form-vertical input[type="datetime"],
+.form-vertical input[type="datetime-local"],
+.form-vertical input[type="email"],
+.form-vertical input[type="month"],
+.form-vertical input[type="number"],
+.form-vertical input[type="password"],
+.form-vertical input[type="search"],
+.form-vertical input[type="tel"],
+.form-vertical input[type="text"],
+.form-vertical input[type="time"],
+.form-vertical input[type="url"],
+.form-vertical input[type="week"],
+.form-vertical textarea,
+.form-vertical select {
+  display: block;
+  margin-bottom: 25.6px;
+}
+
+/* line 59, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/modules/_forms.scss */
+.form-pair.group {
+  margin-bottom: 25.6px;
+  display: flex;
+  flex-wrap: wrap;
+}
+/* line 65, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/modules/_forms.scss */
+.form-pair label {
+  margin-bottom: 0.3125em;
+  flex: 0 0 7.5em;
+  margin-right: 0.625em;
+}
+/* line 71, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/modules/_forms.scss */
+.form-pair input {
+  flex: 1 1 12em;
+}
+
+/* line 76, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/modules/_forms.scss */
+.form-field {
+  margin-bottom: 25.6px;
+}
+
+/* line 83, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/modules/_forms.scss */
+.input-checkbox,
+.input-radio {
+  padding-left: 25.6px;
+}
+/* line 87, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/modules/_forms.scss */
+.input-checkbox input[type="checkbox"],
+.input-checkbox input[type="radio"],
+.input-radio input[type="checkbox"],
+.input-radio input[type="radio"] {
+  float: left;
+  margin: 5px 0 0 -25.6px;
+}
+
+/* line 93, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/modules/_forms.scss */
+.fieldset {
+  margin-bottom: 1.6em;
+  padding: 0.625em;
+  background-color: #c6e5d9;
+  border: 3px solid #c6a49a;
+  border-radius: 0.9375em;
+  box-shadow: #f4ead5 0 0 8px;
+}
+/* line 101, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/modules/_forms.scss */
+.fieldset.reviews {
+  background-color: #c6a49a;
+  margin-top: 1.5625em;
+  padding-bottom: 1.5625em;
+}
+/* line 107, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/modules/_forms.scss */
+.fieldset label {
+  color: #e94e77;
+  font-size: 1.2em;
+  display: block;
+  margin-bottom: .25em;
+}
+/* line 115, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/modules/_forms.scss */
+.fieldset ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 120, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/modules/_forms.scss */
+.fieldset ol li {
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+/* line 124, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/modules/_forms.scss */
+.fieldset ol li.required label {
+  font-weight: bold;
+}
+/* line 131, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/modules/_forms.scss */
+.fieldset input,
+.fieldset label {
+  display: block;
+}
+/* line 136, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/modules/_forms.scss */
+.fieldset input,
+.fieldset textarea {
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 6px;
+  box-shadow: 0px;
+  border: 1px solid #c6a49a;
+}
+/* line 144, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/modules/_forms.scss */
+.fieldset input[type="checkbox"] {
+  width: 24px;
+  height: 24px;
+  float: left;
+}
+/* line 150, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/modules/_forms.scss */
+.fieldset.fields_with_errors {
+  display: inline;
+}
+/* line 152, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/modules/_forms.scss */
+.fieldset.fields_with_errors label {
+  color: #dc3d3d;
+}
+/* line 155, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/modules/_forms.scss */
+.fieldset.fields_with_errors input, .fieldset.fields_with_errors textarea, .fieldset.fields_with_errors select {
+  background: #ffffcc;
+}
+/* line 161, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/modules/_forms.scss */
+.fieldset p input {
+  display: inline-block;
+}
+/* line 164, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/modules/_forms.scss */
+.fieldset p a.button {
+  padding: 10px 15px;
+}
+
+/* line 4, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/modules/_lists.scss */
+.list-plain {
+  margin-top: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+/* line 10, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/modules/_lists.scss */
+.list-horizontal {
+  margin-top: 0;
+  padding-left: 0;
+}
+/* line 14, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/modules/_lists.scss */
+.list-horizontal > li {
+  display: inline-block;
+  margin-right: 25.6px;
+}
+/* line 18, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/modules/_lists.scss */
+.list-horizontal > li:last-child {
+  margin-right: 0;
+}
+
+/* line 4, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/modules/_notifications.scss */
+.notification {
+  padding: 25.6px;
+  margin-bottom: 25.6px;
+  border: 1px solid;
+  border-radius: 4px;
+  font-weight: 600;
+}
+/* line 11, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/modules/_notifications.scss */
+.notification.title {
+  margin: 0 0 12.8px 0;
+  font-size: 1.25em;
+}
+/* line 16, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/modules/_notifications.scss */
+.notification.alert {
+  color: #e94e77;
+  background-color: #fbe4ea;
+  border-color: #ba3e5f;
+}
+/* line 20, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/modules/_notifications.scss */
+.notification.warning {
+  color: #d68189;
+  background-color: #f8eced;
+  border-color: #ab676d;
+}
+/* line 24, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/modules/_notifications.scss */
+.notification.success {
+  color: #c6e5d9;
+  background-color: #f6fbf9;
+  border-color: #9eb7ad;
+}
+/* line 28, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/modules/_notifications.scss */
+.notification.notice {
+  color: #c6e5d9;
+  background-color: #f6fbf9;
+  border-color: #9eb7ad;
+}
+
+/* line 4, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/modules/_tables.scss */
+.table {
+  margin-bottom: 25.6px;
+  width: 100%;
+}
+/* line 8, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/modules/_tables.scss */
+.table thead {
+  border-bottom: 1px solid #cccccc;
+}
+/* line 13, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/modules/_tables.scss */
+.table tbody tr {
+  border-bottom: 1px solid #cccccc;
+}
+/* line 19, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/modules/_tables.scss */
+.table th,
+.table td {
+  padding: 0.625em;
+}
+/* line 23, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/modules/_tables.scss */
+.table th {
+  text-align: left;
+  font-weight: bold;
+}
+/* line 31, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/modules/_tables.scss */
+.table.striped tbody tr:nth-child(odd) {
+  background-color: #f3f3f3;
+}
+/* line 41, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/modules/_tables.scss */
+.table.hover tbody tr:hover {
+  background-color: #eee;
+}
+
+/* line 51, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/modules/_tables.scss */
+.table-wrapper {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 12.8px;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* line 59, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/modules/_tables.scss */
+.scrollable {
+  overflow: auto;
+  overflow-y: hidden;
+}
+
+/* line 5, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/modules/_tiles.scss */
+.tile.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-left: -12.8px;
+}
+/* line 17, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/modules/_tiles.scss */
+.tile.item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12.8px;
+}
+@media screen and (min-width: 31.25em) {
+  /* line 17, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/modules/_tiles.scss */
+  .tile.item {
+    padding-left: 12.8px;
+    width: 50%;
+  }
+}
+@media screen and (min-width: 43.75em) {
+  /* line 29, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/modules/_tiles.scss */
+  .tile.container--three .tile__item {
+    width: 33.33333%;
+  }
+}
+@media screen and (min-width: 43.75em) {
+  /* line 37, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/modules/_tiles.scss */
+  .tile.container--four .tile__item {
+    width: 33.33333%;
+  }
+}
+@media screen and (min-width: 56.25em) {
+  /* line 37, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/modules/_tiles.scss */
+  .tile.container--four .tile__item {
+    width: 25%;
+  }
+}
+/* line 49, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/base/_helpers.scss */
+.no-flexbox .tile.container::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+/* line 56, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/modules/_tiles.scss */
+.no-flexbox .tile.item {
+  float: left;
+  margin-bottom: 12.8px;
+}
+@media screen and (min-width: 31.25em) {
+  /* line 56, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/modules/_tiles.scss */
+  .no-flexbox .tile.item {
+    margin-left: 2%;
+    width: 49%;
+  }
+  /* line 64, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/modules/_tiles.scss */
+  .no-flexbox .tile.item:nth-child(2n+1) {
+    clear: left;
+    margin-left: 0;
+  }
+}
+@media screen and (min-width: 43.75em) {
+  /* line 72, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/modules/_tiles.scss */
+  .no-flexbox .tile.container--three .tile__item {
+    margin-left: 2%;
+    width: 32%;
+  }
+  /* line 77, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/modules/_tiles.scss */
+  .no-flexbox .tile.container--three .tile__item:nth-child(2n+1) {
+    clear: none;
+    margin-left: 2%;
+  }
+  /* line 82, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/modules/_tiles.scss */
+  .no-flexbox .tile.container--three .tile__item:nth-child(3n+1) {
+    clear: left;
+    margin-left: 0;
+  }
+}
+@media screen and (min-width: 43.75em) {
+  /* line 91, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/modules/_tiles.scss */
+  .no-flexbox .tile.container--four .tile__item {
+    margin-left: 2%;
+    width: 32%;
+  }
+  /* line 96, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/modules/_tiles.scss */
+  .no-flexbox .tile.container--four .tile__item:nth-child(2n+1) {
+    clear: none;
+    margin-left: 2%;
+  }
+  /* line 101, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/modules/_tiles.scss */
+  .no-flexbox .tile.container--four .tile__item:nth-child(3n+1) {
+    clear: left;
+    margin-left: 0;
+  }
+}
+@media screen and (min-width: 56.25em) {
+  /* line 91, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/modules/_tiles.scss */
+  .no-flexbox .tile.container--four .tile__item {
+    margin-left: 2%;
+    width: 23.5%;
+  }
+  /* line 111, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/modules/_tiles.scss */
+  .no-flexbox .tile.container--four .tile__item:nth-child(3n+1) {
+    clear: none;
+    margin-left: 2%;
+  }
+  /* line 116, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/modules/_tiles.scss */
+  .no-flexbox .tile.container--four .tile__item:nth-child(4n+1) {
+    clear: left;
+    margin-left: 0;
+  }
+}
+
+/* line 1, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/modules/_lessons.scss */
+section#home {
+  position: relative;
+  min-height: 31.25em;
+  height: auto !important;
+  margin-bottom: 1.25em;
+  background-color: #c6e5d9;
+  background-image: url(/assets/engaged_hero.svg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+/* line 14, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/modules/_lessons.scss */
+li#create-lesson {
+  list-style: none;
+}
+
+/* line 18, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/modules/_lessons.scss */
+nav.lesson-options {
+  background-color: yellow;
+}
+
+/* line 6, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/modules/_users.scss */
+section#errors {
+  margin: 1em 0;
+  padding: 1em;
+  background: #ffffcc;
+}
+/* line 11, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/modules/_users.scss */
+section#errors h2 {
+  color: #dc3d3d;
+  font-size: 1.25em;
+}
+/* line 16, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/modules/_users.scss */
+section#errors h3 {
+  font-size: 1em;
+  margin: .5em 0;
+  font-weight: bold;
+}
+
+/* line 4, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/modules/_sessions.scss */
+#user_link {
+  padding-left: 4.6875em;
+  padding-right: 4.6875em;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 0.8125em;
+  margin-right: 1.5625em;
+}
+
+/* line 5, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/modules/_reviews.scss */
+.review-lesson h1,
+.review-lesson h2,
+.review-lesson h3 {
+  color: #d68189;
+  font: "Papyrus", "Storybook", "Lucinda Grande", sans-serif;
+}
+
+/* line 7, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/states/_display.scss */
+.is-hidden {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+/* line 14, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/states/_display.scss */
+.is-hidden-visually {
+  position: absolute !important;
+  padding: 0;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+  border: 0;
+}
+
+/* line 26, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/states/_display.scss */
+.is-invisible {
+  visibility: hidden;
+}
+
+/* line 30, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/states/_display.scss */
+.is-visible {
+  visibility: visible;
+}
+
+/* line 34, /Users/timproctor/Documents/Projects/FOTF-Developer-Exercise/app/assets/stylesheets/states/_display.scss */
+:focus {
+  outline-color: #c6a49a;
+}

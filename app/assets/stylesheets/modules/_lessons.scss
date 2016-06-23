@@ -1,14 +1,20 @@
-.hero {
+section#home {
   position: relative;
   min-height: 31.25em;
   height: auto !important;
   margin-bottom: 1.25em;
   background-color: $sea-of-love-color;
-  background-image: image-url("engaged_hero.jpg");
+  background-image: image-url("engaged_hero.svg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  border: 3px solid $sand-of-love-color;
+  border-radius: em(15px);
   text-align: center;
+}
+
+#cover {
+  line-height: 0;
 }
 
 li#create-lesson {

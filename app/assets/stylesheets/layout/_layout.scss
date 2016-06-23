@@ -30,14 +30,13 @@
 }
 
 .mast-container {
-  display: table;
-  padding: 15px 0;
   width: 100%;
+  display: block;
 }
 
 .nav {
   margin: 0;
-  padding: 0;
+  padding-top: em(27px);
   text-align: right;
   display: inline-flex;
   float: right;

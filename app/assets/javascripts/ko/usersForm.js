@@ -17,6 +17,6 @@ console.log("I'm in this thing");
 // Use the object as a Promise
 }
 
-$(document).ready(function() {
-  ko.applyBindings(new getUserModel());
-});
+// $(document).ready(function() {
+//   ko.applyBindings(new getUserModel());
+// });

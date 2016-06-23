@@ -11,7 +11,7 @@ class SessionsController < ApplicationController
         flash[:notice] = "Welcome back, #{user.username}!"
         format.html { redirect_to(session[:intended_url] || root_url) }
         session[:intended_url] = nil
-        format.json { render json: @userj, status: :created, localation: @user }
+        format.json { render json: @user, status: :created, localation: @user }
       else
         flash.now[:alert] = "Invalid username or password."
         format.html { render :new }

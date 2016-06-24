@@ -1,7 +1,6 @@
 class UsersController < ApplicationController
   before_action :require_signin, except: [:new, :create]
   before_action :require_correct_user, only: [:edit, :update, :destroy, :show]
-  respond_to :html, :json
 
   def new
     @user = User.new
@@ -14,7 +13,7 @@ class UsersController < ApplicationController
       session[:user_id] = @user.id
       redirect_to @user, notice: "Thanks, #{@user.username} for signing up!"
     else
-      render :new 
+      render :new
     end
   end
 

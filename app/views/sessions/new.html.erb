@@ -1,0 +1,21 @@
+<section class="l-container">
+  <h1>Sign In</h1>
+
+  <%= form_tag(session_path) do %>
+    <div class="fieldset">
+      <ol>
+        <li class="required">
+          <%= label_tag :username %>
+          <%= text_field_tag :username, nil, autofocus: true %>
+        </li>
+        <li class="required">
+          <%= label_tag :password %>
+          <%= password_field_tag :password %>
+        </li>
+        <p>
+          <%= submit_tag "Sign In", class: "button"%>
+        </p>
+      </ol>
+  <% end %>
+    </div>
+</section>

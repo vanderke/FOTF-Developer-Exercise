@@ -1,0 +1,5 @@
+<section class="l-container txt-center">
+  <% flash.each do |key, value| %>
+    <%= content_tag(:p, value, :class => "notification #{key}") %>
+  <% end %>
+</section>  

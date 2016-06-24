@@ -1,0 +1,34 @@
+<%= form_for(@user) do |f| %>
+  <%= render "shared/errors", object: @user %>
+  <div class="fieldset">
+    <ol>
+      <li class="required">
+        <%= f.label :username %>
+        <%= f.text_field :username, size: 40, autofocus: true,
+                         placeholder: "Letters and numbers ok, no spaces." %>
+      </li>
+      <li class="required">
+        <%= f.label :email %>
+        <%= f.email_field :email, size: 40,
+                          placeholder: "user@example.com" %>
+      </li>
+      <li class="required">
+        <%= f.label :password %>
+        <%= f.password_field :password, size: 40,
+                              placeholder: "At least 10 characters." %>
+      </li>
+      <li class="required">
+        <%= f.label :password_confirmation, "Confirm Password" %>
+        <%= f.password_field :password_confirmation, size: 40,
+                              placeholder: "Same as above." %>
+      </li>
+    </ol>
+    <p>
+      <% if @user.new_record? %>
+        <%= f.submit "Create Account", class:"button" %>
+      <% else %>
+        <%= f.submit "Update Account", class:"button" %>
+      <% end %>
+    </p>
+  </div>
+<% end %>

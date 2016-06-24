@@ -1,0 +1,31 @@
+<section id="home" class="l-container">
+  <p class="title txt-center">
+    A New 12-Week Course For Engaged Couples
+  </p>
+</section>
+<section class="l-container">
+  <div>
+    <% @lessons.each do |lesson| %>
+      <div class="row fieldset">
+        <div class="col-12 form-vertical">
+          <p>Chapter: <%= lesson.chapter %></p>
+          <p>Title: <%= lesson.title %></p>
+          <p>Lesson: <%= lesson.summary %></p>
+        </div>
+        <div class="form-horizontal">
+          <nav>
+            <%= link_to 'Show Lesson', lesson_reviews_path(lesson), class:"button" %>
+          </nav>
+        </div>
+      </div>
+    <% end %>
+  </div>
+  <nav>
+    <% if current_user_admin? %>
+      <p>
+        <%= link_to 'Add New Lesson', new_lesson_path, class: 'button' %>
+      </p>
+    <% end %>
+  </nav>
+
+</section>

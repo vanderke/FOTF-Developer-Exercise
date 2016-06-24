@@ -1,0 +1,19 @@
+<header class="header" role="banner">
+  <div id="primary-nav" class="l-container">
+    <div class="mast-container">
+      <div id="cover">
+        <a href="/"><%= image_tag("book_cover_7Mt_icon.ico", class:"book-cover")%></a>
+        <ul class="nav">
+          <% if current_user %>
+            <li id="user_link" class="title button"><%= link_to current_user.username, current_user %></li>
+            <li><%= link_to "Sign Out", session_path, method: :delete, class: "button" %></li>
+
+          <% else %>
+            <li><%= link_to 'Sign Up', signup_path, class: "button" %></li>
+            <li><%= link_to 'Sign In', new_session_path, class: "button" %></li>
+          <% end %>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>

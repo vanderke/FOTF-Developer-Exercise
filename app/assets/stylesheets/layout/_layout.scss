@@ -1,0 +1,63 @@
+// LAYOUT STYLES
+// ------------------------------
+// Prefix layout styles with `l-`
+// to make the context clear
+
+// Main container styles
+
+.l-container {
+  margin: 0 auto;
+  max-width: $l-max-width;
+  width: 90%;
+}
+
+.l-section {
+  margin-bottom: $default-whitespace;
+}
+
+// Layout helpers
+
+.l-left {
+  float: left;
+}
+
+.l-right {
+  float: right;
+}
+
+.header {
+  display: block;
+}
+
+.mast-container {
+  width: 100%;
+  display: block;
+}
+
+.nav {
+  margin: 0;
+  padding-top: em(27px);
+  text-align: right;
+  display: inline-flex;
+  float: right;
+
+  li {
+    list-style: none;
+    padding-right: em(25px);
+
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+}
+
+#wrapper {
+  padding: em(35px);
+  min-height: em(500px);
+  overflow: hidden;
+  background-color: $white;
+
+  h1 {
+    color: $agape-love-color;
+  }
+}

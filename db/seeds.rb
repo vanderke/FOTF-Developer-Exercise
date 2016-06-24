@@ -15,3 +15,25 @@ import_tasks.each do |task_name|
   puts "Running task: #{task_name} "
   Rake::Task[task_name].invoke
 end
+
+#Creating admin user
+admin = User.new(username: "admin", email: "admin@example.com",  password: "supersecret",
+                 password_confirmation: "supersecret", admin: true)
+puts "Created admin user" if admin.save
+
+#Create a general user
+user = User.new(username: "user", email: "user@example.com", password: "supersecret",
+                password_confirmation: "supersecret")
+puts "Created general user" if user.save
+
+#Creating 3 Reviews per Lesson
+chapters = (1..12).to_a
+random_sentences = Faker::Lorem.paragraph
+
+chapters.each do |chapter|
+  3.times do
+    Review.create(lesson_id: "#{chapter}", comment: random_sentences )
+  end
+end
+
+puts "Created #{Review.count} Reflections"

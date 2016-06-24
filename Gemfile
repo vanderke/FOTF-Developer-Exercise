@@ -17,6 +17,7 @@ group :test, :development do
   gem 'sqlite3'
   gem "rspec-rails", "3.4.2"
   gem 'pry'
+  gem 'faker'
 end
 
 group :test do

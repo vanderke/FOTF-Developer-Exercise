@@ -10,6 +10,12 @@
   <div class="form-horizontal">
     <nav>
       <%= link_to 'Write Reflection', new_lesson_review_path(@lesson), class:"button" %>
+      <% if current_user_admin? %>
+        <%= link_to 'Edit Lesson', edit_lesson_path(@lesson), class: 'button' %>
+        <%= link_to 'Delete Lesson', @lesson, method: :delete,
+        data: { confirm: "Are you sure you want to permanently delete your account?"},
+        class: 'button' %>
+      <% end %>
     </nav>
   </div>
   <div>

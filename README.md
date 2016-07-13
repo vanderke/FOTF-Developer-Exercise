@@ -1,4 +1,5 @@
 I created a demo at www.jknowscomputers.com/fotf
+The admin portal is a small gear in the bottom right of the screen. The password is "FocusOnTheFamily"
 
 
 # FOTF-Developer-Exercise

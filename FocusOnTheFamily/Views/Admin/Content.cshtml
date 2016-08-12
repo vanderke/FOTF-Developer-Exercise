@@ -1,0 +1,14 @@
+﻿@model List<FocusOnTheFamily.Models.Content>
+
+@{
+    ViewBag.Title = "List Contents";
+}
+
+<h2>Select a page to edit</h2>
+<hr />
+
+@foreach (FocusOnTheFamily.Models.Content content in @Model)
+{
+    @Html.ActionLink(@content.Title, "Content", "Admin", new { id = content.ContentID }, new { @class = "btn btn-default btn-sm" })
+    <br /><br />
+}

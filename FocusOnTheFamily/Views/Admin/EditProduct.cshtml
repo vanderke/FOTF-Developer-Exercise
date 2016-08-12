@@ -1,0 +1,114 @@
+﻿@model FocusOnTheFamily.ViewModels.EditProductVM
+
+@{
+    ViewBag.Title = "EditProduct";
+}
+
+<h2>Edit Product</h2>
+
+<div>
+    @Html.ActionLink("Back to Product List", "ListProducts", "Admin")
+</div>
+
+<form id="updateProductForm">
+    <hr />
+    <div class="form-horizontal">
+        <input type="hidden" id="ProductID" value="@Model.product.ProductID" />
+
+        <div class="form-group">
+            <label for="Title" class="control-label col-md-2">Title</label>
+            <input type="text" name="Title" id="Title" class="form-control" value="@Model.product.Title" />
+        </div>
+        <div class="form-group">
+            <label for="ISBN" class="control-label col-md-2">ISBN</label>
+            <input type="text" name="ISBN" id="ISBN" class="form-control" value="@Model.product.ISBN" />
+        </div>
+        <div class="form-group">
+            <label for="Price" class="control-label col-md-2">Price</label>
+            <div class="input-group">
+                <span class="input-group-addon">$</span>
+                <input type="text" name="Price" id="Price" class="form-control currency" value="@Model.product.Price" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="QtyAvail" class="control-label col-md-2">Qty</label>
+            <input type="text" name="QtyAvail" id="QtyAvail" class="form-control" value="@Model.product.QtyAvail" />
+        </div>
+        <div class="form-group">
+            <label for="Authors" class="control-label col-md-2">Authors</label>
+            <input type="text" name="Authors" id="Authors" class="form-control" value="@Model.product.Authors" />
+        </div>
+        <div class="form-group">
+            <label for="ImagePath" class="control-label col-md-2">Image Path</label>
+            <select id="ImagePath" class="form-control">
+                <option value="">---SELECT---</option>
+                @foreach (FocusOnTheFamily.Models.Image image in Model.images)
+                {
+                    string isSelected = "";
+                    if (Model.product.ImagePath == image.ImagePath)
+                    {
+                        isSelected = " selected='selected' ";
+                    }
+                    else
+                    {
+                        isSelected = "";
+                    }
+
+                    <option value="@image.ImagePath" @isSelected>@image.ImagePath</option>
+                }
+            </select>
+
+        </div>
+        <div class="form-group">
+            <label for="Summary" class="control-label col-md-2">Summary</label>
+            <textarea id="Summary" class="form-control" style="min-width: 100%;" rows="10" placeholder="Product Summary!">@Model.product.Summary</textarea>
+        </div>
+        <div class="form-group">
+            <label for="Description" class="control-label col-md-2">Description</label>
+            <textarea id="Description" class="form-control" style="min-width: 100%;" rows="10" placeholder="Product Descriptions!">@Model.product.Description</textarea>
+        </div>
+        <div class="form-group text-right">
+            <input type="button" class="btn btn-primary" onclick="UpdateProduct();" value="Update Product" />
+        </div>
+    </div>
+    <hr />
+
+    @{
+        if (Model.product.ProductID != System.Guid.Empty)
+        {
+            <h4>Product Details</h4>
+            foreach(FocusOnTheFamily.Models.ProductDetail detail in Model.product.ProductDetails)
+            {
+                @DisplayDetailRow(detail)
+            }
+            @DisplayDetailRow(new FocusOnTheFamily.Models.ProductDetail())
+        }
+    }
+</form>
+
+@helper DisplayDetailRow(FocusOnTheFamily.Models.ProductDetail detail)
+{
+string detailTitleID = "DetailTitle-" + @detail.ProductDetailID;
+string detailSummaryID = "DetailSummary-" + @detail.ProductDetailID;
+    <div class="panel">
+        <div class="panel-body">
+            <div class="form-group">
+                <label for="@detailTitleID" class="control-label col-md-2 text-right">Title</label>
+                <input type="text" id="@detailTitleID" class="form-control" value="@detail.DetailTitle" />
+            </div>
+            <div class="form-group">
+                <label for="@detailSummaryID" class="control-label col-md-2 text-right">Summary</label>
+                <input type="text" id="@detailSummaryID" class="form-control" value="@detail.DetailSummary" />
+            </div>
+            <div class="form-group text-right">
+                <input type="button" class="btn btn-primary" onclick="UpdateProductDetail('@Model.product.ProductID', @detail.ProductDetailID, $('#@detailTitleID').val(), $('#@detailSummaryID').val());" value="Save" />
+                @{
+                    if (detail.ProductDetailID != 0)
+                    {
+                        <input type="button" class="btn btn-danger" onclick="DeleteProductDetail(@detail.ProductDetailID);" value="Delete" />
+                    }
+                }
+            </div>
+        </div>
+    </div>
+}

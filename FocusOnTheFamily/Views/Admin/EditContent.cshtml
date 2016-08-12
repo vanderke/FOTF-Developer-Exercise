@@ -1,0 +1,110 @@
+﻿@model FocusOnTheFamily.ViewModels.EditContentVM
+
+@{
+    ViewBag.Title = "EditContent";
+}
+
+<h2>Edit Content</h2>
+<div>
+    @Html.ActionLink("Back to List", "ListContents", "Admin")
+</div>
+
+<form id="updateContentTitleForm">
+    <div class="form-horizontal">
+        <hr />
+        <input type="hidden" id="ContentID" value="@Model.pageContent.ContentID" />
+
+        <div class="form-group">
+            <label for="Title" class="control-label col-md-2">Title</label>
+            <input type="text" name="Title" id="Title" class="form-control " value="@Model.pageContent.Title" />
+        </div>
+        <div class="form-group text-right">
+            <input type="button" class="btn btn-primary" onclick="ContentUpdateTitle($('#Title'), $('#ContentID'));" value="Update Title" />
+        </div>
+
+        @foreach (FocusOnTheFamily.Models.ContentStory story in Model.pageContent.StoryContent)
+        {
+            @DisplayStoryData(@story)
+        }
+        @{ 
+            FocusOnTheFamily.Models.ContentStory tmpStory = new FocusOnTheFamily.Models.ContentStory();
+            @DisplayStoryData(tmpStory);
+        }
+    </div>    
+</form>
+
+<div>
+    @Html.ActionLink("Back to List", "ListContents", "Admin")
+</div>
+
+@helper DisplayStoryData(FocusOnTheFamily.Models.ContentStory story)
+{
+string updateButtonText;
+string isSelected = "";
+
+if(story.ContentStoryID > 0)
+{
+    updateButtonText = "Update Story";
+}
+else
+{
+    updateButtonText = "Create Story";
+}
+
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <div class="form-group">
+                <label for="StoryTitle-@story.ContentStoryID" class="control-label col-md-2">Title</label>
+                <input type="text" id="StoryTitle-@story.ContentStoryID" class="form-control " value="@story.StoryTitle" />
+            </div>
+            <div class="form-group">
+                <textarea id="StoryText-@story.ContentStoryID" class="form-control" style="min-width: 100%;" rows="10" placeholder="Story content here!">@story.StoryText</textarea>
+            </div>
+            <div class="form-group">
+                <label for="ImagePath-@story.ContentStoryID" class="control-label col-md-2">Image Path</label>
+                <select id="ImagePath-@story.ContentStoryID" class="form-control">
+                    <option value="">---SELECT---</option>
+                    @foreach (FocusOnTheFamily.Models.Image image in Model.Images)
+                    {
+                        if (story.ImagePath == image.ImagePath)
+                        {
+                            isSelected = " selected='selected' ";
+                        }
+                        else
+                        {
+                            isSelected = "";
+                        }
+
+                        <option value="@image.ImagePath" @isSelected>@image.ImagePath</option>
+                    }
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="RelatedProductID-@story.ContentStoryID" class="control-label col-md-2">Related Product</label>
+                <select id="RelatedProductID-@story.ContentStoryID" class="form-control">
+                    <option value="@System.Guid.Empty">---SELECT---</option>
+                    @foreach(FocusOnTheFamily.Models.Product product in Model.Products)
+                    {
+                        if (story.RelatedProductID == product.ProductID)
+                        {
+                            isSelected = " selected='selected' ";
+                        }
+                        else
+                        {
+                            isSelected = "";
+                        }
+
+                        <option value="@product.ProductID" @isSelected>@product.Title (@product.ISBN)</option>
+                    }
+                </select>
+            </div>
+        </div>
+        <div class="panel-footer text-right">
+            <input type="button" class="btn btn-primary" onclick="UpdateStory(@Model.pageContent.ContentID, @story.ContentStoryID, $('#StoryTitle-@story.ContentStoryID').val(), $('#StoryText-@story.ContentStoryID').val(), $('#ImagePath-@story.ContentStoryID').val(), $('#RelatedProductID-@story.ContentStoryID').val());" value="@updateButtonText" />
+            @if(story.ContentStoryID > 0)
+            {
+                <input type="button" class="btn btn-danger" onclick="DeleteStory(@story.ContentStoryID);" value="Delete Story" />
+            }
+        </div>
+    </div>
+}

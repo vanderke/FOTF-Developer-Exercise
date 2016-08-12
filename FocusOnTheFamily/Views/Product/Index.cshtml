@@ -1,0 +1,84 @@
+﻿@model List<FocusOnTheFamily.Models.Product>
+
+@{
+    ViewBag.Title = "Products";
+}
+
+@{
+    int rowCount = 0;
+    string imgClass = "";
+    string contentTitleClass = "";
+    string productDetailPanelID = "";
+}
+
+
+<div class="container">
+    @foreach (FocusOnTheFamily.Models.Product product in Model)
+    {
+        rowCount++;
+        if (rowCount % 2 != 0)
+        {
+            imgClass = "pull-right";
+            contentTitleClass = "text-left";
+        }
+        else
+        {
+            imgClass = "pull-left";
+            contentTitleClass = "text-right";
+        }
+
+        <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-8">
+                <div class="@contentTitleClass gap">
+                    <h1>@product.Title</h1>
+                    <h5>@product.Authors</h5>
+                </div>
+                @if (product.ImagePath != "")
+                {
+                    <img src="@product.ImagePath" class="@imgClass img-rounded gap" />
+                }
+                <h5>@product.Summary</h5>
+                <p class="gap">
+                    @product.Description
+                </p>
+                <br />
+                @{
+                    productDetailPanelID = "product-details-" + @product.ProductID;
+                }
+
+                @if (product.ProductDetails.Count() > 0)
+                {
+                    <div class="panel-group">
+                        <div class="panel panel-default">
+                            <div class="panel-header">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" href="#@(productDetailPanelID) ">Product Details</a>
+                                </h4>
+                            </div>
+                            <div id="@productDetailPanelID" class="panel-collapse collapse">
+                                <div class="paenl-body">
+                                    <ul>
+                                        @foreach (FocusOnTheFamily.Models.ProductDetail detail in product.ProductDetails)
+                                        {
+                                            <li>
+                                                @detail.DetailTitle
+                                                <p>
+                                                    @detail.DetailSummary
+                                                </p>
+                                            </li>
+                                        }
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+            <div class="col-sm-2"></div>
+        </div>
+        <div class="container-fluid">
+            <hr />
+        </div>
+    }
+</div>

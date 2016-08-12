@@ -1,0 +1,53 @@
+﻿@model FocusOnTheFamily.Models.Content
+
+
+@{
+    ViewBag.Title = Model.Title;
+}
+
+@{
+    int rowCount = 0;
+    string imgClass = "";
+    string contentTitleClass = "";
+}
+
+<div class="container">
+    @foreach (FocusOnTheFamily.Models.ContentStory story in Model.StoryContent)
+    {
+        rowCount++;
+        if (rowCount % 2 != 0)
+        {
+            imgClass = "pull-right";
+            contentTitleClass = "text-left";
+        }
+        else
+        {
+            imgClass = "pull-left";
+            contentTitleClass = "text-right";
+        }
+        
+        <div class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-10">
+                <div class="@contentTitleClass gap">
+                    <h1>@story.StoryTitle</h1>
+                </div>
+                @if (story.ImagePath != "")
+                {
+                    <img src="@story.ImagePath" class="@imgClass img-rounded img-responsive gap" />
+                }
+                <p class="gap">
+                    @story.StoryText
+                </p>
+                @if (story.RelatedProductID != System.Guid.Empty)
+                {
+                    @Html.ActionLink("I want to know more!", "Detail", "Product", new { id = story.RelatedProductID }, new { @class = "btn btn-default btn-sm" })
+                }
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+        <div class="container-fluid">
+            <hr />
+        </div>
+    }
+</div>

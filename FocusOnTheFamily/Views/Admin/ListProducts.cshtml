@@ -1,0 +1,23 @@
+﻿@model List<FocusOnTheFamily.Models.Product>
+
+@{
+    ViewBag.Title = "ListProducts";
+}
+
+<h2>Select a product to edit</h2>
+<hr />
+
+@foreach (FocusOnTheFamily.Models.Product product in @Model)
+{
+    @DisplayEditProductLink(@product.Title, product.ProductID)
+    <br /><br />
+}
+
+<hr />
+<!--@DisplayEditProductLink("Add New Product", System.Guid.Empty)-->
+
+
+@helper DisplayEditProductLink(string title, System.Guid productID)
+{
+    @Html.ActionLink(@title, "EditProduct", "Admin", new { id = productID }, new { @class = "btn btn-default btn-sm" })
+}

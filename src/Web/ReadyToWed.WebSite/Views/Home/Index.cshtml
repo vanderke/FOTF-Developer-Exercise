@@ -1,0 +1,40 @@
+﻿@model ReadyToWed.ViewModels.BookViewModel
+
+<div class="row">
+    <div class="col-md-12">
+        <h1>@Model.Book.Title</h1>
+    </div>
+</div>
+<div id="description"></div>
+<div class="row">
+    <div class="col-md-3">
+        <img src="~/Images/books/@String.Concat(Model.Book.Id.ToString(), ".jpg")" class="img-responsive" />
+    </div>
+    <div class="col-md-9">
+        <h3>Product Descripton</h3>
+        <p>
+            @Model.Book.Description
+        </p>
+    </div>
+</div>
+
+@if (Model.Book.Points.Any())
+{
+    <div id="points"></div>
+    <div class="row">
+        <div class="col-md-12">
+            <h3>Points</h3>
+            <ul>
+                @foreach (ReadyToWed.Models.BookPointModel point in Model.Book.Points.OrderBy(point => point.Id))
+                {
+                    <li><strong>@point.Title</strong><br /> @point.Summary</li>
+                }
+            </ul>
+        </div>
+    </div>
+}
+
+
+
+
+
